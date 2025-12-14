@@ -649,7 +649,7 @@ export default function Events() {
                         <SelectTrigger className="border-0 bg-slate-50 dark:bg-slate-800 rounded-xl px-4 py-3 text-sm">
                           <SelectValue placeholder="Select category" className="text-gray-400 text-xs dark:text-gray-500" />
                         </SelectTrigger>
-                        <SelectContent className="bg-white dark:bg-slate-700 border-slate-200 dark:border-slate-600">
+                        <SelectContent className="bg-white dark:bg-slate-700 border-0">
                           <SelectItem value="crypto">
                             <div className="flex items-center space-x-2">
                               <img src="/assets/cryptosvg.svg" alt="Crypto" className="w-4 h-4" />
@@ -699,7 +699,7 @@ export default function Events() {
                         <SelectTrigger className="border-0 bg-slate-50 dark:bg-slate-800 rounded-xl px-4 py-3 text-sm">
                           <SelectValue placeholder="Select type" className="text-gray-400 text-xs dark:text-gray-500" />
                         </SelectTrigger>
-                        <SelectContent className="bg-white dark:bg-slate-700 border-slate-200 dark:border-slate-600">
+                        <SelectContent className="bg-white dark:bg-slate-700 border-0">
                           <SelectItem value="yes_no">Yes/No</SelectItem>
                           <SelectItem value="multiple_choice">Multiple Choice</SelectItem>
                           <SelectItem value="over_under">Over/Under</SelectItem>
