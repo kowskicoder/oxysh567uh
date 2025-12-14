@@ -1,3 +1,54 @@
+const DEFAULT_BASE = 'https://betchatapp.geminigroq.repl.co';
+
+async function getBase() {
+  return new Promise((resolve) => {
+    try {
+      chrome.storage.sync.get(['bantah_base'], (res) => {
+        resolve(res.bantah_base || DEFAULT_BASE);
+      });
+    } catch (e) {
+      resolve(DEFAULT_BASE);
+    }
+  });
+}
+
+async function saveBase(url) {
+  try {
+    chrome.storage.sync.set({ bantah_base: url });
+  } catch (e) {}
+}
+
+function openUrl(path = '/') {
+  getBase().then((base) => {
+    const url = new URL(path, base as string).toString();
+    chrome.tabs.create({ url });
+  });
+}
+
+document.addEventListener('DOMContentLoaded', async () => {
+  const baseInput = document.getElementById('baseUrl');
+  const saveBtn = document.getElementById('save-url');
+  const openRoot = document.getElementById('open-root');
+  const openEvents = document.getElementById('open-events');
+  const openCreate = document.getElementById('open-create');
+  const openChats = document.getElementById('open-chats');
+  const openTab = document.getElementById('open-tab');
+
+  const base = await getBase();
+  if (baseInput) (baseInput as HTMLInputElement).value = base as string;
+
+  saveBtn?.addEventListener('click', () => {
+    const v = (baseInput as HTMLInputElement).value || DEFAULT_BASE;
+    saveBase(v);
+    window.close();
+  });
+
+  openRoot?.addEventListener('click', () => openUrl('/'));
+  openEvents?.addEventListener('click', () => openUrl('/events'));
+  openCreate?.addEventListener('click', () => openUrl('/events/create'));
+  openChats?.addEventListener('click', () => openUrl('/events'));
+  openTab?.addEventListener('click', () => getBase().then((b) => chrome.tabs.create({ url: b as string })));
+});
 // Bantah Chrome Extension - Popup Script
 class BantahExtension {
     constructor() {

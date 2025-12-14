@@ -1,5 +1,17 @@
 {
   "manifest_version": 3,
+  "name": "Bantah Companion",
+  "version": "0.1.0",
+  "description": "Quick access to Bantah web app: open the site or quick routes from the browser toolbar.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Bantah"
+  },
+  "permissions": ["storage", "tabs"],
+  "host_permissions": ["<all_urls>"]
+}
+{
+  "manifest_version": 3,
   "name": "BetChat - Social Betting Extension",
   "version": "1.0.0",
   "description": "Quick access to BetChat social betting platform with real-time notifications",

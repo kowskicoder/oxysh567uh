@@ -1,3 +1,23 @@
+# Bantah Companion — Chrome Extension
+
+This is a minimal Chrome extension scaffold that provides quick access to the Bantah web app from the browser toolbar.
+
+Installation (developer mode)
+
+1. Build your frontend (if serving from a dev server, note the URL).
+2. Open `chrome://extensions` in Chrome.
+3. Enable Developer Mode.
+4. Click "Load unpacked" and select the `chrome-extension` folder in this repo.
+
+Usage
+
+- The popup has quick actions (Open Bantah, Events, Create Event).
+- Configure the site `Site URL` if you host the frontend on a custom domain or a local dev server.
+
+Notes
+
+- This scaffold opens the web app in new tabs instead of embedding it (iframes may be blocked by site headers).
+- To ship a production extension, add icons (16/48/128) and review the `manifest.json` host permissions.
 # BetChat Chrome Extension
 
 A Chrome extension that provides quick access to BetChat's social betting platform with real-time notifications, event creation from web pages, and Telegram integration.

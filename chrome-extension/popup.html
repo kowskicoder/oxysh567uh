@@ -1,3 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Bantah Companion</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Bantah</h1>
+      <p class="muted">Quick actions</p>
+
+      <div class="actions">
+        <button id="open-root" class="btn primary">Open Bantah</button>
+        <button id="open-events" class="btn">Events</button>
+        <button id="open-create" class="btn">Create Event</button>
+        <button id="open-chats" class="btn">Open Chat</button>
+      </div>
+
+      <div class="settings">
+        <label for="baseUrl">Site URL</label>
+        <input id="baseUrl" type="url" placeholder="https://your-site.example" />
+        <div class="row">
+          <button id="save-url" class="btn">Save</button>
+          <button id="open-tab" class="btn ghost">Open in New Tab</button>
+        </div>
+      </div>
+
+      <p class="note">Tip: if the site has X-Frame-Options, the extension opens new tabs instead of embedding.</p>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
 <!DOCTYPE html>
 <html lang="en">
 <head>
