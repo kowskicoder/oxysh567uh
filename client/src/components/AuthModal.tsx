@@ -43,6 +43,21 @@ export function AuthModal({ isOpen, onClose }: AuthModalProps) {
     }
   }, [authenticated, onClose]);
 
+  // If the modal is opened and Privy is ready, use Privy's modal auth instead
+  // of showing this fallback UI — trigger `login()` and close our modal.
+  useEffect(() => {
+    if (isOpen && ready && !authenticated) {
+      // trigger Privy login modal and close this dialog
+      try {
+        login();
+      } catch (e) {
+        // ignore errors and keep fallback UI available
+        console.warn('Privy login failed:', e);
+      }
+      onClose();
+    }
+  }, [isOpen, ready, authenticated, login, onClose]);
+
   const getTitle = () => "Welcome to Bantah";
   const getDescription = () => "Join the community where predictions meet rewards";
 
