@@ -5,9 +5,17 @@
   "description": "Quick access to Bantah web app: open the site or quick routes from the browser toolbar.",
   "action": {
     "default_popup": "popup.html",
-    "default_title": "Bantah"
+    "default_title": "Bantah",
+    "default_icon": {
+      "16": "icons/icon16.svg",
+      "48": "icons/icon48.svg",
+      "128": "icons/icon128.svg"
+    }
   },
-  "permissions": ["storage", "tabs"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["storage", "tabs", "alarms", "notifications"],
   "host_permissions": ["<all_urls>"]
 }
 {

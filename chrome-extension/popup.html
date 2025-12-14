@@ -1,116 +1,45 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Bantah Companion</title>
-    <link rel="stylesheet" href="popup.css" />
-  </head>
-  <body>
-    <div class="container">
-      <h1>Bantah</h1>
-      <p class="muted">Quick actions</p>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Bantah Companion</title>
+        <link rel="stylesheet" href="popup.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="top">
+                <img src="icons/icon48.svg" class="logo" alt="Bantah" />
+                <div>
+                    <h1>Bantah</h1>
+                    <p class="muted">Quick access and notifications</p>
+                </div>
+            </div>
 
-      <div class="actions">
-        <button id="open-root" class="btn primary">Open Bantah</button>
-        <button id="open-events" class="btn">Events</button>
-        <button id="open-create" class="btn">Create Event</button>
-        <button id="open-chats" class="btn">Open Chat</button>
-      </div>
+            <div class="actions">
+                <button id="open-root" class="btn primary">Open Bantah</button>
+                <button id="open-events" class="btn">Events</button>
+                <button id="open-create" class="btn">Create Event</button>
+                <button id="quick-login" class="btn">Quick Login</button>
+            </div>
 
-      <div class="settings">
-        <label for="baseUrl">Site URL</label>
-        <input id="baseUrl" type="url" placeholder="https://your-site.example" />
-        <div class="row">
-          <button id="save-url" class="btn">Save</button>
-          <button id="open-tab" class="btn ghost">Open in New Tab</button>
-        </div>
-      </div>
+            <div class="settings">
+                <label for="baseUrl">Site URL</label>
+                <input id="baseUrl" type="url" placeholder="https://your-site.example" />
+                <div class="row">
+                    <button id="save-url" class="btn">Save</button>
+                    <button id="open-tab" class="btn ghost">Open in New Tab</button>
+                </div>
 
-      <p class="note">Tip: if the site has X-Frame-Options, the extension opens new tabs instead of embedding.</p>
-    </div>
-    <script src="popup.js"></script>
-  </body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bantah Extension</title>
-    <link rel="stylesheet" href="popup.css">
-</head>
-<body>
-    <div class="container">
-        <div class="header">
-            <img src="icons/icon48.png" alt="BetChat" class="logo">
-            <h1>BetChat</h1>
-            <div class="badge" id="notificationBadge"></div>
+                <label class="mt-2">Notifications</label>
+                <div class="row">
+                    <label class="switch"><input type="checkbox" id="notifyToggle"/><span>Enable</span></label>
+                    <input id="interval" type="number" min="1" max="60" value="5" class="small"/> <span class="muted">min</span>
+                </div>
+            </div>
+
+            <p class="note">Tip: extension will open site pages in a new tab. Notifications require the site to allow cookie auth and CORS.</p>
         </div>
-        
-        <div class="auth-section" id="authSection">
-            <div class="login-prompt">
-                <p>Connect to your BetChat account</p>
-                <button id="loginBtn" class="btn btn-primary">Login to BetChat</button>
-            </div>
-        </div>
-        
-        <div class="main-content" id="mainContent" style="display: none;">
-            <div class="balance-section">
-                <div class="balance-card">
-                    <span class="balance-label">Balance</span>
-                    <span class="balance-amount" id="balanceAmount">₦0</span>
-                </div>
-                <div class="coins-card">
-                    <span class="coins-label">Coins</span>
-                    <span class="coins-amount" id="coinsAmount">0</span>
-                </div>
-            </div>
-            
-            <div class="quick-actions">
-                <button id="createEventBtn" class="btn btn-accent">
-                    🎯 Create Event
-                </button>
-                <button id="viewEventsBtn" class="btn btn-outline">
-                    📋 Active Events
-                </button>
-                <button id="challengeBtn" class="btn btn-outline">
-                    ⚔️ Challenges
-                </button>
-            </div>
-            
-            <div class="notifications-section">
-                <div class="section-header">
-                    <h3>Recent Activity</h3>
-                    <button id="refreshBtn" class="btn-icon">🔄</button>
-                </div>
-                <div class="notifications-list" id="notificationsList">
-                    <div class="no-notifications">
-                        <p>No new notifications</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="page-actions" id="pageActions" style="display: none;">
-                <div class="section-header">
-                    <h3>Page Actions</h3>
-                </div>
-                <button id="createEventFromPageBtn" class="btn btn-secondary">
-                    📄 Create Event from Page
-                </button>
-                <button id="sharePageBtn" class="btn btn-secondary">
-                    📤 Share to Telegram
-                </button>
-            </div>
-        </div>
-        
-        <div class="footer">
-            <button id="settingsBtn" class="btn-icon">⚙️</button>
-            <button id="helpBtn" class="btn-icon">❓</button>
-            <button id="openWebBtn" class="btn-icon">🌐</button>
-        </div>
-    </div>
-    
-    <script src="popup.js"></script>
-</body>
+        <script src="popup.js"></script>
+    </body>
 </html>

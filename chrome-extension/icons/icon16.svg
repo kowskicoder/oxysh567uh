@@ -1,3 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none">
+  <rect width="24" height="24" rx="4" fill="#7440ff" />
+  <path d="M7 12h10" stroke="#fff" stroke-width="1.5" stroke-linecap="round" />
+  <path d="M7 8h10" stroke="#fff" stroke-width="1.5" stroke-linecap="round" />
+</svg>
 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect width="16" height="16" rx="3" fill="url(#gradient)"/>
 <path d="M8 4L10 7H9V11H7V7H6L8 4Z" fill="white"/>
