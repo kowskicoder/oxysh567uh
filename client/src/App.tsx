@@ -49,6 +49,7 @@ import { useDailyLoginPopup } from '@/hooks/useDailyLoginPopup';
 import AdminLogin from "@/pages/AdminLogin";
 import { WebsiteTour, useTour } from "@/components/WebsiteTour";
 import { SplashScreen } from "@/components/SplashScreen";
+import AddToHomePrompt from "@/components/AddToHomePrompt";
 import TelegramTest from "./pages/TelegramTest";
 import TelegramLink from "@/pages/TelegramLink";
 import TelegramMiniApp from "@/pages/TelegramMiniApp";
@@ -349,6 +350,7 @@ function App() {
               ) : (
                 <TooltipProvider>
                   <Toaster />
+                  <AddToHomePrompt />
                   <ErrorBoundary
                     fallback={<div className="p-4 text-center">Something went wrong. Please refresh the page.</div>}
                     onError={(error) => console.error("App Error:", error)}
