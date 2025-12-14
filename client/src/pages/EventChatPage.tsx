@@ -642,8 +642,8 @@ export default function EventChatPage() {
     if (query.trim()) {
       const results = messages.filter((message: ExtendedMessage) =>
         message.message.toLowerCase().includes(query.toLowerCase()) ||
-        message.user.firstName?.toLowerCase().includes(query.toLowerCase()) ||
-        message.user.username?.toLowerCase().includes(query.toLowerCase())
+        (message.user?.firstName || "").toLowerCase().includes(query.toLowerCase()) ||
+        (message.user?.username || "").toLowerCase().includes(query.toLowerCase())
       );
       setSearchResults(results);
     } else {
@@ -671,8 +671,8 @@ export default function EventChatPage() {
   };
 
   const filteredParticipants = participants.filter((p: any) =>
-    p.user.username?.toLowerCase().includes(mentionQuery.toLowerCase()) ||
-    p.user.firstName?.toLowerCase().includes(mentionQuery.toLowerCase())
+    (p.user?.username || "").toLowerCase().includes(mentionQuery.toLowerCase()) ||
+    (p.user?.firstName || "").toLowerCase().includes(mentionQuery.toLowerCase())
   );
 
   if (!eventId) {
