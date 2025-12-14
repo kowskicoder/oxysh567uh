@@ -109,6 +109,9 @@ export default function EventChatPage() {
     },
   });
 
+  // Safely parse end date for display (avoid Invalid Date runtime errors)
+  const safeEndDate = event?.endDate ? new Date(event.endDate) : null;
+
   const { data: messages = [], refetch: refetchMessages } = useQuery({
     queryKey: ["/api/events", eventId, "messages"],
     enabled: !!eventId,
@@ -834,7 +837,10 @@ export default function EventChatPage() {
                 <div className="flex items-center space-x-3 md:space-x-4 text-xs">
                   <span className="flex items-center">
                     <i className="fas fa-clock mr-1"></i>
-                    {formatDistanceToNow(new Date(event.endDate), { addSuffix: true })}
+                    {safeEndDate && !isNaN(safeEndDate.getTime())
+                      ? formatDistanceToNow(safeEndDate, { addSuffix: true })
+                      : "Unknown"
+                    }
                   </span>
                   <span>Pool ₦ {totalPool.toLocaleString()}</span>
                 </div>
