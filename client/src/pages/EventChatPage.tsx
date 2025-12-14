@@ -582,6 +582,11 @@ export default function EventChatPage() {
       replyToId: replyingTo?.id,
       mentions,
     });
+    // Clear input and mention/reply state immediately after sending
+    setNewMessage("");
+    setShowMentions(false);
+    setMentionQuery("");
+    setReplyingTo(null);
   };
 
   const handleKeyPress = (e: React.KeyboardEvent) => {
