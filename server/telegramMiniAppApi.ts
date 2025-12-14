@@ -62,15 +62,34 @@ export function verifyTelegramInitData(
       .map((key) => `${key}=${data[key]}`)
       .join("\n");
 
-    // Calculate expected hash
-    const secretKey = crypto.createHmac("sha256", "WebAppData").update(botToken).digest();
-    const expectedHash = crypto
-      .createHmac("sha256", secretKey)
-      .update(checkString)
-      .digest("hex");
+    // Calculate expected hash per Telegram WebApp verification docs:
+    // secret_key = SHA256(bot_token)
+    // expected_hash = HMAC_SHA256(check_string, secret_key)
+    const secretKey = crypto.createHash("sha256").update(botToken).digest();
+    const expectedHash = crypto.createHmac("sha256", secretKey).update(checkString).digest("hex");
 
     // Verify hash
-    if (expectedHash !== hash) return null;
+    if (expectedHash !== hash) {
+      // Temporary one-shot debug logging for troubleshooting signature failures.
+      // Avoid logging secrets; print only the hashes and a snippet of the check string.
+      try {
+        if (!globalThis.__telegramInitDataDebugPrinted) {
+          // eslint-disable-next-line no-console
+          console.error("[DEBUG] Telegram initData verification failed:", {
+            receivedHash: hash,
+            expectedHash,
+            checkStringSnippet: checkString.slice(0, 500),
+          });
+          // Mark as printed to avoid noisy repeated logs
+          // @ts-ignore - attach to global for cross-module persistence
+          globalThis.__telegramInitDataDebugPrinted = true;
+        }
+      } catch (e) {
+        // ignore logging errors
+      }
+
+      return null;
+    }
 
     // Check if data is not older than 24 hours
     const authDate = parseInt(data.auth_date);

@@ -80,5 +80,15 @@ class ApiClient {
     async getLeaderboard(limit = 50) {
         return this.client.get('/api/telegram/mini-app/leaderboard', { params: { limit } });
     }
+    // User discovery & search
+    async searchUsers(query) {
+        return this.client.get('/api/users/search', { params: { q: query } });
+    }
+    async getSuggestedUsers() {
+        return this.client.get('/api/users/suggestions');
+    }
+    async getUserProfile(userId) {
+        return this.client.get(`/api/users/${userId}/profile`);
+    }
 }
 export const apiClient = new ApiClient();

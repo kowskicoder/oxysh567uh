@@ -58,8 +58,7 @@ export default function ProfileTab() {
                 </span>
               </div>
             </div>
-          </div>
-        </motion.div>
+          </motion.div>
 
         {/* Stats Grid with Icons */}
         <div className="grid grid-cols-3 gap-4 mb-6">

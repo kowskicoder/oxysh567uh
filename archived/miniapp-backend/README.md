@@ -176,19 +176,6 @@ See: https://core.telegram.org/bots/webapps#validating-data-received-from-the-we
 
 ## Deployment
 
-### Docker (Optional)
-
-```dockerfile
-FROM node:20-alpine
-WORKDIR /app
-COPY package*.json ./
-RUN npm install
-COPY src ./src
-COPY tsconfig.json ./
-RUN npm run build
-EXPOSE 5001
-CMD ["npm", "start"]
-```
 
 ### Environment Variables (Production)
 

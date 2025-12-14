@@ -4,6 +4,8 @@ dotenv.config({ path: '.env.local' });
 
 const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
 const FRONTEND_URL = (process.env.FRONTEND_URL || process.env.REPLIT_DOMAINS?.split(',')[0] || '').replace(/\/$/, '');
+// Optional separate mini-app origin (recommended for isolated Telegram auth)
+const MINIAPP_URL = (process.env.MINIAPP_URL || '').replace(/\/$/, '');
 
 function usage() {
   console.log('Usage: node scripts/register-miniapp.js [--dry-run] [--chat-id <chatId>]');
@@ -85,7 +87,8 @@ async function sendTestMessage(chatId, url) {
 
 (async function main() {
   try {
-    const url = (FRONTEND_URL ? `${FRONTEND_URL}/telegram-mini-app` : 'https://example.com/telegram-mini-app');
+    // Prefer a dedicated MINIAPP_URL if provided (serves from its own origin).
+    const url = MINIAPP_URL || (FRONTEND_URL ? `${FRONTEND_URL}/telegram-mini-app` : 'https://example.com/telegram-mini-app');
 
     console.log('Config:');
     console.log('  TELEGRAM_BOT_TOKEN:', TELEGRAM_BOT_TOKEN ? 'present' : 'missing');

@@ -74,6 +74,39 @@ npm run build
 npm start
 ```
 
+### 5. **Host Mini-App Separately (Recommended)**
+For full isolation (no Privy, no shared providers) host the `miniapp/` frontend from its own origin or subdomain and register that exact URL with Telegram.
+
+1. Build the mini-app (from repo root):
+
+```bash
+cd miniapp
+npm install
+npm run build
+# deploy `miniapp/dist` to your static host (Netlify/Vercel/S3/your-domain)
+```
+
+2. Set `MINIAPP_URL` to the deployed mini-app origin, for example:
+
+```bash
+export MINIAPP_URL="https://miniapp.your-domain.com"
+```
+
+3. Re-run the registration script (on the backend host or locally with network access):
+
+```bash
+cd miniapp-backend
+node scripts/register-miniapp.js --dry-run
+# remove --dry-run when ready
+node scripts/register-miniapp.js
+```
+
+4. Open the bot in Telegram and use the menu to open the mini-app. The mini-app will run from its own origin and will not be wrapped in the main webapp's providers.
+
+Notes:
+- Use `MINIAPP_URL` rather than `FRONTEND_URL` so the bot opens the isolated mini-app origin.
+- Ensure the deployed mini-app URL matches exactly (including https) the URL registered with Telegram.
+
 ---
 
 ## Testing Checklist
