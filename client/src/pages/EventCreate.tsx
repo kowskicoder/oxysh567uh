@@ -233,10 +233,10 @@ export default function EventCreate() {
             <div className="mobile-form-field md:mb-6">
               <Label htmlFor="category" className="mobile-form-label md:text-base md:font-semibold md:text-slate-700 md:dark:text-slate-300">Category *</Label>
               <Select value={category} onValueChange={setCategory} required>
-                <SelectTrigger className="mobile-form-select md:h-12 md:text-base md:bg-slate-50 md:dark:bg-slate-800 md:border-0 md:shadow-none md:rounded-xl focus:ring-2 focus:ring-primary/30 bg-white dark:bg-slate-700 border-slate-200 dark:border-slate-600">
+                <SelectTrigger className="mobile-form-select md:h-12 md:text-base md:bg-slate-50 md:dark:bg-slate-800 md:border-0 md:shadow-none md:rounded-xl focus:ring-2 focus:ring-primary/30 bg-white dark:bg-slate-700 border-0">
                   <SelectValue placeholder="Select category" />
                 </SelectTrigger>
-                <SelectContent className="md:bg-slate-50 md:dark:bg-slate-800 md:border-0 md:rounded-xl bg-white dark:bg-slate-700 border-slate-200 dark:border-slate-600">
+                  <SelectContent className="md:bg-slate-50 md:dark:bg-slate-800 md:border-0 md:rounded-xl bg-white dark:bg-slate-700 border-0">
                   {categories.map((cat) => (
                     <SelectItem key={cat.value} value={cat.value}>
                       <div className="flex items-center space-x-2">
