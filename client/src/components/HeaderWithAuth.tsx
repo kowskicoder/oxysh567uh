@@ -4,7 +4,6 @@ import { useState } from "react";
 import { useAuth } from "@/hooks/useAuth";
 import { useQuery } from "@tanstack/react-query";
 import { useNotifications } from "@/hooks/useNotifications";
-import { AuthModal } from "@/components/AuthModal";
 
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
@@ -38,8 +37,7 @@ import {
 import { Link } from "wouter";
 
 export function HeaderWithAuth() {
-  const { user, isLoading, logout, isLoggingOut } = useAuth();
-  const [showAuthModal, setShowAuthModal] = useState(false);
+  const { user, isLoading, logout, isLoggingOut, login } = useAuth();
   const { notifications, unreadCount } = useNotifications();
 
   const { data: balance = 0 } = useQuery({
@@ -68,21 +66,17 @@ export function HeaderWithAuth() {
                   className="w-8 h-8"
                 />
                 <span className="text-xl font-bold text-slate-900 dark:text-white">
-                  Bantah
-                  <sup className="text-xs font-normal text-slate-500 dark:text-slate-400 ml-1">Alpha</sup>
-                </span>
-              </div>
+                  <Button
+                    onClick={() => login()}
+                    className="bg-primary hover:bg-primary/90 text-white"
+                  >
             </div>
             <div className="animate-pulse h-8 w-20 bg-slate-200 dark:bg-slate-700 rounded"></div>
           </div>
         </div>
       </nav>
     );
-  }
-
-  // Unauthenticated header
-  if (!user) {
-    return (
+        
       <>
         <nav className="bg-white dark:bg-slate-800 border-b border-slate-200 dark:border-slate-700 theme-transition sticky top-0 z-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

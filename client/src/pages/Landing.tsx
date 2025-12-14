@@ -2,18 +2,17 @@ import { useAuth } from "@/hooks/useAuth";
 import { useLocation, useParams } from "wouter";
 import { useToast } from "@/hooks/use-toast";
 import { Button } from "@/components/ui/button";
-import { AuthModal } from "@/components/AuthModal";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
 export default function Landing() {
-  const { isAuthenticated, isLoading } = useAuth();
+  const { isAuthenticated, isLoading, login } = useAuth();
   const [, setLocation] = useLocation();
   const params = useParams();
   const { toast } = useToast();
   const [isVisible, setIsVisible] = useState(false);
   const [referralCode, setReferralCode] = useState<string | null>(null);
-  const [showAuthModal, setShowAuthModal] = useState(false);
+  
 
   useEffect(() => {
     setIsVisible(true);
@@ -38,7 +37,8 @@ export default function Landing() {
     if (referralCode) {
       localStorage.setItem("referralCode", referralCode);
     }
-    setShowAuthModal(true);
+    // Trigger Privy modal directly
+    login();
   };
 
   // Fix: Add handleNavigation for logo click
@@ -259,11 +259,7 @@ export default function Landing() {
         </div>
       </div>
 
-      {/* Auth Modal */}
-      <AuthModal
-        isOpen={showAuthModal}
-        onClose={() => setShowAuthModal(false)}
-      />
+      {/* Auth handled by Privy modal (no local fallback) */}
     </div>
   );
 }
