@@ -918,6 +918,8 @@ export default function EventChatPage() {
         ) : (
           <div className="space-y-1 md:space-y-2">
             {messages.map((message: ExtendedMessage, index: number) => {
+            // ensure we have a safe user object to avoid runtime errors
+            const msgUser = message.user ?? { id: message.userId, username: message.user?.username ?? 'unknown', firstName: '', level: 1 };
             // Check if this is a system message
             const isSystemMessage = message.type === 'system';
 
@@ -941,11 +943,11 @@ export default function EventChatPage() {
                 {!isCurrentUser && showAvatar && (
                     <div
                       className="flex-shrink-0 cursor-pointer hover:ring-2 hover:ring-primary/50 transition-all rounded-full"
-                      onClick={() => setSelectedProfileUserId(message.user.id)}
+                      onClick={() => msgUser.id && setSelectedProfileUserId(msgUser.id)}
                     >
                       <UserAvatar
-                        userId={message.user.id}
-                        username={message.user.username}
+                        userId={msgUser.id}
+                        username={msgUser.username}
                         size={24}
                         className="w-6 h-6"
                       />
@@ -957,7 +959,7 @@ export default function EventChatPage() {
                     <div className={`flex items-center space-x-2 mb-1 ${isCurrentUser ? 'justify-end' : ''}`}>
                       <div className="flex items-center space-x-1">
                         <span className="text-xs font-medium text-slate-700 dark:text-slate-300">
-                          {message.user.firstName || message.user.username || 'Anonymous'}
+                          {msgUser.firstName || msgUser.username || 'Anonymous'}
                         </span>
                         {/* Verification badge */}
                         <div className="bg-blue-500 text-white px-1 py-0.5 rounded-full text-[8px] font-bold leading-none">
@@ -965,8 +967,8 @@ export default function EventChatPage() {
                         </div>
                         {/* Level badge */}
                         <img 
-                          src={`/assets/${message.user.level >= 50 ? 'master' : message.user.level >= 30 ? 'expert' : message.user.level >= 20 ? 'advanced' : message.user.level >= 10 ? 'amateur' : 'Beginner'}.svg`} 
-                          alt={`Level ${message.user.level || 1}`} 
+                          src={`/assets/${(msgUser.level || 1) >= 50 ? 'master' : (msgUser.level || 1) >= 30 ? 'expert' : (msgUser.level || 1) >= 20 ? 'advanced' : (msgUser.level || 1) >= 10 ? 'amateur' : 'Beginner'}.svg`} 
+                          alt={`Level ${msgUser.level || 1}`} 
                           className="w-3 h-3" 
                         />
                       </div>
