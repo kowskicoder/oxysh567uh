@@ -4,21 +4,3 @@
 <path d="M181 142C185.418 142 189.089 145.623 188.157 149.942C184.514 166.838 169.486 179.5 151.5 179.5C133.514 179.5 118.486 166.838 114.843 149.942C113.911 145.623 117.582 142 122 142H181Z" fill="#BEFF07"/>
 <path d="M47.1719 76.5357C47.1719 94.0016 61.8482 108.168 79.9362 108.168C98.0098 108.168 112.672 94.0016 112.672 76.5357C112.672 59.0697 98.0098 44.9224 79.9362 44.9224C61.8482 44.9224 47.1719 59.0697 47.1719 76.5357Z" fill="white"/>
 </svg>
-<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 24 24" fill="none">
-  <rect width="24" height="24" rx="4" fill="#7440ff" transform="scale(5.333)" />
-  <path d="M7 12h10" stroke="#fff" stroke-width="1.5" stroke-linecap="round" transform="scale(5.333)" />
-  <path d="M7 8h10" stroke="#fff" stroke-width="1.5" stroke-linecap="round" transform="scale(5.333)" />
-</svg>
-<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="128" height="128" rx="20" fill="url(#gradient)"/>
-<path d="M64 32L80 56H72V88H56V56H48L64 32Z" fill="white"/>
-<circle cx="64" cy="96" r="4" fill="white"/>
-<path d="M44 48L52 56H48V72H40V56H36L44 48Z" fill="white" opacity="0.6"/>
-<path d="M84 48L92 56H88V72H80V56H76L84 48Z" fill="white" opacity="0.6"/>
-<defs>
-<linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-<stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
-<stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
-</linearGradient>
-</defs>
-</svg>
