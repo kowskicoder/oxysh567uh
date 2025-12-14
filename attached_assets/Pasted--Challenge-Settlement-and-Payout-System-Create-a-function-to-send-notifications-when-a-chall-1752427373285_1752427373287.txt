@@ -1,0 +1,244 @@
+-- Challenge Settlement and Payout System
+
+-- Create a function to send notifications when a challenge is settled
+CREATE OR REPLACE FUNCTION send_challenge_settlement_notifications(p_challenge_id UUID)
+RETURNS void
+LANGUAGE plpgsql
+SECURITY DEFINER
+AS $$
+DECLARE
+    v_challenge_record record;
+    v_winner_id uuid;
+    v_loser_id uuid;
+    v_wager_amount numeric;
+    v_challenge_title text;
+BEGIN
+    -- Get challenge details
+    SELECT * INTO v_challenge_record
+    FROM challenges
+    WHERE id = p_challenge_id;
+
+    -- Exit if challenge is not completed
+    IF v_challenge_record.status != 'completed' THEN
+        RETURN;
+    END IF;
+
+    -- Get challenge details
+    v_winner_id := v_challenge_record.winner_id;
+    v_challenge_title := COALESCE(v_challenge_record.title, 'Challenge');
+    v_wager_amount := COALESCE(v_challenge_record.wager_amount, 0);
+    
+    -- Determine the loser (the other participant)
+    IF v_challenge_record.creator_id = v_winner_id THEN
+        v_loser_id := v_challenge_record.opponent_id;
+    ELSE
+        v_loser_id := v_challenge_record.creator_id;
+    END IF;
+
+    -- Send notification to winner
+    IF v_winner_id IS NOT NULL THEN
+        INSERT INTO notifications (
+            user_id,
+            notification_type,
+            title,
+            content,
+            metadata
+        ) VALUES (
+            v_winner_id,
+            'challenge_win',
+            'You Won a Challenge!',
+            'Congratulations! You won the challenge "' || v_challenge_title || '". Your winnings have been credited to your account.',
+            jsonb_build_object(
+                'challenge_id', p_challenge_id,
+                'challenge_title', v_challenge_title,
+                'wager_amount', v_wager_amount,
+                'winnings', v_wager_amount * 2, -- Assuming 1:1 payout minus fees
+                'completed_at', NOW()
+            )
+        );
+    END IF;
+
+    -- Send notification to loser
+    IF v_loser_id IS NOT NULL THEN
+        INSERT INTO notifications (
+            user_id,
+            notification_type,
+            title,
+            content,
+            metadata
+        ) VALUES (
+            v_loser_id,
+            'challenge_loss',
+            'Challenge Completed',
+            'The challenge "' || v_challenge_title || '" has been completed. Unfortunately, you did not win this time.',
+            jsonb_build_object(
+                'challenge_id', p_challenge_id,
+                'challenge_title', v_challenge_title,
+                'wager_amount', v_wager_amount,
+                'completed_at', NOW()
+            )
+        );
+    END IF;
+END;
+$$;
+
+-- Create a function to process challenge payouts
+CREATE OR REPLACE FUNCTION process_challenge_payouts(p_challenge_id UUID, p_admin_email TEXT)
+RETURNS void
+LANGUAGE plpgsql
+SECURITY DEFINER
+AS $$
+DECLARE
+    v_challenge_record record;
+    v_winner_id uuid;
+    v_wager_amount numeric;
+    v_platform_fee_percentage numeric := 5; -- Default 5% platform fee
+    v_platform_fee numeric;
+    v_winner_payout numeric;
+    v_winner_wallet_id uuid;
+BEGIN
+    -- Get challenge details
+    SELECT * INTO v_challenge_record
+    FROM challenges
+    WHERE id = p_challenge_id;
+
+    -- Exit if challenge is not completed or already processed
+    IF v_challenge_record.status != 'completed' OR v_challenge_record.payouts_processed THEN
+        RETURN;
+    END IF;
+
+    -- Get challenge details
+    v_winner_id := v_challenge_record.winner_id;
+    v_wager_amount := COALESCE(v_challenge_record.wager_amount, 0);
+    
+    -- If no winner or no wager, exit early
+    IF v_winner_id IS NULL OR v_wager_amount <= 0 THEN
+        -- Mark as processed anyway
+        UPDATE challenges
+        SET payouts_processed = true,
+            updated_at = NOW()
+        WHERE id = p_challenge_id;
+        RETURN;
+    END IF;
+
+    -- Calculate fees and payout
+    v_platform_fee := (v_wager_amount * 2) * (v_platform_fee_percentage / 100);
+    v_winner_payout := (v_wager_amount * 2) - v_platform_fee;
+
+    -- Get winner's wallet
+    SELECT id INTO v_winner_wallet_id
+    FROM wallets
+    WHERE user_id = v_winner_id;
+
+    -- Process payout to winner
+    IF v_winner_wallet_id IS NOT NULL THEN
+        -- Update wallet balance
+        UPDATE wallets
+        SET balance = balance + v_winner_payout
+        WHERE id = v_winner_wallet_id;
+
+        -- Record transaction
+        INSERT INTO transactions (
+            wallet_id,
+            user_id,
+            type,
+            amount,
+            status,
+            metadata
+        ) VALUES (
+            v_winner_wallet_id,
+            v_winner_id,
+            'challenge_win',
+            v_winner_payout,
+            'completed',
+            jsonb_build_object(
+                'challenge_id', p_challenge_id,
+                'wager_amount', v_wager_amount,
+                'platform_fee', v_platform_fee,
+                'processed_by', p_admin_email,
+                'processed_at', NOW()
+            )
+        );
+    END IF;
+
+    -- Mark challenge as processed
+    UPDATE challenges
+    SET payouts_processed = true,
+        updated_at = NOW()
+    WHERE id = p_challenge_id;
+
+    -- Log admin action
+    INSERT INTO admin_actions (
+        admin_email,
+        action_type,
+        target_type,
+        target_id,
+        details
+    ) VALUES (
+        p_admin_email,
+        'process_challenge_payouts',
+        'challenge',
+        p_challenge_id,
+        jsonb_build_object(
+            'wager_amount', v_wager_amount,
+            'platform_fee', v_platform_fee,
+            'winner_payout', v_winner_payout,
+            'winner_id', v_winner_id,
+            'processed_at', NOW()
+        )
+    );
+END;
+$$;
+
+-- Create a trigger function for challenge completion
+CREATE OR REPLACE FUNCTION handle_challenge_completion()
+RETURNS TRIGGER
+LANGUAGE plpgsql
+SECURITY DEFINER
+AS $$
+DECLARE
+    v_admin_email text;
+BEGIN
+    -- Only proceed if the challenge is being marked as completed
+    IF NEW.status = 'completed' AND OLD.status != 'completed' THEN
+        -- Get the admin email from the current user
+        SELECT email INTO v_admin_email
+        FROM auth.users
+        WHERE id = auth.uid();
+
+        -- Send notifications to participants
+        PERFORM send_challenge_settlement_notifications(NEW.id);
+
+        -- Process payouts using the admin email
+        PERFORM process_challenge_payouts(NEW.id, v_admin_email);
+    END IF;
+    RETURN NEW;
+END;
+$$;
+
+-- Drop and recreate the trigger
+DROP TRIGGER IF EXISTS challenge_completion_trigger ON challenges;
+
+CREATE TRIGGER challenge_completion_trigger
+AFTER UPDATE ON challenges
+FOR EACH ROW
+WHEN (NEW.status = 'completed' AND OLD.status != 'completed')
+EXECUTE FUNCTION handle_challenge_completion();
+
+-- Add payouts_processed column to challenges table if it doesn't exist
+DO $$ 
+BEGIN
+    IF NOT EXISTS (
+        SELECT 1 
+        FROM information_schema.columns 
+        WHERE table_schema = 'public' 
+        AND table_name = 'challenges' 
+        AND column_name = 'payouts_processed'
+    ) THEN
+        ALTER TABLE public.challenges 
+        ADD COLUMN payouts_processed BOOLEAN DEFAULT false;
+    END IF;
+END $$;
+
+-- Notify PostgREST to reload schema
+NOTIFY pgrst, 'reload schema';

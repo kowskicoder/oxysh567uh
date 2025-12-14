@@ -1,0 +1,150 @@
+/* Mobile Compact Design Styles */
+
+/* Hide scrollbars on mobile for cleaner look */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Mobile-optimized card spacing */
+@media (max-width: 768px) {
+  /* Tighter spacing for mobile cards */
+  .mobile-compact-card {
+    @apply p-3 space-y-2;
+  }
+  
+  .mobile-compact-card .card-header {
+    @apply pb-2;
+  }
+  
+  .mobile-compact-card .card-content {
+    @apply space-y-2;
+  }
+  
+  /* Reduce switch and button sizes on mobile */
+  .mobile-compact-switch {
+    transform: scale(0.9);
+  }
+  
+  /* Mobile-optimized buttons */
+  .mobile-compact-button {
+    @apply h-8 px-3 text-xs;
+  }
+  
+  /* Compact form elements */
+  .mobile-compact-select {
+    @apply h-8 text-xs;
+  }
+  
+  /* Remove excessive padding from mobile containers */
+  .mobile-page-container {
+    @apply px-3 py-2 pb-20;
+  }
+  
+  /* Mobile header with proper spacing */
+  .mobile-header {
+    @apply bg-white dark:bg-slate-800 sticky top-0 z-10;
+  }
+  
+  .mobile-header-content {
+    @apply flex items-center justify-between px-4 py-2;
+  }
+  
+  /* Clean mobile navigation styling */
+  .mobile-nav-item {
+    @apply flex flex-col items-center justify-center p-1.5 rounded-lg transition-all duration-200 ease-in-out min-w-[50px];
+  }
+  
+  .mobile-nav-item.active {
+    @apply text-primary bg-primary/10 scale-105;
+  }
+  
+  .mobile-nav-item:not(.active) {
+    @apply text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200;
+  }
+  
+  /* Profile avatar in mobile nav */
+  .mobile-nav-avatar {
+    @apply w-5 h-5 mb-1 transition-transform duration-200 rounded-full;
+  }
+  
+  .mobile-nav-avatar.active {
+    @apply scale-110 ring-2;
+    ring-color: hsl(220, 14%, 90%);
+  }
+  
+  .dark .mobile-nav-avatar.active {
+    @apply ring-primary;
+  }
+  
+  /* Mobile settings card improvements */
+  .mobile-setting-item {
+    @apply flex items-center justify-between py-1;
+  }
+  
+  .mobile-setting-label {
+    @apply flex-1 min-w-0;
+  }
+  
+  /* Smooth transitions for mobile interactions */
+  .mobile-smooth-transition {
+    @apply transition-all duration-200 ease-in-out;
+  }
+  
+  /* Hide desktop descriptions on mobile */
+  .mobile-hide-description {
+    @apply hidden md:block;
+  }
+}
+
+/* Create page mobile styling */
+.create-page {
+  @apply bg-[#EDEDED];
+}
+
+.create-page .create-header {
+  @apply bg-[#EDEDED] text-black flex justify-center items-center relative p-4 sticky top-0 z-10;
+}
+
+.create-page .event-type-button {
+  @apply flex-shrink-0 flex flex-col items-center justify-center p-1 rounded-lg transition-all duration-300;
+}
+
+.create-page .event-type-button.active {
+  @apply bg-[#7440ff]/10 shadow-[0_0_10px_rgba(116,64,255,0.1)];
+}
+
+.create-page .event-type-button:not(.active) {
+  @apply hover:bg-gray-50 dark:hover:bg-slate-800;
+}
+
+/* Mobile form styling improvements */
+@media (max-width: 768px) {
+  .mobile-form-container {
+    @apply space-y-3;
+  }
+  
+  .mobile-form-field {
+    @apply space-y-1;
+  }
+  
+  .mobile-form-label {
+    @apply text-sm font-bold;
+  }
+  
+  .mobile-form-input {
+    @apply text-sm h-10;
+  }
+  
+  .mobile-form-select {
+    @apply text-sm h-10;
+  }
+  
+  .mobile-form-textarea {
+    @apply text-sm min-h-[60px];
+  }
+}

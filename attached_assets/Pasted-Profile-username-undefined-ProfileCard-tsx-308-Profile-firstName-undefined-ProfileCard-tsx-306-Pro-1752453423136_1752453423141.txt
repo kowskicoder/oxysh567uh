@@ -1,0 +1,22 @@
+Profile username: undefined
+ProfileCard.tsx:308 Profile firstName: undefined
+ProfileCard.tsx:306 Profile data in component: Response {type: 'basic', url: 'https://b5b89eb7-8f18-44b4-9a12-ceb28f94ec15-00-10…drc44e.worf.replit.dev/api/users/44978831/profile', redirected: false, status: 200, ok: true, …}body: (...)bodyUsed: falseheaders: Headers {}ok: trueredirected: falsestatus: 200statusText: "OK"type: "basic"url: "https://b5b89eb7-8f18-44b4-9a12-ceb28f94ec15-00-10rqifmdrc44e.worf.replit.dev/api/users/44978831/profile"[[Prototype]]: Response
+ProfileCard.tsx:307 Profile username: undefined
+ProfileCard.tsx:308 Profile firstName: undefined
+ProfileCard.tsx:306 Profile data in component: Response {type: 'basic', url: 'https://b5b89eb7-8f18-44b4-9a12-ceb28f94ec15-00-10…drc44e.worf.replit.dev/api/users/44978831/profile', redirected: false, status: 200, ok: true, …}body: (...)bodyUsed: falseheaders: Headers {}ok: trueredirected: falsestatus: 200statusText: "OK"type: "basic"url: "https://b5b89eb7-8f18-44b4-9a12-ceb28f94ec15-00-10rqifmdrc44e.worf.replit.dev/api/users/44978831/profile"[[Prototype]]: Response
+ProfileCard.tsx:307 Profile username: undefined
+ProfileCard.tsx:308 Profile firstName: undefined
+ Received tip-sent: {title: '💸 Tip Sent', message: 'You tipped @sheri ₦665.00!', amount: 665, receiverId: '44978831', receiverName: 'sheri', …}amount: 665message: "You tipped @sheri ₦665.00!"receiverId: "44978831"receiverName: "sheri"timestamp: "2025-07-14T00:36:14.479Z"title: "💸 Tip Sent"[[Prototype]]: Object
+ProfileCard.tsx:306 Profile data in component: Response {type: 'basic', url: 'https://b5b89eb7-8f18-44b4-9a12-ceb28f94ec15-00-10…drc44e.worf.replit.dev/api/users/44978831/profile', redirected: false, status: 200, ok: true, …}body: (...)bodyUsed: falseheaders: Headers {}ok: trueredirected: falsestatus: 200statusText: "OK"type: "basic"url: "https://b5b89eb7-8f18-44b4-9a12-ceb28f94ec15-00-10rqifmdrc44e.worf.replit.dev/api/users/44978831/profile"[[Prototype]]: Response
+ProfileCard.tsx:307 Profile username: undefined
+ProfileCard.tsx:308 Profile firstName: undefined
+ProfileCard.tsx:306 Profile data in component: Response {type: 'basic', url: 'https://b5b89eb7-8f18-44b4-9a12-ceb28f94ec15-00-10…drc44e.worf.replit.dev/api/users/44978831/profile', redirected: false, status: 200, ok: true, …}body: (...)bodyUsed: falseheaders: Headers {}ok: trueredirected: falsestatus: 200statusText: "OK"type: "basic"url: "https://b5b89eb7-8f18-44b4-9a12-ceb28f94ec15-00-10rqifmdrc44e.worf.replit.dev/api/users/44978831/profile"[[Prototype]]: Response
+ProfileCard.tsx:307 Profile username: undefined
+ProfileCard.tsx:308 Profile firstName: undefined
+ProfileCard.tsx:70 Profile API response: Response {type: 'basic', url: 'https://b5b89eb7-8f18-44b4-9a12-ceb28f94ec15-00-10…drc44e.worf.replit.dev/api/users/44978831/profile', redirected: false, status: 200, ok: true, …}body: (...)bodyUsed: falseheaders: Headers {}ok: trueredirected: falsestatus: 200statusText: "OK"type: "basic"url: "https://b5b89eb7-8f18-44b4-9a12-ceb28f94ec15-00-10rqifmdrc44e.worf.replit.dev/api/users/44978831/profile"[[Prototype]]: Response
+ProfileCard.tsx:306 Profile data in component: Response {type: 'basic', url: 'https://b5b89eb7-8f18-44b4-9a12-ceb28f94ec15-00-10…drc44e.worf.replit.dev/api/users/44978831/profile', redirected: false, status: 200, ok: true, …}body: (...)bodyUsed: falseheaders: Headers {}ok: trueredirected: falsestatus: 200statusText: "OK"type: "basic"url: "https://b5b89eb7-8f18-44b4-9a12-ceb28f94ec15-00-10rqifmdrc44e.worf.replit.dev/api/users/44978831/profile"[[Prototype]]: Response
+ProfileCard.tsx:307 Profile username: undefined
+ProfileCard.tsx:308 Profile firstName: undefined
+ProfileCard.tsx:306 Profile data in component: Response {type: 'basic', url: 'https://b5b89eb7-8f18-44b4-9a12-ceb28f94ec15-00-10…drc44e.worf.replit.dev/api/users/44978831/profile', redirected: false, status: 200, ok: true, …}
+ProfileCard.tsx:307 Profile username: undefined
+ProfileCard.tsx:308 Profile firstName: undefined

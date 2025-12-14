@@ -1,0 +1,83 @@
+queryClient.ts:15 
+ POST https://f4733bc6-6449-42fe-949f-fe8cc81a9582-00-18omkv99whh33.riker.replit.dev/api/events 500 (Internal Server Error)
+
+queryClient.ts:15 
+ POST https://f4733bc6-6449-42fe-949f-fe8cc81a9582-00-18omkv99whh33.riker.replit.dev/api/events 500 (Internal Server Error)
+queryClient.ts:15 
+ POST https://f4733bc6-6449-42fe-949f-fe8cc81a9582-00-18omkv99whh33.riker.replit.dev/api/events 500 (Internal Server Error)
+queryClient.ts:15 
+ POST https://f4733bc6-6449-42fe-949f-fe8cc81a9582-00-18omkv99whh33.riker.replit.dev/api/events 500 (Internal Server Error)
+apiRequest	@	queryClient.ts:15
+mutationFn	@	Events.tsx:67
+fn	@	@tanstack_react-query.js?v=6f23fb54:1189
+run	@	@tanstack_react-query.js?v=6f23fb54:494
+start	@	@tanstack_react-query.js?v=6f23fb54:536
+execute	@	@tanstack_react-query.js?v=6f23fb54:1225
+await in execute		
+mutate	@	@tanstack_react-query.js?v=6f23fb54:2630
+(anonymous)	@	@tanstack_react-query.js?v=6f23fb54:3295
+onSubmit	@	Events.tsx:113
+(anonymous)	@	chunk-4BFJKWC4.js?v=6f23fb54:1465
+await in (anonymous)		
+callCallback2	@	chunk-RPCDYKBN.js?v=6f23fb54:3674
+invokeGuardedCallbackDev	@	chunk-RPCDYKBN.js?v=6f23fb54:3699
+invokeGuardedCallback	@	chunk-RPCDYKBN.js?v=6f23fb54:3733
+invokeGuardedCallbackAndCatchFirstError	@	chunk-RPCDYKBN.js?v=6f23fb54:3736
+executeDispatch	@	chunk-RPCDYKBN.js?v=6f23fb54:7014
+processDispatchQueueItemsInOrder	@	chunk-RPCDYKBN.js?v=6f23fb54:7034
+processDispatchQueue	@	chunk-RPCDYKBN.js?v=6f23fb54:7043
+dispatchEventsForPlugins	@	chunk-RPCDYKBN.js?v=6f23fb54:7051
+(anonymous)	@	chunk-RPCDYKBN.js?v=6f23fb54:7174
+batchedUpdates$1	@	chunk-RPCDYKBN.js?v=6f23fb54:18913
+batchedUpdates	@	chunk-RPCDYKBN.js?v=6f23fb54:3579
+dispatchEventForPluginEventSystem	@	chunk-RPCDYKBN.js?v=6f23fb54:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay	@	chunk-RPCDYKBN.js?v=6f23fb54:5478
+dispatchEvent	@	chunk-RPCDYKBN.js?v=6f23fb54:5472
+dispatchDiscreteEvent	@	chunk-RPCDYKBN.js?v=6f23fb54:5449
+3
+useWebSocket.ts:44 WebSocket disconnected
+useWebSocket.ts:22 WebSocket connection to 'wss://f4733bc6-6449-42fe-949f-fe8cc81a9582-00-18omkv99whh33.riker.replit.dev/ws' failed: 
+useWebSocket.ts:58 WebSocket error: 
+Event {isTrusted: true, type: 'error', target: WebSocket, currentTarget: WebSocket, eventPhase: 2, …}
+isTrusted
+: 
+true
+bubbles
+: 
+false
+cancelBubble
+: 
+false
+cancelable
+: 
+false
+composed
+: 
+false
+currentTarget
+: 
+WebSocket {url: 'wss://f4733bc6-6449-42fe-949f-fe8cc81a9582-00-18omkv99whh33.riker.replit.dev/ws', readyState: 3, bufferedAmount: 0, onopen: ƒ, onerror: ƒ, …}
+defaultPrevented
+: 
+false
+eventPhase
+: 
+0
+returnValue
+: 
+true
+srcElement
+: 
+WebSocket {url: 'wss://f4733bc6-6449-42fe-949f-fe8cc81a9582-00-18omkv99whh33.riker.replit.dev/ws', readyState: 3, bufferedAmount: 0, onopen: ƒ, onerror: ƒ, …}
+target
+: 
+WebSocket {url: 'wss://f4733bc6-6449-42fe-949f-fe8cc81a9582-00-18omkv99whh33.riker.replit.dev/ws', readyState: 3, bufferedAmount: 0, onopen: ƒ, onerror: ƒ, …}
+timeStamp
+: 
+1036109.8000000119
+type
+: 
+"error"
+[[Prototype]]
+: 
+Event

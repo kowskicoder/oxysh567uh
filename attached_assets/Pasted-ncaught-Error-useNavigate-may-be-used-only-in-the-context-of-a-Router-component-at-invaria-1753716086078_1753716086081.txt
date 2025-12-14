@@ -1,0 +1,40 @@
+ncaught Error: useNavigate() may be used only in the context of a <Router> component.
+    at invariant (react-router-dom.js?v=60915661:531:11)
+    at useNavigateUnstable (react-router-dom.js?v=60915661:5216:3)
+    at useNavigate (react-router-dom.js?v=60915661:5213:46)
+    at SupportChat (SupportChat.tsx:41:20)
+    at renderWithHooks (chunk-RPCDYKBN.js?v=60915661:11548:26)
+    at mountIndeterminateComponent (chunk-RPCDYKBN.js?v=60915661:14926:21)
+    at beginWork (chunk-RPCDYKBN.js?v=60915661:15914:22)
+    at HTMLUnknownElement.callCallback2 (chunk-RPCDYKBN.js?v=60915661:3674:22)
+    at Object.invokeGuardedCallbackDev (chunk-RPCDYKBN.js?v=60915661:3699:24)
+    at invokeGuardedCallback (chunk-RPCDYKBN.js?v=60915661:3733:39)Understand this error
+chunk-RPCDYKBN.js?v=60915661:14032 The above error occurred in the <SupportChat> component:
+
+    at SupportChat (https://5f4c2dcd-5e0e-4a85-bdef-d86fbc4108d0-00-17urihvxq6x1g.spock.replit.dev:3000/src/pages/SupportChat.tsx:35:20)
+    at Route (https://5f4c2dcd-5e0e-4a85-bdef-d86fbc4108d0-00-17urihvxq6x1g.spock.replit.dev:3000/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=60915661:338:16)
+    at Switch (https://5f4c2dcd-5e0e-4a85-bdef-d86fbc4108d0-00-17urihvxq6x1g.spock.replit.dev:3000/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=60915661:394:17)
+    at div
+    at Router (https://5f4c2dcd-5e0e-4a85-bdef-d86fbc4108d0-00-17urihvxq6x1g.spock.replit.dev:3000/src/App.tsx?v=n4iodezkw2MJfza1jlRvb:76:48)
+    at ErrorBoundary (https://5f4c2dcd-5e0e-4a85-bdef-d86fbc4108d0-00-17urihvxq6x1g.spock.replit.dev:3000/@fs/home/runner/workspace/node_modules/.vite/deps/react-error-boundary.js?v=60915661:18:5)
+    at Provider (https://5f4c2dcd-5e0e-4a85-bdef-d86fbc4108d0-00-17urihvxq6x1g.spock.replit.dev:3000/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-OXZDJRWN.js?v=60915661:38:15)
+    at TooltipProvider (https://5f4c2dcd-5e0e-4a85-bdef-d86fbc4108d0-00-17urihvxq6x1g.spock.replit.dev:3000/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-tooltip.js?v=60915661:64:5)
+    at div
+    at EventsSearchProvider (https://5f4c2dcd-5e0e-4a85-bdef-d86fbc4108d0-00-17urihvxq6x1g.spock.replit.dev:3000/src/context/EventsSearchContext.tsx:20:40)
+    at ThemeProvider (https://5f4c2dcd-5e0e-4a85-bdef-d86fbc4108d0-00-17urihvxq6x1g.spock.replit.dev:3000/src/contexts/ThemeProvider.tsx:20:33)
+    at QueryClientProvider (https://5f4c2dcd-5e0e-4a85-bdef-d86fbc4108d0-00-17urihvxq6x1g.spock.replit.dev:3000/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=60915661:2805:3)
+    at App (https://5f4c2dcd-5e0e-4a85-bdef-d86fbc4108d0-00-17urihvxq6x1g.spock.replit.dev:3000/src/App.tsx?v=n4iodezkw2MJfza1jlRvb:390:39)
+
+React will try to recreate this component tree from scratch using the error boundary you provided, ErrorBoundary.
+logCapturedError @ chunk-RPCDYKBN.js?v=60915661:14032Understand this error
+App.tsx:211 App Error: Error: useNavigate() may be used only in the context of a <Router> component.
+    at invariant (react-router-dom.js?v=60915661:531:11)
+    at useNavigateUnstable (react-router-dom.js?v=60915661:5216:3)
+    at useNavigate (react-router-dom.js?v=60915661:5213:46)
+    at SupportChat (SupportChat.tsx:41:20)
+    at renderWithHooks (chunk-RPCDYKBN.js?v=60915661:11548:26)
+    at mountIndeterminateComponent (chunk-RPCDYKBN.js?v=60915661:14926:21)
+    at beginWork (chunk-RPCDYKBN.js?v=60915661:15914:22)
+    at beginWork$1 (chunk-RPCDYKBN.js?v=60915661:19753:22)
+    at performUnitOfWork (chunk-RPCDYKBN.js?v=60915661:19198:20)
+    at workLoopSync (chunk-RPCDYKBN.js?v=60915661:19137:13)

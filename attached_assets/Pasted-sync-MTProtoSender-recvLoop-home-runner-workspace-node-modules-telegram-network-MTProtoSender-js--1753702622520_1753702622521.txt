@@ -1,0 +1,36 @@
+sync MTProtoSender._recvLoop (/home/runner/workspace/node_modules/telegram/network/MTProtoSender.js:439:17) {
+  code: 406,
+  errorMessage: 'AUTH_KEY_DUPLICATED'
+}
+⚠️ Telegram session is being used by another instance. Telegram sync disabled.
+💡 To fix this, generate a new session string or stop other instances using the same session.
+🤖 Telegram bot connected: BantahSocialBot
+📢 Channel found: Bantah
+✅ Telegram bot ready for broadcasting
+   Bot: BantahSocialBot
+   Channel: Bantah
+🔔 Starting notification algorithm service...
+✅ Notification algorithm service started
+11:18:40 AM [express] serving on port 5000
+11:19:02 AM [express] GET /api/auth/user 401 in 3ms :: {"message":"Not authenticated"}
+11:19:02 AM [express] GET /api/auth/user 401 in 1ms :: {"message":"Not authenticated"}
+🔔 Starting notification algorithm execution...
+✅ Notification algorithm completed. Processed 0 triggers.
+11:19:47 AM [express] GET /api/wallet/balance 401 in 1ms :: {"message":"Authentication required"}
+11:22:15 AM [express] GET /api/wallet/balance 401 in 1ms :: {"message":"Authentication required"}
+🔔 Starting notification algorithm execution...
+✅ Notification algorithm completed. Processed 0 triggers.
+11:34:36 AM [express] GET /api/wallet/balance 401 in 1ms :: {"message":"Authentication required"}
+11:34:42 AM [express] GET /api/wallet/balance 401 in 1ms :: {"message":"Authentication required"}
+11:35:02 AM [express] GET /api/wallet/balance 401 in 1ms :: {"message":"Authentication required"}
+11:35:03 AM [express] GET /api/auth/user 401 in 1ms :: {"message":"Not authenticated"}
+11:35:22 AM [vite] hmr update /src/components/EventCard.tsx, /src/index.css?v=-eqOvGalV7edw0Ht_0MBD
+11:35:32 AM [vite] Pre-transform error: /home/runner/workspace/client/src/components/EventCard.tsx: Missing semicolon. (592:16)
+
+  590 |     if (compact && amount >= 1000) {
+  591 |       if (amount >= 1000000) {
+> 592 |         return `${symbol}${(amount / 1000000).toFixed(1)}M`;
+      |                 ^
+  593 |       }
+  594 |       return `${symbol}${(amount / 1000).toFixed(1)}K`;
+  595 |     }

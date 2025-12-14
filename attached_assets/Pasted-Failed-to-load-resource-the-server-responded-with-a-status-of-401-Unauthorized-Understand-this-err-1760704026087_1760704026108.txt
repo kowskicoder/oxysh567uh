@@ -1,0 +1,1265 @@
+Failed to load resource: the server responded with a status of 401 (Unauthorized)Understand this error
+queryClient.ts:49 API Request Error: Error: 401: {"message":"Authentication required"}
+    at throwIfResNotOk (queryClient.ts:6:11)
+    at async apiRequest (queryClient.ts:37:5)
+apiRequest @ queryClient.ts:49Understand this error
+api/navigation/badges:1  Failed to load resource: the server responded with a status of 401 (Unauthorized)Understand this error
+queryClient.ts:93 Query Function Error: Error: 401: {"message":"Authentication required"}
+    at throwIfResNotOk (queryClient.ts:6:11)
+    at async queryClient.ts:81:7
+(anonymous) @ queryClient.ts:93Understand this error
+balance:1  Failed to load resource: the server responded with a status of 401 (Unauthorized)Understand this error
+queryClient.ts:93 Query Function Error: Error: 401: {"message":"Authentication required"}
+    at throwIfResNotOk (queryClient.ts:6:11)
+    at async queryClient.ts:81:7
+(anonymous) @ queryClient.ts:93Understand this error
+api/recommendations/events:1  Failed to load resource: the server responded with a status of 401 (Unauthorized)Understand this error
+queryClient.ts:93 Query Function Error: Error: 401: {"message":"Authentication required"}
+    at throwIfResNotOk (queryClient.ts:6:11)
+    at async queryClient.ts:81:7
+(anonymous) @ queryClient.ts:93Understand this error
+api/daily-signin/status:1  Failed to load resource: the server responded with a status of 401 (Unauthorized)Understand this error
+queryClient.ts:93 Query Function Error: Error: 401: {"message":"Authentication required"}
+    at throwIfResNotOk (queryClient.ts:6:11)
+    at async queryClient.ts:81:7
+(anonymous) @ queryClient.ts:93Understand this error
+api/navigation/badges:1  Failed to load resource: the server responded with a status of 401 (Unauthorized)Understand this error
+queryClient.ts:93 Query Function Error: Error: 401: {"message":"Authentication required"}
+    at throwIfResNotOk (queryClient.ts:6:11)
+    at async queryClient.ts:81:7
+(anonymous) @ queryClient.ts:93Understand this error
+balance:1  Failed to load resource: the server responded with a status of 401 (Unauthorized)Understand this error
+queryClient.ts:93 Query Function Error: Error: 401: {"message":"Authentication required"}
+    at throwIfResNotOk (queryClient.ts:6:11)
+    at async queryClient.ts:81:7
+(anonymous) @ queryClient.ts:93Understand this error
+balance:1  Failed to load resource: the server responded with a status of 401 (Unauthorized)Understand this error
+queryClient.ts:93 Query Function Error: Error: 401: {"message":"Authentication required"}
+    at throwIfResNotOk (queryClient.ts:6:11)
+    at async queryClient.ts:81:7
+(anonymous) @ queryClient.ts:93Understand this error
+balance:1  Failed to load resource: the server responded with a status of 401 (Unauthorized)Understand this error
+queryClient.ts:93 Query Function Error: Error: 401: {"message":"Authentication required"}
+    at throwIfResNotOk (queryClient.ts:6:11)
+    at async queryClient.ts:81:7
+(anonymous) @ queryClient.ts:93Understand this error
+balance:1  Failed to load resource: the server responded with a status of 401 (Unauthorized)Understand this error
+queryClient.ts:93 Query Function Error: Error: 401: {"message":"Authentication required"}
+    at throwIfResNotOk (queryClient.ts:6:11)
+    at async queryClient.ts:81:7
+(anonymous) @ queryClient.ts:93Understand this error
+api/notifications:1  Failed to load resource: the server responded with a status of 401 (Unauthorized)Understand this error
+queryClient.ts:49 API Request Error: Error: 401: {"message":"Authentication required"}
+    at throwIfResNotOk (queryClient.ts:6:11)
+    at async apiRequest (queryClient.ts:37:5)
+apiRequest @ queryClient.ts:49Understand this error
+balance:1  Failed to load resource: the server responded with a status of 401 (Unauthorized)Understand this error
+queryClient.ts:93 Query Function Error: Error: 401: {"message":"Authentication required"}
+    at throwIfResNotOk (queryClient.ts:6:11)
+    at async queryClient.ts:81:7
+(anonymous) @ queryClient.ts:93Understand this error
+balance:1  Failed to load resource: the server responded with a status of 401 (Unauthorized)Understand this error
+queryClient.ts:93 Query Function Error: Error: 401: {"message":"Authentication required"}
+    at throwIfResNotOk (queryClient.ts:6:11)
+    at async queryClient.ts:81:7
+(anonymous) @ queryClient.ts:93Understand this error
+balance:1  Failed to load resource: the server responded with a status of 401 (Unauthorized)Understand this error
+queryClient.ts:93 Query Function Error: Error: 401: {"message":"Authentication required"}
+    at throwIfResNotOk (queryClient.ts:6:11)
+    at async queryClient.ts:81:7
+(anonymous) @ queryClient.ts:93Understand this error
+balance:1  Failed to load resource: the server responded with a status of 401 (Unauthorized)Understand this error
+queryClient.ts:93 Query Function Error: Error: 401: {"message":"Authentication required"}
+    at throwIfResNotOk (queryClient.ts:6:11)
+    at async queryClient.ts:81:7
+(anonymous) @ queryClient.ts:93Understand this error
+balance:1  Failed to load resource: the server responded with a status of 401 (Unauthorized)Understand this error
+queryClient.ts:93 Query Function Error: Error: 401: {"message":"Authentication required"}
+    at throwIfResNotOk (queryClient.ts:6:11)
+    at async queryClient.ts:81:7
+(anonymous) @ queryClient.ts:93Understand this error
+balance:1  Failed to load resource: the server responded with a status of 401 (Unauthorized)Understand this error
+queryClient.ts:93 Query Function Error: Error: 401: {"message":"Authentication required"}
+    at throwIfResNotOk (queryClient.ts:6:11)
+    at async queryClient.ts:81:7
+(anonymous) @ queryClient.ts:93Understand this error
+api/notifications:1  Failed to load resource: the server responded with a status of 401 (Unauthorized)Understand this error
+queryClient.ts:49 API Request Error: Error: 401: {"message":"Authentication required"}
+    at throwIfResNotOk (queryClient.ts:6:11)
+    at async apiRequest (queryClient.ts:37:5)
+apiRequest @ queryClient.ts:49Understand this error
+api/daily-signin/status:1  Failed to load resource: the server responded with a status of 401 (Unauthorized)Understand this error
+queryClient.ts:93 Query Function Error: Error: 401: {"message":"Authentication required"}
+    at throwIfResNotOk (queryClient.ts:6:11)
+    at async queryClient.ts:81:7
+(anonymous) @ queryClient.ts:93Understand this error
+balance:1  Failed to load resource: the server responded with a status of 401 (Unauthorized)Understand this error
+queryClient.ts:93 Query Function Error: Error: 401: {"message":"Authentication required"}
+    at throwIfResNotOk (queryClient.ts:6:11)
+    at async queryClient.ts:81:7
+(anonymous) @ queryClient.ts:93Understand this error
+api/navigation/badges:1  Failed to load resource: the server responded with a status of 401 (Unauthorized)Understand this error
+queryClient.ts:93 Query Function Error: Error: 401: {"message":"Authentication required"}
+    at throwIfResNotOk (queryClient.ts:6:11)
+    at async queryClient.ts:81:7
+(anonymous) @ queryClient.ts:93Understand this error
+api/navigation/badges:1  Failed to load resource: the server responded with a status of 401 (Unauthorized)Understand this error
+queryClient.ts:93 Query Function Error: Error: 401: {"message":"Authentication required"}
+    at throwIfResNotOk (queryClient.ts:6:11)
+    at async queryClient.ts:81:7
+(anonymous) @ queryClient.ts:93Understand this error
+balance:1  Failed to load resource: the server responded with a status of 401 (Unauthorized)Understand this error
+queryClient.ts:93 Query Function Error: Error: 401: {"message":"Authentication required"}
+    at throwIfResNotOk (queryClient.ts:6:11)
+    at async queryClient.ts:81:7
+(anonymous) @ queryClient.ts:93Understand this error
+balance:1  Failed to load resource: the server responded with a status of 401 (Unauthorized)Understand this error
+queryClient.ts:93 Query Function Error: Error: 401: {"message":"Authentication required"}
+    at throwIfResNotOk (queryClient.ts:6:11)
+    at async queryClient.ts:81:7
+(anonymous) @ queryClient.ts:93Understand this error
+useNotifications.ts:48 Pusher notifications initialized for user: did:privy:cmgtis9ju004qle0dhl3krf9w
+api/notifications:1  Failed to load resource: the server responded with a status of 401 (Unauthorized)Understand this error
+queryClient.ts:49 API Request Error: Error: 401: {"message":"Authentication required"}
+    at throwIfResNotOk (queryClient.ts:6:11)
+    at async apiRequest (queryClient.ts:37:5)
+apiRequest @ queryClient.ts:49Understand this error
+api/navigation/badges:1  Failed to load resource: the server responded with a status of 401 (Unauthorized)Understand this error
+queryClient.ts:93 Query Function Error: Error: 401: {"message":"Authentication required"}
+    at throwIfResNotOk (queryClient.ts:6:11)
+    at async queryClient.ts:81:7
+(anonymous) @ queryClient.ts:93Understand this error
+balance:1  Failed to load resource: the server responded with a status of 401 (Unauthorized)Understand this error
+queryClient.ts:93 Query Function Error: Error: 401: {"message":"Authentication required"}
+    at throwIfResNotOk (queryClient.ts:6:11)
+    at async queryClient.ts:81:7
+(anonymous) @ queryClient.ts:93Understand this error
+api/user/stats:1  Failed to load resource: the server responded with a status of 401 (Unauthorized)Understand this error
+queryClient.ts:93 Query Function Error: Error: 401: {"message":"Authentication required"}
+    at throwIfResNotOk (queryClient.ts:6:11)
+    at async queryClient.ts:81:7
+(anonymous) @ queryClient.ts:93Understand this error
+api/user/achievements:1  Failed to load resource: the server responded with a status of 401 (Unauthorized)Understand this error
+queryClient.ts:93 Query Function Error: Error: 401: {"message":"Authentication required"}
+    at throwIfResNotOk (queryClient.ts:6:11)
+    at async queryClient.ts:81:7
+(anonymous) @ queryClient.ts:93Understand this error
+api/navigation/badges:1  Failed to load resource: the server responded with a status of 401 (Unauthorized)Understand this error
+queryClient.ts:93 Query Function Error: Error: 401: {"message":"Authentication required"}
+    at throwIfResNotOk (queryClient.ts:6:11)
+    at async queryClient.ts:81:7
+(anonymous) @ queryClient.ts:93Understand this error
+useNotifications.ts:48 Pusher notifications initialized for user: did:privy:cmgtis9ju004qle0dhl3krf9w
+balance:1  Failed to load resource: the server responded with a status of 401 (Unauthorized)Understand this error
+api/navigation/badges:1  Failed to load resource: the server responded with a status of 401 (Unauthorized)Understand this error
+api/notifications:1  Failed to load resource: the server responded with a status of 401 (Unauthorized)Understand this error
+api/transactions:1  Failed to load resource: the server responded with a status of 401 (Unauthorized)Understand this error
+2queryClient.ts:93 Query Function Error: Error: 401: {"message":"Authentication required"}
+    at throwIfResNotOk (queryClient.ts:6:11)
+    at async queryClient.ts:81:7
+(anonymous) @ queryClient.ts:93Understand this error
+queryClient.ts:49 API Request Error: Error: 401: {"message":"Authentication required"}
+    at throwIfResNotOk (queryClient.ts:6:11)
+    at async apiRequest (queryClient.ts:37:5)
+apiRequest @ queryClient.ts:49Understand this error
+queryClient.ts:93 Query Function Error: Error: 401: {"message":"Authentication required"}
+    at throwIfResNotOk (queryClient.ts:6:11)
+    at async queryClient.ts:81:7
+(anonymous) @ queryClient.ts:93Understand this error
+api/navigation/badges:1  Failed to load resource: the server responded with a status of 401 (Unauthorized)Understand this error
+queryClient.ts:93 Query Function Error: Error: 401: {"message":"Authentication required"}
+    at throwIfResNotOk (queryClient.ts:6:11)
+    at async queryClient.ts:81:7
+(anonymous) @ queryClient.ts:93Understand this error
+balance:1  Failed to load resource: the server responded with a status of 401 (Unauthorized)Understand this error
+queryClient.ts:93 Query Function Error: Error: 401: {"message":"Authentication required"}
+    at throwIfResNotOk (queryClient.ts:6:11)
+    at async queryClient.ts:81:7
+(anonymous) @ queryClient.ts:93Understand this error
+useNotifications.ts:48 Pusher notifications initialized for user: did:privy:cmgtis9ju004qle0dhl3krf9w
+api/notifications:1  Failed to load resource: the server responded with a status of 401 (Unauthorized)Understand this error
+queryClient.ts:49 API Request Error: Error: 401: {"message":"Authentication required"}
+    at throwIfResNotOk (queryClient.ts:6:11)
+    at async apiRequest (queryClient.ts:37:5)
+apiRequest @ queryClient.ts:49Understand this error
+Notifications.tsx:42 Error fetching notifications: Error: 401: {"message":"Authentication required"}
+    at throwIfResNotOk (queryClient.ts:6:11)
+    at async apiRequest (queryClient.ts:37:5)
+(anonymous) @ Notifications.tsx:42Understand this error
+api/navigation/badges:1  Failed to load resource: the server responded with a status of 401 (Unauthorized)Understand this error
+queryClient.ts:93 Query Function Error: Error: 401: {"message":"Authentication required"}
+    at throwIfResNotOk (queryClient.ts:6:11)
+    at async queryClient.ts:81:7
+(anonymous) @ queryClient.ts:93Understand this error
+balance:1  Failed to load resource: the server responded with a status of 401 (Unauthorized)Understand this error
+queryClient.ts:93 Query Function Error: Error: 401: {"message":"Authentication required"}
+    at throwIfResNotOk (queryClient.ts:6:11)
+    at async queryClient.ts:81:7
+(anonymous) @ queryClient.ts:93Understand this error
+api/daily-signin/status:1  Failed to load resource: the server responded with a status of 401 (Unauthorized)Understand this error
+queryClient.ts:93 Query Function Error: Error: 401: {"message":"Authentication required"}
+    at throwIfResNotOk (queryClient.ts:6:11)
+    at async queryClient.ts:81:7
+(anonymous) @ queryClient.ts:93Understand this error
+api/navigation/badges:1  Failed to load resource: the server responded with a status of 401 (Unauthorized)Understand this error
+queryClient.ts:93 Query Function Error: Error: 401: {"message":"Authentication required"}
+    at throwIfResNotOk (queryClient.ts:6:11)
+    at async queryClient.ts:81:7
+(anonymous) @ queryClient.ts:93Understand this error
+balance:1  Failed to load resource: the server responded with a status of 401 (Unauthorized)Understand this error
+queryClient.ts:93 Query Function Error: Error: 401: {"message":"Authentication required"}
+    at throwIfResNotOk (queryClient.ts:6:11)
+    at async queryClient.ts:81:7
+(anonymous) @ queryClient.ts:93Understand this error
+queryClient.ts:72  GET https://fcae725b-6e60-4330-97e2-2f6fe033cd01-00-f6h8jjiftwnj.picard.replit.dev:8000/api/wallet/balance 401 (Unauthorized)
+(anonymous) @ queryClient.ts:72
+fetchFn @ @tanstack_react-query.js?v=ecc0ff97:840
+run @ @tanstack_react-query.js?v=ecc0ff97:494
+start @ @tanstack_react-query.js?v=ecc0ff97:536
+fetch @ @tanstack_react-query.js?v=ecc0ff97:926
+executeFetch_fn @ @tanstack_react-query.js?v=ecc0ff97:2211
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:2245
+setInterval
+updateRefetchInterval_fn @ @tanstack_react-query.js?v=ecc0ff97:2243
+updateTimers_fn @ @tanstack_react-query.js?v=ecc0ff97:2250
+onQueryUpdate @ @tanstack_react-query.js?v=ecc0ff97:2206
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:998
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:997
+batch @ @tanstack_react-query.js?v=ecc0ff97:583
+dispatch_fn @ @tanstack_react-query.js?v=ecc0ff97:996
+onError @ @tanstack_react-query.js?v=ecc0ff97:861
+reject @ @tanstack_react-query.js?v=ecc0ff97:465
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:508Understand this error
+queryClient.ts:93 Query Function Error: Error: 401: {"message":"Authentication required"}
+    at throwIfResNotOk (queryClient.ts:6:11)
+    at async queryClient.ts:81:7
+(anonymous) @ queryClient.ts:93
+await in (anonymous)
+fetchFn @ @tanstack_react-query.js?v=ecc0ff97:840
+run @ @tanstack_react-query.js?v=ecc0ff97:494
+start @ @tanstack_react-query.js?v=ecc0ff97:536
+fetch @ @tanstack_react-query.js?v=ecc0ff97:926
+executeFetch_fn @ @tanstack_react-query.js?v=ecc0ff97:2211
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:2245
+setInterval
+updateRefetchInterval_fn @ @tanstack_react-query.js?v=ecc0ff97:2243
+updateTimers_fn @ @tanstack_react-query.js?v=ecc0ff97:2250
+onQueryUpdate @ @tanstack_react-query.js?v=ecc0ff97:2206
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:998
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:997
+batch @ @tanstack_react-query.js?v=ecc0ff97:583
+dispatch_fn @ @tanstack_react-query.js?v=ecc0ff97:996
+onError @ @tanstack_react-query.js?v=ecc0ff97:861
+reject @ @tanstack_react-query.js?v=ecc0ff97:465
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:508Understand this error
+queryClient.ts:72  GET https://fcae725b-6e60-4330-97e2-2f6fe033cd01-00-f6h8jjiftwnj.picard.replit.dev:8000/api/wallet/balance 401 (Unauthorized)
+(anonymous) @ queryClient.ts:72
+fetchFn @ @tanstack_react-query.js?v=ecc0ff97:840
+run @ @tanstack_react-query.js?v=ecc0ff97:494
+start @ @tanstack_react-query.js?v=ecc0ff97:536
+fetch @ @tanstack_react-query.js?v=ecc0ff97:926
+executeFetch_fn @ @tanstack_react-query.js?v=ecc0ff97:2211
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:2245
+setInterval
+updateRefetchInterval_fn @ @tanstack_react-query.js?v=ecc0ff97:2243
+updateTimers_fn @ @tanstack_react-query.js?v=ecc0ff97:2250
+onQueryUpdate @ @tanstack_react-query.js?v=ecc0ff97:2206
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:998
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:997
+batch @ @tanstack_react-query.js?v=ecc0ff97:583
+dispatch_fn @ @tanstack_react-query.js?v=ecc0ff97:996
+onError @ @tanstack_react-query.js?v=ecc0ff97:861
+reject @ @tanstack_react-query.js?v=ecc0ff97:465
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:508
+Promise.catch
+run @ @tanstack_react-query.js?v=ecc0ff97:498
+start @ @tanstack_react-query.js?v=ecc0ff97:536
+fetch @ @tanstack_react-query.js?v=ecc0ff97:926
+executeFetch_fn @ @tanstack_react-query.js?v=ecc0ff97:2211
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:2245
+setInterval
+updateRefetchInterval_fn @ @tanstack_react-query.js?v=ecc0ff97:2243
+updateTimers_fn @ @tanstack_react-query.js?v=ecc0ff97:2250
+onQueryUpdate @ @tanstack_react-query.js?v=ecc0ff97:2206
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:998
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:997
+batch @ @tanstack_react-query.js?v=ecc0ff97:583
+dispatch_fn @ @tanstack_react-query.js?v=ecc0ff97:996
+onError @ @tanstack_react-query.js?v=ecc0ff97:861
+reject @ @tanstack_react-query.js?v=ecc0ff97:465
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:508Understand this error
+queryClient.ts:93 Query Function Error: Error: 401: {"message":"Authentication required"}
+    at throwIfResNotOk (queryClient.ts:6:11)
+    at async queryClient.ts:81:7
+(anonymous) @ queryClient.ts:93
+await in (anonymous)
+fetchFn @ @tanstack_react-query.js?v=ecc0ff97:840
+run @ @tanstack_react-query.js?v=ecc0ff97:494
+start @ @tanstack_react-query.js?v=ecc0ff97:536
+fetch @ @tanstack_react-query.js?v=ecc0ff97:926
+executeFetch_fn @ @tanstack_react-query.js?v=ecc0ff97:2211
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:2245
+setInterval
+updateRefetchInterval_fn @ @tanstack_react-query.js?v=ecc0ff97:2243
+updateTimers_fn @ @tanstack_react-query.js?v=ecc0ff97:2250
+onQueryUpdate @ @tanstack_react-query.js?v=ecc0ff97:2206
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:998
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:997
+batch @ @tanstack_react-query.js?v=ecc0ff97:583
+dispatch_fn @ @tanstack_react-query.js?v=ecc0ff97:996
+onError @ @tanstack_react-query.js?v=ecc0ff97:861
+reject @ @tanstack_react-query.js?v=ecc0ff97:465
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:508
+Promise.catch
+run @ @tanstack_react-query.js?v=ecc0ff97:498
+start @ @tanstack_react-query.js?v=ecc0ff97:536
+fetch @ @tanstack_react-query.js?v=ecc0ff97:926
+executeFetch_fn @ @tanstack_react-query.js?v=ecc0ff97:2211
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:2245
+setInterval
+updateRefetchInterval_fn @ @tanstack_react-query.js?v=ecc0ff97:2243
+updateTimers_fn @ @tanstack_react-query.js?v=ecc0ff97:2250
+onQueryUpdate @ @tanstack_react-query.js?v=ecc0ff97:2206
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:998
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:997
+batch @ @tanstack_react-query.js?v=ecc0ff97:583
+dispatch_fn @ @tanstack_react-query.js?v=ecc0ff97:996
+onError @ @tanstack_react-query.js?v=ecc0ff97:861
+reject @ @tanstack_react-query.js?v=ecc0ff97:465
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:508Understand this error
+queryClient.ts:72  GET https://fcae725b-6e60-4330-97e2-2f6fe033cd01-00-f6h8jjiftwnj.picard.replit.dev:8000/api/wallet/balance 401 (Unauthorized)
+(anonymous) @ queryClient.ts:72
+fetchFn @ @tanstack_react-query.js?v=ecc0ff97:840
+run @ @tanstack_react-query.js?v=ecc0ff97:494
+start @ @tanstack_react-query.js?v=ecc0ff97:536
+fetch @ @tanstack_react-query.js?v=ecc0ff97:926
+executeFetch_fn @ @tanstack_react-query.js?v=ecc0ff97:2211
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:2245
+setInterval
+updateRefetchInterval_fn @ @tanstack_react-query.js?v=ecc0ff97:2243
+updateTimers_fn @ @tanstack_react-query.js?v=ecc0ff97:2250
+onQueryUpdate @ @tanstack_react-query.js?v=ecc0ff97:2206
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:998
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:997
+batch @ @tanstack_react-query.js?v=ecc0ff97:583
+dispatch_fn @ @tanstack_react-query.js?v=ecc0ff97:996
+onError @ @tanstack_react-query.js?v=ecc0ff97:861
+reject @ @tanstack_react-query.js?v=ecc0ff97:465
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:508
+Promise.catch
+run @ @tanstack_react-query.js?v=ecc0ff97:498
+start @ @tanstack_react-query.js?v=ecc0ff97:536
+fetch @ @tanstack_react-query.js?v=ecc0ff97:926
+executeFetch_fn @ @tanstack_react-query.js?v=ecc0ff97:2211
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:2245
+setInterval
+updateRefetchInterval_fn @ @tanstack_react-query.js?v=ecc0ff97:2243
+updateTimers_fn @ @tanstack_react-query.js?v=ecc0ff97:2250
+onQueryUpdate @ @tanstack_react-query.js?v=ecc0ff97:2206
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:998
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:997
+batch @ @tanstack_react-query.js?v=ecc0ff97:583
+dispatch_fn @ @tanstack_react-query.js?v=ecc0ff97:996
+onError @ @tanstack_react-query.js?v=ecc0ff97:861
+reject @ @tanstack_react-query.js?v=ecc0ff97:465
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:508
+Promise.catch
+run @ @tanstack_react-query.js?v=ecc0ff97:498
+start @ @tanstack_react-query.js?v=ecc0ff97:536
+fetch @ @tanstack_react-query.js?v=ecc0ff97:926
+executeFetch_fn @ @tanstack_react-query.js?v=ecc0ff97:2211
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:2245
+setInterval
+updateRefetchInterval_fn @ @tanstack_react-query.js?v=ecc0ff97:2243
+updateTimers_fn @ @tanstack_react-query.js?v=ecc0ff97:2250
+onQueryUpdate @ @tanstack_react-query.js?v=ecc0ff97:2206
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:998
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:997
+batch @ @tanstack_react-query.js?v=ecc0ff97:583
+dispatch_fn @ @tanstack_react-query.js?v=ecc0ff97:996
+onError @ @tanstack_react-query.js?v=ecc0ff97:861
+reject @ @tanstack_react-query.js?v=ecc0ff97:465
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:508Understand this error
+queryClient.ts:93 Query Function Error: Error: 401: {"message":"Authentication required"}
+    at throwIfResNotOk (queryClient.ts:6:11)
+    at async queryClient.ts:81:7
+(anonymous) @ queryClient.ts:93
+await in (anonymous)
+fetchFn @ @tanstack_react-query.js?v=ecc0ff97:840
+run @ @tanstack_react-query.js?v=ecc0ff97:494
+start @ @tanstack_react-query.js?v=ecc0ff97:536
+fetch @ @tanstack_react-query.js?v=ecc0ff97:926
+executeFetch_fn @ @tanstack_react-query.js?v=ecc0ff97:2211
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:2245
+setInterval
+updateRefetchInterval_fn @ @tanstack_react-query.js?v=ecc0ff97:2243
+updateTimers_fn @ @tanstack_react-query.js?v=ecc0ff97:2250
+onQueryUpdate @ @tanstack_react-query.js?v=ecc0ff97:2206
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:998
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:997
+batch @ @tanstack_react-query.js?v=ecc0ff97:583
+dispatch_fn @ @tanstack_react-query.js?v=ecc0ff97:996
+onError @ @tanstack_react-query.js?v=ecc0ff97:861
+reject @ @tanstack_react-query.js?v=ecc0ff97:465
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:508
+Promise.catch
+run @ @tanstack_react-query.js?v=ecc0ff97:498
+start @ @tanstack_react-query.js?v=ecc0ff97:536
+fetch @ @tanstack_react-query.js?v=ecc0ff97:926
+executeFetch_fn @ @tanstack_react-query.js?v=ecc0ff97:2211
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:2245
+setInterval
+updateRefetchInterval_fn @ @tanstack_react-query.js?v=ecc0ff97:2243
+updateTimers_fn @ @tanstack_react-query.js?v=ecc0ff97:2250
+onQueryUpdate @ @tanstack_react-query.js?v=ecc0ff97:2206
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:998
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:997
+batch @ @tanstack_react-query.js?v=ecc0ff97:583
+dispatch_fn @ @tanstack_react-query.js?v=ecc0ff97:996
+onError @ @tanstack_react-query.js?v=ecc0ff97:861
+reject @ @tanstack_react-query.js?v=ecc0ff97:465
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:508
+Promise.catch
+run @ @tanstack_react-query.js?v=ecc0ff97:498
+start @ @tanstack_react-query.js?v=ecc0ff97:536
+fetch @ @tanstack_react-query.js?v=ecc0ff97:926
+executeFetch_fn @ @tanstack_react-query.js?v=ecc0ff97:2211
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:2245
+setInterval
+updateRefetchInterval_fn @ @tanstack_react-query.js?v=ecc0ff97:2243
+updateTimers_fn @ @tanstack_react-query.js?v=ecc0ff97:2250
+onQueryUpdate @ @tanstack_react-query.js?v=ecc0ff97:2206
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:998
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:997
+batch @ @tanstack_react-query.js?v=ecc0ff97:583
+dispatch_fn @ @tanstack_react-query.js?v=ecc0ff97:996
+onError @ @tanstack_react-query.js?v=ecc0ff97:861
+reject @ @tanstack_react-query.js?v=ecc0ff97:465
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:508Understand this error
+queryClient.ts:72  GET https://fcae725b-6e60-4330-97e2-2f6fe033cd01-00-f6h8jjiftwnj.picard.replit.dev:8000/api/wallet/balance 401 (Unauthorized)
+(anonymous) @ queryClient.ts:72
+fetchFn @ @tanstack_react-query.js?v=ecc0ff97:840
+run @ @tanstack_react-query.js?v=ecc0ff97:494
+start @ @tanstack_react-query.js?v=ecc0ff97:536
+fetch @ @tanstack_react-query.js?v=ecc0ff97:926
+executeFetch_fn @ @tanstack_react-query.js?v=ecc0ff97:2211
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:2245
+setInterval
+updateRefetchInterval_fn @ @tanstack_react-query.js?v=ecc0ff97:2243
+updateTimers_fn @ @tanstack_react-query.js?v=ecc0ff97:2250
+onQueryUpdate @ @tanstack_react-query.js?v=ecc0ff97:2206
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:998
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:997
+batch @ @tanstack_react-query.js?v=ecc0ff97:583
+dispatch_fn @ @tanstack_react-query.js?v=ecc0ff97:996
+onError @ @tanstack_react-query.js?v=ecc0ff97:861
+reject @ @tanstack_react-query.js?v=ecc0ff97:465
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:508
+Promise.catch
+run @ @tanstack_react-query.js?v=ecc0ff97:498
+start @ @tanstack_react-query.js?v=ecc0ff97:536
+fetch @ @tanstack_react-query.js?v=ecc0ff97:926
+executeFetch_fn @ @tanstack_react-query.js?v=ecc0ff97:2211
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:2245
+setInterval
+updateRefetchInterval_fn @ @tanstack_react-query.js?v=ecc0ff97:2243
+updateTimers_fn @ @tanstack_react-query.js?v=ecc0ff97:2250
+onQueryUpdate @ @tanstack_react-query.js?v=ecc0ff97:2206
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:998
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:997
+batch @ @tanstack_react-query.js?v=ecc0ff97:583
+dispatch_fn @ @tanstack_react-query.js?v=ecc0ff97:996
+onError @ @tanstack_react-query.js?v=ecc0ff97:861
+reject @ @tanstack_react-query.js?v=ecc0ff97:465
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:508
+Promise.catch
+run @ @tanstack_react-query.js?v=ecc0ff97:498
+start @ @tanstack_react-query.js?v=ecc0ff97:536
+fetch @ @tanstack_react-query.js?v=ecc0ff97:926
+executeFetch_fn @ @tanstack_react-query.js?v=ecc0ff97:2211
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:2245
+setInterval
+updateRefetchInterval_fn @ @tanstack_react-query.js?v=ecc0ff97:2243
+updateTimers_fn @ @tanstack_react-query.js?v=ecc0ff97:2250
+onQueryUpdate @ @tanstack_react-query.js?v=ecc0ff97:2206
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:998
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:997
+batch @ @tanstack_react-query.js?v=ecc0ff97:583
+dispatch_fn @ @tanstack_react-query.js?v=ecc0ff97:996
+onError @ @tanstack_react-query.js?v=ecc0ff97:861
+reject @ @tanstack_react-query.js?v=ecc0ff97:465
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:508
+Promise.catch
+run @ @tanstack_react-query.js?v=ecc0ff97:498
+start @ @tanstack_react-query.js?v=ecc0ff97:536
+fetch @ @tanstack_react-query.js?v=ecc0ff97:926
+executeFetch_fn @ @tanstack_react-query.js?v=ecc0ff97:2211
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:2245
+setInterval
+updateRefetchInterval_fn @ @tanstack_react-query.js?v=ecc0ff97:2243
+updateTimers_fn @ @tanstack_react-query.js?v=ecc0ff97:2250
+onQueryUpdate @ @tanstack_react-query.js?v=ecc0ff97:2206
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:998
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:997
+batch @ @tanstack_react-query.js?v=ecc0ff97:583
+dispatch_fn @ @tanstack_react-query.js?v=ecc0ff97:996
+onError @ @tanstack_react-query.js?v=ecc0ff97:861
+reject @ @tanstack_react-query.js?v=ecc0ff97:465
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:508Understand this error
+queryClient.ts:93 Query Function Error: Error: 401: {"message":"Authentication required"}
+    at throwIfResNotOk (queryClient.ts:6:11)
+    at async queryClient.ts:81:7
+(anonymous) @ queryClient.ts:93
+await in (anonymous)
+fetchFn @ @tanstack_react-query.js?v=ecc0ff97:840
+run @ @tanstack_react-query.js?v=ecc0ff97:494
+start @ @tanstack_react-query.js?v=ecc0ff97:536
+fetch @ @tanstack_react-query.js?v=ecc0ff97:926
+executeFetch_fn @ @tanstack_react-query.js?v=ecc0ff97:2211
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:2245
+setInterval
+updateRefetchInterval_fn @ @tanstack_react-query.js?v=ecc0ff97:2243
+updateTimers_fn @ @tanstack_react-query.js?v=ecc0ff97:2250
+onQueryUpdate @ @tanstack_react-query.js?v=ecc0ff97:2206
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:998
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:997
+batch @ @tanstack_react-query.js?v=ecc0ff97:583
+dispatch_fn @ @tanstack_react-query.js?v=ecc0ff97:996
+onError @ @tanstack_react-query.js?v=ecc0ff97:861
+reject @ @tanstack_react-query.js?v=ecc0ff97:465
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:508
+Promise.catch
+run @ @tanstack_react-query.js?v=ecc0ff97:498
+start @ @tanstack_react-query.js?v=ecc0ff97:536
+fetch @ @tanstack_react-query.js?v=ecc0ff97:926
+executeFetch_fn @ @tanstack_react-query.js?v=ecc0ff97:2211
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:2245
+setInterval
+updateRefetchInterval_fn @ @tanstack_react-query.js?v=ecc0ff97:2243
+updateTimers_fn @ @tanstack_react-query.js?v=ecc0ff97:2250
+onQueryUpdate @ @tanstack_react-query.js?v=ecc0ff97:2206
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:998
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:997
+batch @ @tanstack_react-query.js?v=ecc0ff97:583
+dispatch_fn @ @tanstack_react-query.js?v=ecc0ff97:996
+onError @ @tanstack_react-query.js?v=ecc0ff97:861
+reject @ @tanstack_react-query.js?v=ecc0ff97:465
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:508
+Promise.catch
+run @ @tanstack_react-query.js?v=ecc0ff97:498
+start @ @tanstack_react-query.js?v=ecc0ff97:536
+fetch @ @tanstack_react-query.js?v=ecc0ff97:926
+executeFetch_fn @ @tanstack_react-query.js?v=ecc0ff97:2211
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:2245
+setInterval
+updateRefetchInterval_fn @ @tanstack_react-query.js?v=ecc0ff97:2243
+updateTimers_fn @ @tanstack_react-query.js?v=ecc0ff97:2250
+onQueryUpdate @ @tanstack_react-query.js?v=ecc0ff97:2206
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:998
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:997
+batch @ @tanstack_react-query.js?v=ecc0ff97:583
+dispatch_fn @ @tanstack_react-query.js?v=ecc0ff97:996
+onError @ @tanstack_react-query.js?v=ecc0ff97:861
+reject @ @tanstack_react-query.js?v=ecc0ff97:465
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:508
+Promise.catch
+run @ @tanstack_react-query.js?v=ecc0ff97:498
+start @ @tanstack_react-query.js?v=ecc0ff97:536
+fetch @ @tanstack_react-query.js?v=ecc0ff97:926
+executeFetch_fn @ @tanstack_react-query.js?v=ecc0ff97:2211
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:2245
+setInterval
+updateRefetchInterval_fn @ @tanstack_react-query.js?v=ecc0ff97:2243
+updateTimers_fn @ @tanstack_react-query.js?v=ecc0ff97:2250
+onQueryUpdate @ @tanstack_react-query.js?v=ecc0ff97:2206
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:998
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:997
+batch @ @tanstack_react-query.js?v=ecc0ff97:583
+dispatch_fn @ @tanstack_react-query.js?v=ecc0ff97:996
+onError @ @tanstack_react-query.js?v=ecc0ff97:861
+reject @ @tanstack_react-query.js?v=ecc0ff97:465
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:508Understand this error
+queryClient.ts:30  GET https://fcae725b-6e60-4330-97e2-2f6fe033cd01-00-f6h8jjiftwnj.picard.replit.dev:8000/api/notifications 401 (Unauthorized)
+apiRequest @ queryClient.ts:30
+queryFn @ useNotifications.ts:15
+fetchFn @ @tanstack_react-query.js?v=ecc0ff97:840
+run @ @tanstack_react-query.js?v=ecc0ff97:494
+start @ @tanstack_react-query.js?v=ecc0ff97:536
+fetch @ @tanstack_react-query.js?v=ecc0ff97:926
+executeFetch_fn @ @tanstack_react-query.js?v=ecc0ff97:2211
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:2245Understand this error
+queryClient.ts:49 API Request Error: Error: 401: {"message":"Authentication required"}
+    at throwIfResNotOk (queryClient.ts:6:11)
+    at async apiRequest (queryClient.ts:37:5)
+apiRequest @ queryClient.ts:49
+await in apiRequest
+queryFn @ useNotifications.ts:15
+fetchFn @ @tanstack_react-query.js?v=ecc0ff97:840
+run @ @tanstack_react-query.js?v=ecc0ff97:494
+start @ @tanstack_react-query.js?v=ecc0ff97:536
+fetch @ @tanstack_react-query.js?v=ecc0ff97:926
+executeFetch_fn @ @tanstack_react-query.js?v=ecc0ff97:2211
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:2245Understand this error
+Notifications.tsx:42 Error fetching notifications: Error: 401: {"message":"Authentication required"}
+    at throwIfResNotOk (queryClient.ts:6:11)
+    at async apiRequest (queryClient.ts:37:5)
+(anonymous) @ Notifications.tsx:42
+commitHookEffectListMount @ chunk-SKRUXVEK.js?v=ecc0ff97:16915
+commitPassiveMountOnFiber @ chunk-SKRUXVEK.js?v=ecc0ff97:18156
+commitPassiveMountEffects_complete @ chunk-SKRUXVEK.js?v=ecc0ff97:18129
+commitPassiveMountEffects_begin @ chunk-SKRUXVEK.js?v=ecc0ff97:18119
+commitPassiveMountEffects @ chunk-SKRUXVEK.js?v=ecc0ff97:18109
+flushPassiveEffectsImpl @ chunk-SKRUXVEK.js?v=ecc0ff97:19490
+flushPassiveEffects @ chunk-SKRUXVEK.js?v=ecc0ff97:19447
+commitRootImpl @ chunk-SKRUXVEK.js?v=ecc0ff97:19416
+commitRoot @ chunk-SKRUXVEK.js?v=ecc0ff97:19277
+performSyncWorkOnRoot @ chunk-SKRUXVEK.js?v=ecc0ff97:18895
+flushSyncCallbacks @ chunk-SKRUXVEK.js?v=ecc0ff97:9119
+(anonymous) @ chunk-SKRUXVEK.js?v=ecc0ff97:18627
+setTimeout
+scheduleFn @ @tanstack_react-query.js?v=ecc0ff97:555
+flush @ @tanstack_react-query.js?v=ecc0ff97:569
+batch @ @tanstack_react-query.js?v=ecc0ff97:587
+dispatch_fn @ @tanstack_react-query.js?v=ecc0ff97:996
+onError @ @tanstack_react-query.js?v=ecc0ff97:861
+reject @ @tanstack_react-query.js?v=ecc0ff97:465
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:508
+Promise.catch
+run @ @tanstack_react-query.js?v=ecc0ff97:498
+start @ @tanstack_react-query.js?v=ecc0ff97:536
+fetch @ @tanstack_react-query.js?v=ecc0ff97:926
+executeFetch_fn @ @tanstack_react-query.js?v=ecc0ff97:2211
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:2245Understand this error
+queryClient.ts:72  GET https://fcae725b-6e60-4330-97e2-2f6fe033cd01-00-f6h8jjiftwnj.picard.replit.dev:8000/api/wallet/balance 401 (Unauthorized)
+(anonymous) @ queryClient.ts:72
+fetchFn @ @tanstack_react-query.js?v=ecc0ff97:840
+run @ @tanstack_react-query.js?v=ecc0ff97:494
+start @ @tanstack_react-query.js?v=ecc0ff97:536
+fetch @ @tanstack_react-query.js?v=ecc0ff97:926
+executeFetch_fn @ @tanstack_react-query.js?v=ecc0ff97:2211
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:2245
+setInterval
+updateRefetchInterval_fn @ @tanstack_react-query.js?v=ecc0ff97:2243
+updateTimers_fn @ @tanstack_react-query.js?v=ecc0ff97:2250
+onQueryUpdate @ @tanstack_react-query.js?v=ecc0ff97:2206
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:998
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:997
+batch @ @tanstack_react-query.js?v=ecc0ff97:583
+dispatch_fn @ @tanstack_react-query.js?v=ecc0ff97:996
+onError @ @tanstack_react-query.js?v=ecc0ff97:861
+reject @ @tanstack_react-query.js?v=ecc0ff97:465
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:508
+Promise.catch
+run @ @tanstack_react-query.js?v=ecc0ff97:498
+start @ @tanstack_react-query.js?v=ecc0ff97:536
+fetch @ @tanstack_react-query.js?v=ecc0ff97:926
+executeFetch_fn @ @tanstack_react-query.js?v=ecc0ff97:2211
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:2245
+setInterval
+updateRefetchInterval_fn @ @tanstack_react-query.js?v=ecc0ff97:2243
+updateTimers_fn @ @tanstack_react-query.js?v=ecc0ff97:2250
+onQueryUpdate @ @tanstack_react-query.js?v=ecc0ff97:2206
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:998
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:997
+batch @ @tanstack_react-query.js?v=ecc0ff97:583
+dispatch_fn @ @tanstack_react-query.js?v=ecc0ff97:996
+onError @ @tanstack_react-query.js?v=ecc0ff97:861
+reject @ @tanstack_react-query.js?v=ecc0ff97:465
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:508
+Promise.catch
+run @ @tanstack_react-query.js?v=ecc0ff97:498
+start @ @tanstack_react-query.js?v=ecc0ff97:536
+fetch @ @tanstack_react-query.js?v=ecc0ff97:926
+executeFetch_fn @ @tanstack_react-query.js?v=ecc0ff97:2211
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:2245
+setInterval
+updateRefetchInterval_fn @ @tanstack_react-query.js?v=ecc0ff97:2243
+updateTimers_fn @ @tanstack_react-query.js?v=ecc0ff97:2250
+onQueryUpdate @ @tanstack_react-query.js?v=ecc0ff97:2206
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:998
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:997
+batch @ @tanstack_react-query.js?v=ecc0ff97:583
+dispatch_fn @ @tanstack_react-query.js?v=ecc0ff97:996
+onError @ @tanstack_react-query.js?v=ecc0ff97:861
+reject @ @tanstack_react-query.js?v=ecc0ff97:465
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:508
+Promise.catch
+run @ @tanstack_react-query.js?v=ecc0ff97:498
+start @ @tanstack_react-query.js?v=ecc0ff97:536
+fetch @ @tanstack_react-query.js?v=ecc0ff97:926
+executeFetch_fn @ @tanstack_react-query.js?v=ecc0ff97:2211
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:2245
+setInterval
+updateRefetchInterval_fn @ @tanstack_react-query.js?v=ecc0ff97:2243
+updateTimers_fn @ @tanstack_react-query.js?v=ecc0ff97:2250
+onQueryUpdate @ @tanstack_react-query.js?v=ecc0ff97:2206
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:998
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:997
+batch @ @tanstack_react-query.js?v=ecc0ff97:583
+dispatch_fn @ @tanstack_react-query.js?v=ecc0ff97:996
+onError @ @tanstack_react-query.js?v=ecc0ff97:861
+reject @ @tanstack_react-query.js?v=ecc0ff97:465
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:508
+Promise.catch
+run @ @tanstack_react-query.js?v=ecc0ff97:498
+start @ @tanstack_react-query.js?v=ecc0ff97:536
+fetch @ @tanstack_react-query.js?v=ecc0ff97:926
+executeFetch_fn @ @tanstack_react-query.js?v=ecc0ff97:2211
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:2245
+setInterval
+updateRefetchInterval_fn @ @tanstack_react-query.js?v=ecc0ff97:2243
+updateTimers_fn @ @tanstack_react-query.js?v=ecc0ff97:2250
+onQueryUpdate @ @tanstack_react-query.js?v=ecc0ff97:2206
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:998
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:997
+batch @ @tanstack_react-query.js?v=ecc0ff97:583
+dispatch_fn @ @tanstack_react-query.js?v=ecc0ff97:996
+onError @ @tanstack_react-query.js?v=ecc0ff97:861
+reject @ @tanstack_react-query.js?v=ecc0ff97:465
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:508Understand this error
+queryClient.ts:93 Query Function Error: Error: 401: {"message":"Authentication required"}
+    at throwIfResNotOk (queryClient.ts:6:11)
+    at async queryClient.ts:81:7
+(anonymous) @ queryClient.ts:93
+await in (anonymous)
+fetchFn @ @tanstack_react-query.js?v=ecc0ff97:840
+run @ @tanstack_react-query.js?v=ecc0ff97:494
+start @ @tanstack_react-query.js?v=ecc0ff97:536
+fetch @ @tanstack_react-query.js?v=ecc0ff97:926
+executeFetch_fn @ @tanstack_react-query.js?v=ecc0ff97:2211
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:2245
+setInterval
+updateRefetchInterval_fn @ @tanstack_react-query.js?v=ecc0ff97:2243
+updateTimers_fn @ @tanstack_react-query.js?v=ecc0ff97:2250
+onQueryUpdate @ @tanstack_react-query.js?v=ecc0ff97:2206
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:998
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:997
+batch @ @tanstack_react-query.js?v=ecc0ff97:583
+dispatch_fn @ @tanstack_react-query.js?v=ecc0ff97:996
+onError @ @tanstack_react-query.js?v=ecc0ff97:861
+reject @ @tanstack_react-query.js?v=ecc0ff97:465
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:508
+Promise.catch
+run @ @tanstack_react-query.js?v=ecc0ff97:498
+start @ @tanstack_react-query.js?v=ecc0ff97:536
+fetch @ @tanstack_react-query.js?v=ecc0ff97:926
+executeFetch_fn @ @tanstack_react-query.js?v=ecc0ff97:2211
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:2245
+setInterval
+updateRefetchInterval_fn @ @tanstack_react-query.js?v=ecc0ff97:2243
+updateTimers_fn @ @tanstack_react-query.js?v=ecc0ff97:2250
+onQueryUpdate @ @tanstack_react-query.js?v=ecc0ff97:2206
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:998
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:997
+batch @ @tanstack_react-query.js?v=ecc0ff97:583
+dispatch_fn @ @tanstack_react-query.js?v=ecc0ff97:996
+onError @ @tanstack_react-query.js?v=ecc0ff97:861
+reject @ @tanstack_react-query.js?v=ecc0ff97:465
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:508
+Promise.catch
+run @ @tanstack_react-query.js?v=ecc0ff97:498
+start @ @tanstack_react-query.js?v=ecc0ff97:536
+fetch @ @tanstack_react-query.js?v=ecc0ff97:926
+executeFetch_fn @ @tanstack_react-query.js?v=ecc0ff97:2211
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:2245
+setInterval
+updateRefetchInterval_fn @ @tanstack_react-query.js?v=ecc0ff97:2243
+updateTimers_fn @ @tanstack_react-query.js?v=ecc0ff97:2250
+onQueryUpdate @ @tanstack_react-query.js?v=ecc0ff97:2206
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:998
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:997
+batch @ @tanstack_react-query.js?v=ecc0ff97:583
+dispatch_fn @ @tanstack_react-query.js?v=ecc0ff97:996
+onError @ @tanstack_react-query.js?v=ecc0ff97:861
+reject @ @tanstack_react-query.js?v=ecc0ff97:465
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:508
+Promise.catch
+run @ @tanstack_react-query.js?v=ecc0ff97:498
+start @ @tanstack_react-query.js?v=ecc0ff97:536
+fetch @ @tanstack_react-query.js?v=ecc0ff97:926
+executeFetch_fn @ @tanstack_react-query.js?v=ecc0ff97:2211
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:2245
+setInterval
+updateRefetchInterval_fn @ @tanstack_react-query.js?v=ecc0ff97:2243
+updateTimers_fn @ @tanstack_react-query.js?v=ecc0ff97:2250
+onQueryUpdate @ @tanstack_react-query.js?v=ecc0ff97:2206
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:998
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:997
+batch @ @tanstack_react-query.js?v=ecc0ff97:583
+dispatch_fn @ @tanstack_react-query.js?v=ecc0ff97:996
+onError @ @tanstack_react-query.js?v=ecc0ff97:861
+reject @ @tanstack_react-query.js?v=ecc0ff97:465
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:508
+Promise.catch
+run @ @tanstack_react-query.js?v=ecc0ff97:498
+start @ @tanstack_react-query.js?v=ecc0ff97:536
+fetch @ @tanstack_react-query.js?v=ecc0ff97:926
+executeFetch_fn @ @tanstack_react-query.js?v=ecc0ff97:2211
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:2245
+setInterval
+updateRefetchInterval_fn @ @tanstack_react-query.js?v=ecc0ff97:2243
+updateTimers_fn @ @tanstack_react-query.js?v=ecc0ff97:2250
+onQueryUpdate @ @tanstack_react-query.js?v=ecc0ff97:2206
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:998
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:997
+batch @ @tanstack_react-query.js?v=ecc0ff97:583
+dispatch_fn @ @tanstack_react-query.js?v=ecc0ff97:996
+onError @ @tanstack_react-query.js?v=ecc0ff97:861
+reject @ @tanstack_react-query.js?v=ecc0ff97:465
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:508Understand this error
+queryClient.ts:72  GET https://fcae725b-6e60-4330-97e2-2f6fe033cd01-00-f6h8jjiftwnj.picard.replit.dev:8000/api/wallet/balance 401 (Unauthorized)
+(anonymous) @ queryClient.ts:72
+fetchFn @ @tanstack_react-query.js?v=ecc0ff97:840
+run @ @tanstack_react-query.js?v=ecc0ff97:494
+start @ @tanstack_react-query.js?v=ecc0ff97:536
+fetch @ @tanstack_react-query.js?v=ecc0ff97:926
+executeFetch_fn @ @tanstack_react-query.js?v=ecc0ff97:2211
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:2245
+setInterval
+updateRefetchInterval_fn @ @tanstack_react-query.js?v=ecc0ff97:2243
+updateTimers_fn @ @tanstack_react-query.js?v=ecc0ff97:2250
+onQueryUpdate @ @tanstack_react-query.js?v=ecc0ff97:2206
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:998
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:997
+batch @ @tanstack_react-query.js?v=ecc0ff97:583
+dispatch_fn @ @tanstack_react-query.js?v=ecc0ff97:996
+onError @ @tanstack_react-query.js?v=ecc0ff97:861
+reject @ @tanstack_react-query.js?v=ecc0ff97:465
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:508
+Promise.catch
+run @ @tanstack_react-query.js?v=ecc0ff97:498
+start @ @tanstack_react-query.js?v=ecc0ff97:536
+fetch @ @tanstack_react-query.js?v=ecc0ff97:926
+executeFetch_fn @ @tanstack_react-query.js?v=ecc0ff97:2211
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:2245
+setInterval
+updateRefetchInterval_fn @ @tanstack_react-query.js?v=ecc0ff97:2243
+updateTimers_fn @ @tanstack_react-query.js?v=ecc0ff97:2250
+onQueryUpdate @ @tanstack_react-query.js?v=ecc0ff97:2206
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:998
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:997
+batch @ @tanstack_react-query.js?v=ecc0ff97:583
+dispatch_fn @ @tanstack_react-query.js?v=ecc0ff97:996
+onError @ @tanstack_react-query.js?v=ecc0ff97:861
+reject @ @tanstack_react-query.js?v=ecc0ff97:465
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:508
+Promise.catch
+run @ @tanstack_react-query.js?v=ecc0ff97:498
+start @ @tanstack_react-query.js?v=ecc0ff97:536
+fetch @ @tanstack_react-query.js?v=ecc0ff97:926
+executeFetch_fn @ @tanstack_react-query.js?v=ecc0ff97:2211
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:2245
+setInterval
+updateRefetchInterval_fn @ @tanstack_react-query.js?v=ecc0ff97:2243
+updateTimers_fn @ @tanstack_react-query.js?v=ecc0ff97:2250
+onQueryUpdate @ @tanstack_react-query.js?v=ecc0ff97:2206
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:998
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:997
+batch @ @tanstack_react-query.js?v=ecc0ff97:583
+dispatch_fn @ @tanstack_react-query.js?v=ecc0ff97:996
+onError @ @tanstack_react-query.js?v=ecc0ff97:861
+reject @ @tanstack_react-query.js?v=ecc0ff97:465
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:508
+Promise.catch
+run @ @tanstack_react-query.js?v=ecc0ff97:498
+start @ @tanstack_react-query.js?v=ecc0ff97:536
+fetch @ @tanstack_react-query.js?v=ecc0ff97:926
+executeFetch_fn @ @tanstack_react-query.js?v=ecc0ff97:2211
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:2245
+setInterval
+updateRefetchInterval_fn @ @tanstack_react-query.js?v=ecc0ff97:2243
+updateTimers_fn @ @tanstack_react-query.js?v=ecc0ff97:2250
+onQueryUpdate @ @tanstack_react-query.js?v=ecc0ff97:2206
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:998
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:997
+batch @ @tanstack_react-query.js?v=ecc0ff97:583
+dispatch_fn @ @tanstack_react-query.js?v=ecc0ff97:996
+onError @ @tanstack_react-query.js?v=ecc0ff97:861
+reject @ @tanstack_react-query.js?v=ecc0ff97:465
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:508
+Promise.catch
+run @ @tanstack_react-query.js?v=ecc0ff97:498
+start @ @tanstack_react-query.js?v=ecc0ff97:536
+fetch @ @tanstack_react-query.js?v=ecc0ff97:926
+executeFetch_fn @ @tanstack_react-query.js?v=ecc0ff97:2211
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:2245
+setInterval
+updateRefetchInterval_fn @ @tanstack_react-query.js?v=ecc0ff97:2243
+updateTimers_fn @ @tanstack_react-query.js?v=ecc0ff97:2250
+onQueryUpdate @ @tanstack_react-query.js?v=ecc0ff97:2206
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:998
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:997
+batch @ @tanstack_react-query.js?v=ecc0ff97:583
+dispatch_fn @ @tanstack_react-query.js?v=ecc0ff97:996
+onError @ @tanstack_react-query.js?v=ecc0ff97:861
+reject @ @tanstack_react-query.js?v=ecc0ff97:465
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:508
+Promise.catch
+run @ @tanstack_react-query.js?v=ecc0ff97:498
+start @ @tanstack_react-query.js?v=ecc0ff97:536
+fetch @ @tanstack_react-query.js?v=ecc0ff97:926
+executeFetch_fn @ @tanstack_react-query.js?v=ecc0ff97:2211
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:2245
+setInterval
+updateRefetchInterval_fn @ @tanstack_react-query.js?v=ecc0ff97:2243
+updateTimers_fn @ @tanstack_react-query.js?v=ecc0ff97:2250
+onQueryUpdate @ @tanstack_react-query.js?v=ecc0ff97:2206
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:998
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:997
+batch @ @tanstack_react-query.js?v=ecc0ff97:583
+dispatch_fn @ @tanstack_react-query.js?v=ecc0ff97:996
+onError @ @tanstack_react-query.js?v=ecc0ff97:861
+reject @ @tanstack_react-query.js?v=ecc0ff97:465
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:508Understand this error
+queryClient.ts:93 Query Function Error: Error: 401: {"message":"Authentication required"}
+    at throwIfResNotOk (queryClient.ts:6:11)
+    at async queryClient.ts:81:7
+(anonymous) @ queryClient.ts:93
+await in (anonymous)
+fetchFn @ @tanstack_react-query.js?v=ecc0ff97:840
+run @ @tanstack_react-query.js?v=ecc0ff97:494
+start @ @tanstack_react-query.js?v=ecc0ff97:536
+fetch @ @tanstack_react-query.js?v=ecc0ff97:926
+executeFetch_fn @ @tanstack_react-query.js?v=ecc0ff97:2211
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:2245
+setInterval
+updateRefetchInterval_fn @ @tanstack_react-query.js?v=ecc0ff97:2243
+updateTimers_fn @ @tanstack_react-query.js?v=ecc0ff97:2250
+onQueryUpdate @ @tanstack_react-query.js?v=ecc0ff97:2206
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:998
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:997
+batch @ @tanstack_react-query.js?v=ecc0ff97:583
+dispatch_fn @ @tanstack_react-query.js?v=ecc0ff97:996
+onError @ @tanstack_react-query.js?v=ecc0ff97:861
+reject @ @tanstack_react-query.js?v=ecc0ff97:465
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:508
+Promise.catch
+run @ @tanstack_react-query.js?v=ecc0ff97:498
+start @ @tanstack_react-query.js?v=ecc0ff97:536
+fetch @ @tanstack_react-query.js?v=ecc0ff97:926
+executeFetch_fn @ @tanstack_react-query.js?v=ecc0ff97:2211
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:2245
+setInterval
+updateRefetchInterval_fn @ @tanstack_react-query.js?v=ecc0ff97:2243
+updateTimers_fn @ @tanstack_react-query.js?v=ecc0ff97:2250
+onQueryUpdate @ @tanstack_react-query.js?v=ecc0ff97:2206
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:998
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:997
+batch @ @tanstack_react-query.js?v=ecc0ff97:583
+dispatch_fn @ @tanstack_react-query.js?v=ecc0ff97:996
+onError @ @tanstack_react-query.js?v=ecc0ff97:861
+reject @ @tanstack_react-query.js?v=ecc0ff97:465
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:508
+Promise.catch
+run @ @tanstack_react-query.js?v=ecc0ff97:498
+start @ @tanstack_react-query.js?v=ecc0ff97:536
+fetch @ @tanstack_react-query.js?v=ecc0ff97:926
+executeFetch_fn @ @tanstack_react-query.js?v=ecc0ff97:2211
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:2245
+setInterval
+updateRefetchInterval_fn @ @tanstack_react-query.js?v=ecc0ff97:2243
+updateTimers_fn @ @tanstack_react-query.js?v=ecc0ff97:2250
+onQueryUpdate @ @tanstack_react-query.js?v=ecc0ff97:2206
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:998
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:997
+batch @ @tanstack_react-query.js?v=ecc0ff97:583
+dispatch_fn @ @tanstack_react-query.js?v=ecc0ff97:996
+onError @ @tanstack_react-query.js?v=ecc0ff97:861
+reject @ @tanstack_react-query.js?v=ecc0ff97:465
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:508
+Promise.catch
+run @ @tanstack_react-query.js?v=ecc0ff97:498
+start @ @tanstack_react-query.js?v=ecc0ff97:536
+fetch @ @tanstack_react-query.js?v=ecc0ff97:926
+executeFetch_fn @ @tanstack_react-query.js?v=ecc0ff97:2211
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:2245
+setInterval
+updateRefetchInterval_fn @ @tanstack_react-query.js?v=ecc0ff97:2243
+updateTimers_fn @ @tanstack_react-query.js?v=ecc0ff97:2250
+onQueryUpdate @ @tanstack_react-query.js?v=ecc0ff97:2206
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:998
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:997
+batch @ @tanstack_react-query.js?v=ecc0ff97:583
+dispatch_fn @ @tanstack_react-query.js?v=ecc0ff97:996
+onError @ @tanstack_react-query.js?v=ecc0ff97:861
+reject @ @tanstack_react-query.js?v=ecc0ff97:465
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:508
+Promise.catch
+run @ @tanstack_react-query.js?v=ecc0ff97:498
+start @ @tanstack_react-query.js?v=ecc0ff97:536
+fetch @ @tanstack_react-query.js?v=ecc0ff97:926
+executeFetch_fn @ @tanstack_react-query.js?v=ecc0ff97:2211
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:2245
+setInterval
+updateRefetchInterval_fn @ @tanstack_react-query.js?v=ecc0ff97:2243
+updateTimers_fn @ @tanstack_react-query.js?v=ecc0ff97:2250
+onQueryUpdate @ @tanstack_react-query.js?v=ecc0ff97:2206
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:998
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:997
+batch @ @tanstack_react-query.js?v=ecc0ff97:583
+dispatch_fn @ @tanstack_react-query.js?v=ecc0ff97:996
+onError @ @tanstack_react-query.js?v=ecc0ff97:861
+reject @ @tanstack_react-query.js?v=ecc0ff97:465
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:508
+Promise.catch
+run @ @tanstack_react-query.js?v=ecc0ff97:498
+start @ @tanstack_react-query.js?v=ecc0ff97:536
+fetch @ @tanstack_react-query.js?v=ecc0ff97:926
+executeFetch_fn @ @tanstack_react-query.js?v=ecc0ff97:2211
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:2245
+setInterval
+updateRefetchInterval_fn @ @tanstack_react-query.js?v=ecc0ff97:2243
+updateTimers_fn @ @tanstack_react-query.js?v=ecc0ff97:2250
+onQueryUpdate @ @tanstack_react-query.js?v=ecc0ff97:2206
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:998
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:997
+batch @ @tanstack_react-query.js?v=ecc0ff97:583
+dispatch_fn @ @tanstack_react-query.js?v=ecc0ff97:996
+onError @ @tanstack_react-query.js?v=ecc0ff97:861
+reject @ @tanstack_react-query.js?v=ecc0ff97:465
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:508Understand this error
+queryClient.ts:72  GET https://fcae725b-6e60-4330-97e2-2f6fe033cd01-00-f6h8jjiftwnj.picard.replit.dev:8000/api/wallet/balance 401 (Unauthorized)
+(anonymous) @ queryClient.ts:72
+fetchFn @ @tanstack_react-query.js?v=ecc0ff97:840
+run @ @tanstack_react-query.js?v=ecc0ff97:494
+start @ @tanstack_react-query.js?v=ecc0ff97:536
+fetch @ @tanstack_react-query.js?v=ecc0ff97:926
+executeFetch_fn @ @tanstack_react-query.js?v=ecc0ff97:2211
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:2245
+setInterval
+updateRefetchInterval_fn @ @tanstack_react-query.js?v=ecc0ff97:2243
+updateTimers_fn @ @tanstack_react-query.js?v=ecc0ff97:2250
+onQueryUpdate @ @tanstack_react-query.js?v=ecc0ff97:2206
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:998
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:997
+batch @ @tanstack_react-query.js?v=ecc0ff97:583
+dispatch_fn @ @tanstack_react-query.js?v=ecc0ff97:996
+onError @ @tanstack_react-query.js?v=ecc0ff97:861
+reject @ @tanstack_react-query.js?v=ecc0ff97:465
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:508
+Promise.catch
+run @ @tanstack_react-query.js?v=ecc0ff97:498
+start @ @tanstack_react-query.js?v=ecc0ff97:536
+fetch @ @tanstack_react-query.js?v=ecc0ff97:926
+executeFetch_fn @ @tanstack_react-query.js?v=ecc0ff97:2211
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:2245
+setInterval
+updateRefetchInterval_fn @ @tanstack_react-query.js?v=ecc0ff97:2243
+updateTimers_fn @ @tanstack_react-query.js?v=ecc0ff97:2250
+onQueryUpdate @ @tanstack_react-query.js?v=ecc0ff97:2206
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:998
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:997
+batch @ @tanstack_react-query.js?v=ecc0ff97:583
+dispatch_fn @ @tanstack_react-query.js?v=ecc0ff97:996
+onError @ @tanstack_react-query.js?v=ecc0ff97:861
+reject @ @tanstack_react-query.js?v=ecc0ff97:465
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:508
+Promise.catch
+run @ @tanstack_react-query.js?v=ecc0ff97:498
+start @ @tanstack_react-query.js?v=ecc0ff97:536
+fetch @ @tanstack_react-query.js?v=ecc0ff97:926
+executeFetch_fn @ @tanstack_react-query.js?v=ecc0ff97:2211
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:2245
+setInterval
+updateRefetchInterval_fn @ @tanstack_react-query.js?v=ecc0ff97:2243
+updateTimers_fn @ @tanstack_react-query.js?v=ecc0ff97:2250
+onQueryUpdate @ @tanstack_react-query.js?v=ecc0ff97:2206
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:998
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:997
+batch @ @tanstack_react-query.js?v=ecc0ff97:583
+dispatch_fn @ @tanstack_react-query.js?v=ecc0ff97:996
+onError @ @tanstack_react-query.js?v=ecc0ff97:861
+reject @ @tanstack_react-query.js?v=ecc0ff97:465
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:508
+Promise.catch
+run @ @tanstack_react-query.js?v=ecc0ff97:498
+start @ @tanstack_react-query.js?v=ecc0ff97:536
+fetch @ @tanstack_react-query.js?v=ecc0ff97:926
+executeFetch_fn @ @tanstack_react-query.js?v=ecc0ff97:2211
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:2245
+setInterval
+updateRefetchInterval_fn @ @tanstack_react-query.js?v=ecc0ff97:2243
+updateTimers_fn @ @tanstack_react-query.js?v=ecc0ff97:2250
+onQueryUpdate @ @tanstack_react-query.js?v=ecc0ff97:2206
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:998
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:997
+batch @ @tanstack_react-query.js?v=ecc0ff97:583
+dispatch_fn @ @tanstack_react-query.js?v=ecc0ff97:996
+onError @ @tanstack_react-query.js?v=ecc0ff97:861
+reject @ @tanstack_react-query.js?v=ecc0ff97:465
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:508
+Promise.catch
+run @ @tanstack_react-query.js?v=ecc0ff97:498
+start @ @tanstack_react-query.js?v=ecc0ff97:536
+fetch @ @tanstack_react-query.js?v=ecc0ff97:926
+executeFetch_fn @ @tanstack_react-query.js?v=ecc0ff97:2211
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:2245
+setInterval
+updateRefetchInterval_fn @ @tanstack_react-query.js?v=ecc0ff97:2243
+updateTimers_fn @ @tanstack_react-query.js?v=ecc0ff97:2250
+onQueryUpdate @ @tanstack_react-query.js?v=ecc0ff97:2206
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:998
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:997
+batch @ @tanstack_react-query.js?v=ecc0ff97:583
+dispatch_fn @ @tanstack_react-query.js?v=ecc0ff97:996
+onError @ @tanstack_react-query.js?v=ecc0ff97:861
+reject @ @tanstack_react-query.js?v=ecc0ff97:465
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:508
+Promise.catch
+run @ @tanstack_react-query.js?v=ecc0ff97:498
+start @ @tanstack_react-query.js?v=ecc0ff97:536
+fetch @ @tanstack_react-query.js?v=ecc0ff97:926
+executeFetch_fn @ @tanstack_react-query.js?v=ecc0ff97:2211
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:2245
+setInterval
+updateRefetchInterval_fn @ @tanstack_react-query.js?v=ecc0ff97:2243
+updateTimers_fn @ @tanstack_react-query.js?v=ecc0ff97:2250
+onQueryUpdate @ @tanstack_react-query.js?v=ecc0ff97:2206
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:998
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:997
+batch @ @tanstack_react-query.js?v=ecc0ff97:583
+dispatch_fn @ @tanstack_react-query.js?v=ecc0ff97:996
+onError @ @tanstack_react-query.js?v=ecc0ff97:861
+reject @ @tanstack_react-query.js?v=ecc0ff97:465
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:508
+Promise.catch
+run @ @tanstack_react-query.js?v=ecc0ff97:498
+start @ @tanstack_react-query.js?v=ecc0ff97:536
+fetch @ @tanstack_react-query.js?v=ecc0ff97:926
+executeFetch_fn @ @tanstack_react-query.js?v=ecc0ff97:2211
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:2245
+setInterval
+updateRefetchInterval_fn @ @tanstack_react-query.js?v=ecc0ff97:2243
+updateTimers_fn @ @tanstack_react-query.js?v=ecc0ff97:2250
+onQueryUpdate @ @tanstack_react-query.js?v=ecc0ff97:2206
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:998
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:997
+batch @ @tanstack_react-query.js?v=ecc0ff97:583
+dispatch_fn @ @tanstack_react-query.js?v=ecc0ff97:996
+onError @ @tanstack_react-query.js?v=ecc0ff97:861
+reject @ @tanstack_react-query.js?v=ecc0ff97:465
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:508Understand this error
+queryClient.ts:93 Query Function Error: Error: 401: {"message":"Authentication required"}
+    at throwIfResNotOk (queryClient.ts:6:11)
+    at async queryClient.ts:81:7
+(anonymous) @ queryClient.ts:93
+await in (anonymous)
+fetchFn @ @tanstack_react-query.js?v=ecc0ff97:840
+run @ @tanstack_react-query.js?v=ecc0ff97:494
+start @ @tanstack_react-query.js?v=ecc0ff97:536
+fetch @ @tanstack_react-query.js?v=ecc0ff97:926
+executeFetch_fn @ @tanstack_react-query.js?v=ecc0ff97:2211
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:2245
+setInterval
+updateRefetchInterval_fn @ @tanstack_react-query.js?v=ecc0ff97:2243
+updateTimers_fn @ @tanstack_react-query.js?v=ecc0ff97:2250
+onQueryUpdate @ @tanstack_react-query.js?v=ecc0ff97:2206
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:998
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:997
+batch @ @tanstack_react-query.js?v=ecc0ff97:583
+dispatch_fn @ @tanstack_react-query.js?v=ecc0ff97:996
+onError @ @tanstack_react-query.js?v=ecc0ff97:861
+reject @ @tanstack_react-query.js?v=ecc0ff97:465
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:508
+Promise.catch
+run @ @tanstack_react-query.js?v=ecc0ff97:498
+start @ @tanstack_react-query.js?v=ecc0ff97:536
+fetch @ @tanstack_react-query.js?v=ecc0ff97:926
+executeFetch_fn @ @tanstack_react-query.js?v=ecc0ff97:2211
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:2245
+setInterval
+updateRefetchInterval_fn @ @tanstack_react-query.js?v=ecc0ff97:2243
+updateTimers_fn @ @tanstack_react-query.js?v=ecc0ff97:2250
+onQueryUpdate @ @tanstack_react-query.js?v=ecc0ff97:2206
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:998
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:997
+batch @ @tanstack_react-query.js?v=ecc0ff97:583
+dispatch_fn @ @tanstack_react-query.js?v=ecc0ff97:996
+onError @ @tanstack_react-query.js?v=ecc0ff97:861
+reject @ @tanstack_react-query.js?v=ecc0ff97:465
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:508
+Promise.catch
+run @ @tanstack_react-query.js?v=ecc0ff97:498
+start @ @tanstack_react-query.js?v=ecc0ff97:536
+fetch @ @tanstack_react-query.js?v=ecc0ff97:926
+executeFetch_fn @ @tanstack_react-query.js?v=ecc0ff97:2211
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:2245
+setInterval
+updateRefetchInterval_fn @ @tanstack_react-query.js?v=ecc0ff97:2243
+updateTimers_fn @ @tanstack_react-query.js?v=ecc0ff97:2250
+onQueryUpdate @ @tanstack_react-query.js?v=ecc0ff97:2206
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:998
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:997
+batch @ @tanstack_react-query.js?v=ecc0ff97:583
+dispatch_fn @ @tanstack_react-query.js?v=ecc0ff97:996
+onError @ @tanstack_react-query.js?v=ecc0ff97:861
+reject @ @tanstack_react-query.js?v=ecc0ff97:465
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:508
+Promise.catch
+run @ @tanstack_react-query.js?v=ecc0ff97:498
+start @ @tanstack_react-query.js?v=ecc0ff97:536
+fetch @ @tanstack_react-query.js?v=ecc0ff97:926
+executeFetch_fn @ @tanstack_react-query.js?v=ecc0ff97:2211
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:2245
+setInterval
+updateRefetchInterval_fn @ @tanstack_react-query.js?v=ecc0ff97:2243
+updateTimers_fn @ @tanstack_react-query.js?v=ecc0ff97:2250
+onQueryUpdate @ @tanstack_react-query.js?v=ecc0ff97:2206
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:998
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:997
+batch @ @tanstack_react-query.js?v=ecc0ff97:583
+dispatch_fn @ @tanstack_react-query.js?v=ecc0ff97:996
+onError @ @tanstack_react-query.js?v=ecc0ff97:861
+reject @ @tanstack_react-query.js?v=ecc0ff97:465
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:508
+Promise.catch
+run @ @tanstack_react-query.js?v=ecc0ff97:498
+start @ @tanstack_react-query.js?v=ecc0ff97:536
+fetch @ @tanstack_react-query.js?v=ecc0ff97:926
+executeFetch_fn @ @tanstack_react-query.js?v=ecc0ff97:2211
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:2245
+setInterval
+updateRefetchInterval_fn @ @tanstack_react-query.js?v=ecc0ff97:2243
+updateTimers_fn @ @tanstack_react-query.js?v=ecc0ff97:2250
+onQueryUpdate @ @tanstack_react-query.js?v=ecc0ff97:2206
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:998
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:997
+batch @ @tanstack_react-query.js?v=ecc0ff97:583
+dispatch_fn @ @tanstack_react-query.js?v=ecc0ff97:996
+onError @ @tanstack_react-query.js?v=ecc0ff97:861
+reject @ @tanstack_react-query.js?v=ecc0ff97:465
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:508
+Promise.catch
+run @ @tanstack_react-query.js?v=ecc0ff97:498
+start @ @tanstack_react-query.js?v=ecc0ff97:536
+fetch @ @tanstack_react-query.js?v=ecc0ff97:926
+executeFetch_fn @ @tanstack_react-query.js?v=ecc0ff97:2211
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:2245
+setInterval
+updateRefetchInterval_fn @ @tanstack_react-query.js?v=ecc0ff97:2243
+updateTimers_fn @ @tanstack_react-query.js?v=ecc0ff97:2250
+onQueryUpdate @ @tanstack_react-query.js?v=ecc0ff97:2206
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:998
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:997
+batch @ @tanstack_react-query.js?v=ecc0ff97:583
+dispatch_fn @ @tanstack_react-query.js?v=ecc0ff97:996
+onError @ @tanstack_react-query.js?v=ecc0ff97:861
+reject @ @tanstack_react-query.js?v=ecc0ff97:465
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:508
+Promise.catch
+run @ @tanstack_react-query.js?v=ecc0ff97:498
+start @ @tanstack_react-query.js?v=ecc0ff97:536
+fetch @ @tanstack_react-query.js?v=ecc0ff97:926
+executeFetch_fn @ @tanstack_react-query.js?v=ecc0ff97:2211
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:2245
+setInterval
+updateRefetchInterval_fn @ @tanstack_react-query.js?v=ecc0ff97:2243
+updateTimers_fn @ @tanstack_react-query.js?v=ecc0ff97:2250
+onQueryUpdate @ @tanstack_react-query.js?v=ecc0ff97:2206
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:998
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:997
+batch @ @tanstack_react-query.js?v=ecc0ff97:583
+dispatch_fn @ @tanstack_react-query.js?v=ecc0ff97:996
+onError @ @tanstack_react-query.js?v=ecc0ff97:861
+reject @ @tanstack_react-query.js?v=ecc0ff97:465
+(anonymous) @ @tanstack_react-query.js?v=ecc0ff97:508Understand this error

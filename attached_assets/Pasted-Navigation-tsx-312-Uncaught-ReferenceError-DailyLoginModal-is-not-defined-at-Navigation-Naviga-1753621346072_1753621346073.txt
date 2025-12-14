@@ -1,0 +1,40 @@
+Navigation.tsx:312 Uncaught ReferenceError: DailyLoginModal is not defined
+    at Navigation (Navigation.tsx:312:8)
+    at renderWithHooks (:8000/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-RPCDYKBN.js?v=1ed448c9:11548:26)
+    at mountIndeterminateComponent (:8000/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-RPCDYKBN.js?v=1ed448c9:14926:21)
+    at beginWork (:8000/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-RPCDYKBN.js?v=1ed448c9:15914:22)
+    at HTMLUnknownElement.callCallback2 (:8000/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-RPCDYKBN.js?v=1ed448c9:3674:22)
+    at Object.invokeGuardedCallbackDev (:8000/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-RPCDYKBN.js?v=1ed448c9:3699:24)
+    at invokeGuardedCallback (:8000/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-RPCDYKBN.js?v=1ed448c9:3733:39)
+    at beginWork$1 (:8000/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-RPCDYKBN.js?v=1ed448c9:19765:15)
+    at performUnitOfWork (:8000/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-RPCDYKBN.js?v=1ed448c9:19198:20)
+    at workLoopSync (:8000/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-RPCDYKBN.js?v=1ed448c9:19137:13)Understand this error
+ The above error occurred in the <Navigation> component:
+
+    at Navigation (https://1b8be7a8-89e7-4d80-8c9f-d9a5e6f1c107-00-hu0imqf99xmu.riker.replit.dev:8000/src/components/Navigation.tsx:41:20)
+    at div
+    at div
+    at Router (https://1b8be7a8-89e7-4d80-8c9f-d9a5e6f1c107-00-hu0imqf99xmu.riker.replit.dev:8000/src/App.tsx?t=1753621132957&v=QchlOrsdcwmcUvwL-RZFG:76:48)
+    at ErrorBoundary (https://1b8be7a8-89e7-4d80-8c9f-d9a5e6f1c107-00-hu0imqf99xmu.riker.replit.dev:8000/@fs/home/runner/workspace/node_modules/.vite/deps/react-error-boundary.js?v=1ed448c9:18:5)
+    at Provider (https://1b8be7a8-89e7-4d80-8c9f-d9a5e6f1c107-00-hu0imqf99xmu.riker.replit.dev:8000/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-OXZDJRWN.js?v=1ed448c9:38:15)
+    at TooltipProvider (https://1b8be7a8-89e7-4d80-8c9f-d9a5e6f1c107-00-hu0imqf99xmu.riker.replit.dev:8000/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-tooltip.js?v=1ed448c9:64:5)
+    at div
+    at EventsSearchProvider (https://1b8be7a8-89e7-4d80-8c9f-d9a5e6f1c107-00-hu0imqf99xmu.riker.replit.dev:8000/src/context/EventsSearchContext.tsx:20:40)
+    at ThemeProvider (https://1b8be7a8-89e7-4d80-8c9f-d9a5e6f1c107-00-hu0imqf99xmu.riker.replit.dev:8000/src/contexts/ThemeProvider.tsx:20:33)
+    at QueryClientProvider (https://1b8be7a8-89e7-4d80-8c9f-d9a5e6f1c107-00-hu0imqf99xmu.riker.replit.dev:8000/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=1ed448c9:2805:3)
+    at App (https://1b8be7a8-89e7-4d80-8c9f-d9a5e6f1c107-00-hu0imqf99xmu.riker.replit.dev:8000/src/App.tsx?t=1753621132957&v=QchlOrsdcwmcUvwL-RZFG:401:39)
+
+React will try to recreate this component tree from scratch using the error boundary you provided, ErrorBoundary.
+logCapturedError @ :8000/@fs/home/runne…js?v=1ed448c9:14032Understand this error
+App.tsx:218 App Error: ReferenceError: DailyLoginModal is not defined
+    at Navigation (Navigation.tsx:312:8)
+    at renderWithHooks (:8000/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-RPCDYKBN.js?v=1ed448c9:11548:26)
+    at mountIndeterminateComponent (:8000/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-RPCDYKBN.js?v=1ed448c9:14926:21)
+    at beginWork (:8000/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-RPCDYKBN.js?v=1ed448c9:15914:22)
+    at beginWork$1 (:8000/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-RPCDYKBN.js?v=1ed448c9:19753:22)
+    at performUnitOfWork (:8000/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-RPCDYKBN.js?v=1ed448c9:19198:20)
+    at workLoopSync (:8000/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-RPCDYKBN.js?v=1ed448c9:19137:13)
+    at renderRootSync (:8000/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-RPCDYKBN.js?v=1ed448c9:19116:15)
+    at recoverFromConcurrentError (:8000/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-RPCDYKBN.js?v=1ed448c9:18736:28)
+    at performSyncWorkOnRoot (:8000/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-RPCDYKBN.js?v=1ed448c9:18879:28)
+onError @ App.tsx:218Understand this error

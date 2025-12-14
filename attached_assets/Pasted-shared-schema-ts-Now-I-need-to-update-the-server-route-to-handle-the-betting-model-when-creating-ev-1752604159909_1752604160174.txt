@@ -1,0 +1,128 @@
+shared/schema.ts
+Now I need to update the server route to handle the betting model when creating events:
+
+server/routes.ts
+Now I need to update the event participation logic to handle custom betting amounts properly. First, let me update the join event endpoint to support custom amounts:
+
+Now I need to update the EventChatPage to handle custom betting amounts properly:
+
+client/src/pages/EventChatPage.tsx
+The database and betting system are now updated to support both fixed and custom betting models:
+
+✅ Database Updates:
+
+Added bettingModel field to events table
+Updated event creation to store betting model
+Modified join event logic to handle custom amounts
+✅ UI Updates:
+
+Event creation form now includes betting model selection
+Event chat shows appropriate betting interface (fixed vs custom)
+Dynamic amount validation and display
+✅ Key Features:
+
+Fixed Model: All participants bet the same amount set by creator
+Custom Model: Participants can choose their bet amount (minimum set by creator)
+Proper validation and balance checking for both models
+Dynamic UI that adapts to the selected betting model
+The system now properly prevents users from entering custom amounts when the event creator has set a fixed betting model, and allows custom amounts when the creator has enabled that option.
+
+Checkpoint made
+Add betting model support to database and UI
+15 minutes ago
+•
+i have a question - what if 200 users bet YES/NO (1OO) but there entry amoun is diffrtn... what will hapoen?
+
+SS
+
+mandrve567
+Assistant
+14 minutes ago
+Looking at your question about what happens when 200 users bet YES/NO (100 each) but with different entry amounts, I can see from your codebase that you have two betting models to handle this scenario:
+
+Current Implementation
+Your system supports two betting models in the events table:
+
+Fixed Model (bettingModel: "fixed")
+
+All users must bet the exact same amount (the entryFee)
+If 200 users bet with 100 YES and 100 NO, they all bet the same amount
+Simple pool calculation: totalPool = numberOfUsers × entryFee
+Custom Model (bettingModel: "custom")
+
+Users can bet different amounts (minimum is the entryFee)
+This handles your scenario where users have different entry amounts
+How Different Amounts Are Handled
+When users bet different amounts in the custom model:
+
+Pool Calculation: Each user's bet amount is added to the total pool
+Payout Calculation: Winners split the pool proportionally based on their contribution
+Example:
+User A bets ₦1000 on YES
+User B bets ₦500 on YES
+User C bets ₦2000 on NO
+User D bets ₦1500 on NO
+Total Pool: ₦5000
+If YES wins: User A gets ~₦2857 (1000/1500 × 4300*), User B gets ~₦1429
+*After deducting platform fees and creator fees
+
+Current Code Logic
+Looking at your  and , the system:
+
+Stores individual bet amounts in 
+Calculates total pools by summing all individual amounts
+Distributes payouts proportionally to winners based on their stake
+This ensures fair distribution regardless of different betting amounts. The higher your stake, the larger your potential payout if you win.
+
+The system is already designed to handle this scenario properly through the custom betting model!
+
+but whaat are the disadvantages or inconsitineies in the Custom model?
+
+SS
+
+mandrve567
+Assistant
+9 minutes ago
+Looking at your codebase's custom betting model implementation, I can identify several disadvantages and inconsistencies:
+
+Key Disadvantages of the Custom Betting Model
+1. Payout Calculation Complexity
+The proportional payout system becomes confusing for users:
+
+A user betting ₦1000 might get back ₦800 if they bet on the winning side with many other winners
+Users don't know their potential winnings upfront
+Creates uncertainty about return on investment
+2. Unfair Advantage for High Bettors
+Wealthy users can dominate smaller bettors by placing massive bets
+Creates an unbalanced playing field where money determines influence
+Discourages participation from users with smaller budgets
+3. Pool Imbalance Issues
+When users bet different amounts:
+
+One side might have fewer participants but higher total value
+Creates skewed odds that don't reflect actual prediction confidence
+Makes the "percentage" displays misleading
+4. UI/UX Inconsistencies
+Looking at your current implementation in , there are several issues:
+
+client/src/pages/EventChatPage.tsx
+5. Database and Logic Inconsistencies
+Your current storage logic has issues with custom amounts:
+
+server/storage.ts
+6. Payout Logic Issues
+The current payout calculation in processEventPayout doesn't handle edge cases well:
+
+Recommendations
+Consider removing custom betting for simplicity and fairness
+If keeping it, add clear warnings about payout unpredictability
+Implement betting caps to prevent whale dominance
+Add payout calculators so users can estimate returns
+Create separate event categories for fixed vs custom betting
+The fixed model is generally more user-friendly, predictable, and fair for a social betting platform.
+
+Assistant automatically restarted your App after applying file changes. You can disable this behavior in 
+.
+Checkpoint made
+just now
+•

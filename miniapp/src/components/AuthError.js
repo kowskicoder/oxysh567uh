@@ -1,0 +1,4 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+export default function AuthError({ error }) {
+    return (_jsx("div", { className: "flex items-center justify-center h-screen bg-dark-bg", children: _jsxs("div", { className: "text-center max-w-sm mx-auto p-6", children: [_jsx("div", { className: "text-4xl mb-4", children: "\u26A0\uFE0F" }), _jsx("h1", { className: "text-2xl font-bold text-red-400 mb-2", children: "Authentication Failed" }), _jsx("p", { className: "text-gray-400 mb-6", children: error }), _jsxs("div", { className: "bg-dark-card p-4 rounded-lg border border-dark-border text-left text-sm text-gray-300", children: [_jsxs("p", { className: "mb-2", children: [_jsx("strong", { children: "For development:" }), " This app must be opened from within Telegram as a mini-app."] }), _jsxs("p", { children: [_jsx("strong", { children: "Test link:" }), " Ask your admin for the mini-app deep link to test properly."] })] })] }) }));
+}

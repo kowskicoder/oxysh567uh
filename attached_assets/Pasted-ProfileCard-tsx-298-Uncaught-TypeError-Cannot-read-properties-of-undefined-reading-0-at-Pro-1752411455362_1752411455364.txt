@@ -1,0 +1,28 @@
+ProfileCard.tsx:298 Uncaught TypeError: Cannot read properties of undefined (reading '0')
+    at ProfileCard (ProfileCard.tsx:298:57)
+    at renderWithHooks (chunk-RPCDYKBN.js?v=7c1b6b77:11548:26)
+    at updateFunctionComponent (chunk-RPCDYKBN.js?v=7c1b6b77:14582:28)
+    at beginWork (chunk-RPCDYKBN.js?v=7c1b6b77:15924:22)
+    at HTMLUnknownElement.callCallback2 (chunk-RPCDYKBN.js?v=7c1b6b77:3674:22)
+    at Object.invokeGuardedCallbackDev (chunk-RPCDYKBN.js?v=7c1b6b77:3699:24)
+    at invokeGuardedCallback (chunk-RPCDYKBN.js?v=7c1b6b77:3733:39)
+    at beginWork$1 (chunk-RPCDYKBN.js?v=7c1b6b77:19765:15)
+    at performUnitOfWork (chunk-RPCDYKBN.js?v=7c1b6b77:19198:20)
+    at workLoopSync (chunk-RPCDYKBN.js?v=7c1b6b77:19137:13)Understand this error
+chunk-RPCDYKBN.js?v=7c1b6b77:14032 The above error occurred in the <ProfileCard> component:
+
+    at ProfileCard (https://61f6cc2a-b31a-4a23-b434-705cec4179bb-00-32urn4ych8kui.spock.replit.dev/src/components/ProfileCard.tsx:37:24)
+    at div
+    at EventChatPage (https://61f6cc2a-b31a-4a23-b434-705cec4179bb-00-32urn4ych8kui.spock.replit.dev/src/pages/EventChatPage.tsx:45:18)
+    at Route (https://61f6cc2a-b31a-4a23-b434-705cec4179bb-00-32urn4ych8kui.spock.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=7c1b6b77:338:16)
+    at Switch (https://61f6cc2a-b31a-4a23-b434-705cec4179bb-00-32urn4ych8kui.spock.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=7c1b6b77:394:17)
+    at div
+    at Router (https://61f6cc2a-b31a-4a23-b434-705cec4179bb-00-32urn4ych8kui.spock.replit.dev/src/App.tsx?v=QqhN8H4zOD0IvpepWDsRy:43:42)
+    at Provider (https://61f6cc2a-b31a-4a23-b434-705cec4179bb-00-32urn4ych8kui.spock.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-OXZDJRWN.js?v=7c1b6b77:38:15)
+    at TooltipProvider (https://61f6cc2a-b31a-4a23-b434-705cec4179bb-00-32urn4ych8kui.spock.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-tooltip.js?v=7c1b6b77:62:5)
+    at ThemeProvider (https://61f6cc2a-b31a-4a23-b434-705cec4179bb-00-32urn4ych8kui.spock.replit.dev/src/contexts/ThemeProvider.tsx:20:33)
+    at QueryClientProvider (https://61f6cc2a-b31a-4a23-b434-705cec4179bb-00-32urn4ych8kui.spock.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=7c1b6b77:2805:3)
+    at App
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.

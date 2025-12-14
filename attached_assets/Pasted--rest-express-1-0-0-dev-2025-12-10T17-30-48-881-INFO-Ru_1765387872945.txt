@@ -1,0 +1,411 @@
+
+> rest-express@1.0.0 dev
+[2025-12-10T17:30:48.881] [INFO] - [Running gramJS version 2.26.21]
+🔧 Initializing Telegram sync service...
+🔄 Initializing Telegram client...
+Event scheduler started
+[2025-12-10T17:30:48.933] [INFO] - [Connecting to 149.154.167.91:80/TCPFull...]
+🤖 Telegram bot service initialized
+🔧 Testing Telegram bot configuration...
+[2025-12-10T17:30:49.108] [INFO] - [Connection to 149.154.167.91:80/TCPFull complete!]
+[2025-12-10T17:30:49.109] [INFO] - [Using LAYER 198 for initial connect]
+❌ Failed to initialize Telegram client: RPCError: 406: AUTH_KEY_DUPLICATED (caused by InvokeWithLayer)
+    at RPCMessageToError (/home/runner/workspace/node_modules/telegram/errors/index.js:28:12)
+    at MTProtoSender._handleRPCResult (/home/runner/workspace/node_modules/telegram/network/MTProtoSender.js:561:58)
+    at MTProtoSender._processMessage (/home/runner/workspace/node_modules/telegram/network/MTProtoSender.js:492:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MTProtoSender._recvLoop (/home/runner/workspace/node_modules/telegram/network/MTProtoSender.js:439:17) {
+  code: 406,
+  errorMessage: 'AUTH_KEY_DUPLICATED'
+}
+⚠️ Telegram session is being used by another instance. Telegram sync disabled.
+💡 To fix this, generate a new session string or stop other instances using the same session.
+🤖 Telegram bot connected: myBantahbot
+❌ Channel connection failed: AxiosError: Request failed with status code 400
+    at settle (file:///home/runner/workspace/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///home/runner/workspace/node_modules/axios/lib/adapters/http.js:599:11)
+    at IncomingMessage.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (file:///home/runner/workspace/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async TelegramBotService.testConnection (/home/runner/workspace/server/telegramBot.ts:113:33)
+    at async <anonymous> (/home/runner/workspace/server/index.ts:66:28) {
+  code: 'ERR_BAD_REQUEST',
+  config: {
+    transitional: {
+      silentJSONParsing: true,
+      forcedJSONParsing: true,
+      clarifyTimeoutError: false
+    },
+    adapter: [ 'xhr', 'http', 'fetch' ],
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    env: { FormData: [Function [FormData]], Blob: [class Blob] },
+    validateStatus: [Function: validateStatus],
+    headers: Object [AxiosHeaders] {
+      Accept: 'application/json, text/plain, */*',
+      'Content-Type': undefined,
+      'User-Agent': 'axios/1.10.0',
+      'Accept-Encoding': 'gzip, compress, deflate, br'
+    },
+    params: { chat_id: '-1002613134730' },
+    method: 'get',
+    url: 'https://api.telegram.org/bot8533251257:AAHDJGnL16CsDlO5nCn8TilzkIuEteU2kbs/getChat',
+    allowAbsoluteUrls: true,
+    data: undefined
+  },
+  request: <ref *1> ClientRequest {
+    _events: [Object: null prototype] {
+      abort: [Function (anonymous)],
+      aborted: [Function (anonymous)],
+      connect: [Function (anonymous)],
+      error: [Function (anonymous)],
+      socket: [Function (anonymous)],
+      timeout: [Function (anonymous)],
+      finish: [Function: requestOnFinish]
+    },
+    _eventsCount: 7,
+    _maxListeners: undefined,
+    outputData: [],
+    outputSize: 0,
+    writable: true,
+    destroyed: true,
+    _last: true,
+    chunkedEncoding: false,
+    shouldKeepAlive: true,
+    maxRequestsOnConnectionReached: false,
+    _defaultKeepAlive: true,
+    useChunkedEncodingByDefault: false,
+    sendDate: false,
+    _removedConnection: false,
+    _removedContLen: false,
+    _removedTE: false,
+    strictContentLength: false,
+    _contentLength: 0,
+    _hasBody: true,
+    _trailer: '',
+    finished: true,
+    _headerSent: true,
+    _closed: true,
+    socket: TLSSocket {
+      _tlsOptions: [Object],
+      _secureEstablished: true,
+      _securePending: false,
+      _newSessionPending: false,
+      _controlReleased: true,
+      secureConnecting: false,
+      _SNICallback: null,
+      servername: 'api.telegram.org',
+      alpnProtocol: false,
+      authorized: true,
+      authorizationError: null,
+      encrypted: true,
+      _events: [Object: null prototype],
+      _eventsCount: 9,
+      connecting: false,
+      _hadError: false,
+      _parent: null,
+      _host: 'api.telegram.org',
+      _closeAfterHandlingError: false,
+      _readableState: [ReadableState],
+      _writableState: [WritableState],
+      allowHalfOpen: false,
+      _maxListeners: undefined,
+      _sockname: null,
+      _pendingData: null,
+      _pendingEncoding: '',
+      server: undefined,
+      _server: null,
+      ssl: [TLSWrap],
+      _requestCert: true,
+      _rejectUnauthorized: true,
+      timeout: 5000,
+      parser: null,
+      _httpMessage: null,
+      [Symbol(alpncallback)]: null,
+      [Symbol(res)]: [TLSWrap],
+      [Symbol(verified)]: true,
+      [Symbol(pendingSession)]: null,
+      [Symbol(async_id_symbol)]: -1,
+      [Symbol(kHandle)]: [TLSWrap],
+      [Symbol(lastWriteQueueSize)]: 0,
+      [Symbol(timeout)]: Timeout {
+        _idleTimeout: 5000,
+        _idlePrev: [TimersList],
+        _idleNext: [TimersList],
+        _idleStart: 9594,
+        _onTimeout: [Function: bound ],
+        _timerArgs: undefined,
+        _repeat: null,
+        _destroyed: false,
+        [Symbol(refed)]: false,
+        [Symbol(kHasPrimitive)]: false,
+        [Symbol(asyncId)]: 9013,
+        [Symbol(triggerId)]: 9011
+      },
+      [Symbol(kBuffer)]: null,
+      [Symbol(kBufferCb)]: null,
+      [Symbol(kBufferGen)]: null,
+      [Symbol(shapeMode)]: true,
+      [Symbol(kCapture)]: false,
+      [Symbol(kSetNoDelay)]: false,
+      [Symbol(kSetKeepAlive)]: true,
+      [Symbol(kSetKeepAliveInitialDelay)]: 1,
+      [Symbol(kBytesRead)]: 0,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(connect-options)]: [Object]
+    },
+    _header: 'GET /bot8533251257:AAHDJGnL16CsDlO5nCn8TilzkIuEteU2kbs/getChat?chat_id=-1002613134730 HTTP/1.1\r\n' +
+      'Accept: application/json, text/plain, */*\r\n' +
+      'User-Agent: axios/1.10.0\r\n' +
+      'Accept-Encoding: gzip, compress, deflate, br\r\n' +
+      'Host: api.telegram.org\r\n' +
+      'Connection: keep-alive\r\n' +
+      '\r\n',
+    _keepAliveTimeout: 0,
+    _onPendingData: [Function: nop],
+    agent: Agent {
+      _events: [Object: null prototype],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      defaultPort: 443,
+      protocol: 'https:',
+      options: [Object: null prototype],
+      requests: [Object: null prototype] {},
+      sockets: [Object: null prototype] {},
+      freeSockets: [Object: null prototype],
+      keepAliveMsecs: 1000,
+      keepAlive: true,
+      maxSockets: Infinity,
+      maxFreeSockets: 256,
+      scheduling: 'lifo',
+      maxTotalSockets: Infinity,
+      totalSocketCount: 1,
+      maxCachedSessions: 100,
+      _sessionCache: [Object],
+      [Symbol(shapeMode)]: false,
+      [Symbol(kCapture)]: false
+    },
+    socketPath: undefined,
+    method: 'GET',
+    maxHeaderSize: undefined,
+    insecureHTTPParser: undefined,
+    joinDuplicateHeaders: undefined,
+    path: '/bot8533251257:AAHDJGnL16CsDlO5nCn8TilzkIuEteU2kbs/getChat?chat_id=-1002613134730',
+    _ended: true,
+    res: IncomingMessage {
+      _events: [Object],
+      _readableState: [ReadableState],
+      _maxListeners: undefined,
+      socket: null,
+      httpVersionMajor: 1,
+      httpVersionMinor: 1,
+      httpVersion: '1.1',
+      complete: true,
+      rawHeaders: [Array],
+      rawTrailers: [],
+      joinDuplicateHeaders: undefined,
+      aborted: false,
+      upgrade: false,
+      url: '',
+      method: null,
+      statusCode: 400,
+      statusMessage: 'Bad Request',
+      client: [TLSSocket],
+      _consuming: false,
+      _dumped: false,
+      req: [Circular *1],
+      _eventsCount: 4,
+      responseUrl: 'https://api.telegram.org/bot8533251257:AAHDJGnL16CsDlO5nCn8TilzkIuEteU2kbs/getChat?chat_id=-1002613134730',
+      redirects: [],
+      [Symbol(shapeMode)]: true,
+      [Symbol(kCapture)]: false,
+      [Symbol(kHeaders)]: [Object],
+      [Symbol(kHeadersCount)]: 16,
+      [Symbol(kTrailers)]: null,
+      [Symbol(kTrailersCount)]: 0
+    },
+    aborted: false,
+    timeoutCb: null,
+    upgradeOrConnect: false,
+    parser: null,
+    maxHeadersCount: null,
+    reusedSocket: true,
+    host: 'api.telegram.org',
+    protocol: 'https:',
+    _redirectable: Writable {
+      _events: [Object],
+      _writableState: [WritableState],
+      _maxListeners: undefined,
+      _options: [Object],
+      _ended: true,
+      _ending: true,
+      _redirectCount: 0,
+      _redirects: [],
+      _requestBodyLength: 0,
+      _requestBodyBuffers: [],
+      _eventsCount: 3,
+      _onNativeResponse: [Function (anonymous)],
+      _currentRequest: [Circular *1],
+      _currentUrl: 'https://api.telegram.org/bot8533251257:AAHDJGnL16CsDlO5nCn8TilzkIuEteU2kbs/getChat?chat_id=-1002613134730',
+      [Symbol(shapeMode)]: true,
+      [Symbol(kCapture)]: false
+    },
+    [Symbol(shapeMode)]: false,
+    [Symbol(kCapture)]: false,
+    [Symbol(kBytesWritten)]: 0,
+    [Symbol(kNeedDrain)]: false,
+    [Symbol(corked)]: 0,
+    [Symbol(kOutHeaders)]: [Object: null prototype] {
+      accept: [Array],
+      'user-agent': [Array],
+      'accept-encoding': [Array],
+      host: [Array]
+    },
+    [Symbol(errored)]: null,
+    [Symbol(kHighWaterMark)]: 16384,
+    [Symbol(kRejectNonStandardBodyWrites)]: false,
+    [Symbol(kUniqueHeaders)]: null
+  },
+  response: {
+    status: 400,
+    statusText: 'Bad Request',
+    headers: Object [AxiosHeaders] {
+      server: 'nginx/1.18.0',
+      date: 'Wed, 10 Dec 2025 17:30:52 GMT',
+      'content-type': 'application/json',
+      'content-length': '73',
+      connection: 'keep-alive',
+      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+      'access-control-allow-origin': '*',
+      'access-control-expose-headers': 'Content-Length,Content-Type,Date,Server,Connection'
+    },
+    config: {
+      transitional: [Object],
+      adapter: [Array],
+      transformRequest: [Array],
+      transformResponse: [Array],
+      timeout: 0,
+      xsrfCookieName: 'XSRF-TOKEN',
+      xsrfHeaderName: 'X-XSRF-TOKEN',
+      maxContentLength: -1,
+      maxBodyLength: -1,
+      env: [Object],
+      validateStatus: [Function: validateStatus],
+      headers: [Object [AxiosHeaders]],
+      params: [Object],
+      method: 'get',
+      url: 'https://api.telegram.org/bot8533251257:AAHDJGnL16CsDlO5nCn8TilzkIuEteU2kbs/getChat',
+      allowAbsoluteUrls: true,
+      data: undefined
+    },
+    request: <ref *1> ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: true,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: true,
+      maxRequestsOnConnectionReached: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      strictContentLength: false,
+      _contentLength: 0,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      _closed: true,
+      socket: [TLSSocket],
+      _header: 'GET /bot8533251257:AAHDJGnL16CsDlO5nCn8TilzkIuEteU2kbs/getChat?chat_id=-1002613134730 HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'User-Agent: axios/1.10.0\r\n' +
+        'Accept-Encoding: gzip, compress, deflate, br\r\n' +
+        'Host: api.telegram.org\r\n' +
+        'Connection: keep-alive\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: nop],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'GET',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      joinDuplicateHeaders: undefined,
+      path: '/bot8533251257:AAHDJGnL16CsDlO5nCn8TilzkIuEteU2kbs/getChat?chat_id=-1002613134730',
+      _ended: true,
+      res: [IncomingMessage],
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: true,
+      host: 'api.telegram.org',
+      protocol: 'https:',
+      _redirectable: [Writable],
+      [Symbol(shapeMode)]: false,
+      [Symbol(kCapture)]: false,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype],
+      [Symbol(errored)]: null,
+      [Symbol(kHighWaterMark)]: 16384,
+      [Symbol(kRejectNonStandardBodyWrites)]: false,
+      [Symbol(kUniqueHeaders)]: null
+    },
+    data: {
+      ok: false,
+      error_code: 400,
+      description: 'Bad Request: chat not found'
+    }
+  },
+  status: 400
+}
+❌ Telegram bot configuration error:
+   Channel connection failed: Bad Request: chat not found
+
+📋 TELEGRAM SETUP INSTRUCTIONS:
+   1. Create a bot with @BotFather on Telegram
+   2. Add the bot to your channel/group as admin
+   3. Get the correct channel ID:
+      - For channels: starts with -100
+      - For groups: positive number
+      - Or use @username format
+   4. Update TELEGRAM_CHANNEL_ID secret
+🌱 Starting admin seeding process...
+✅ Admin user already exists: admin
+✅ Admin privileges and password updated for existing user
+✅ Backup admin user already exists and password updated: superadmin
+
+🎉 Admin seeding completed successfully!
+
+📋 Admin Login Credentials:
+Username: admin
+Password: admin123 (or use ADMIN_PASSWORD env var)
+
+Backup Admin:
+Username: superadmin
+Password: admin123 (or use ADMIN_PASSWORD env var)
+
+🌐 Admin Login URL: /admin/login
+👑 Admin users seeded successfully
+🔔 Starting notification algorithm service...
+✅ Notification algorithm service started
+Re-optimizing dependencies because lockfile has changed
+5:30:53 PM [express] serving on port 5000

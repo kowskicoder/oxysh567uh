@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paystack Direct Test</title>
+  <script src="https://js.paystack.co/v1/inline.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    button {
+      background-color: #0a721b;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 20px;
+    }
+    .container {
+      border: 1px solid #ddd;
+      padding: 20px;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+    h1 {
+      font-size: 24px;
+    }
+    #status {
+      margin-top: 20px;
+      padding: 10px;
+      border-radius: 4px;
+    }
+    .success {
+      background-color: #d4edda;
+      color: #155724;
+    }
+    .error {
+      background-color: #f8d7da;
+      color: #721c24;
+    }
+  </style>
+</head>
+<body>
+  <h1>Paystack Direct Test</h1>
+  
+  <div class="container">
+    <p>This is a direct test of the Paystack integration.</p>
+    <p>Status: <span id="status">Checking...</span></p>
+    
+    <button id="testButton" disabled>Test Paystack</button>
+  </div>
+  
+  <script>
+    // Check if Paystack is loaded
+    function checkPaystack() {
+      const statusElement = document.getElementById('status');
+      const testButton = document.getElementById('testButton');
+      
+      if (typeof PaystackPop !== 'undefined') {
+        statusElement.textContent = 'Paystack is loaded and ready';
+        statusElement.className = 'success';
+        testButton.disabled = false;
+      } else {
+        statusElement.textContent = 'Paystack is not loaded';
+        statusElement.className = 'error';
+        setTimeout(checkPaystack, 500);
+      }
+    }
+    
+    // Start checking when the page loads
+    window.addEventListener('DOMContentLoaded', checkPaystack);
+    
+    // Add click handler for the test button
+    document.getElementById('testButton').addEventListener('click', function() {
+      try {
+        const handler = PaystackPop.setup({
+          key: 'pk_test_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx', // Replace with your public key
+          email: 'customer@example.com',
+          amount: 10000, // 100 Naira in kobo
+          currency: 'NGN',
+          ref: 'TEST_' + Date.now(),
+          callback: function(response) {
+            alert('Payment successful! Reference: ' + response.reference);
+          },
+          onClose: function() {
+            alert('Payment window closed');
+          }
+        });
+        handler.openIframe();
+      } catch (error) {
+        alert('Error: ' + error.message);
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paystack Inline Test</title>
+  <script src="https://js.paystack.co/v1/inline.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    button {
+      background-color: #0a721b;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 20px;
+    }
+    .container {
+      border: 1px solid #ddd;
+      padding: 20px;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+    h1 {
+      font-size: 24px;
+    }
+    #status {
+      margin-top: 20px;
+      padding: 10px;
+      border-radius: 4px;
+    }
+    .success {
+      background-color: #d4edda;
+      color: #155724;
+    }
+    .error {
+      background-color: #f8d7da;
+      color: #721c24;
+    }
+    .amount-buttons {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-top: 20px;
+    }
+    .amount-button {
+      background-color: #f0f0f0;
+      color: #333;
+      border: none;
+      padding: 10px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    .amount-button:hover {
+      background-color: #e0e0e0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Paystack Inline Test</h1>
+  
+  <div class="container">
+    <p>This is a direct test of the Paystack integration.</p>
+    <p>Status: <span id="status">Checking...</span></p>
+    
+    <div class="amount-buttons">
+      <button class="amount-button" data-amount="1000">₦1,000</button>
+      <button class="amount-button" data-amount="2000">₦2,000</button>
+      <button class="amount-button" data-amount="5000">₦5,000</button>
+      <button class="amount-button" data-amount="10000">₦10,000</button>
+      <button class="amount-button" data-amount="20000">₦20,000</button>
+      <button class="amount-button" data-amount="50000">₦50,000</button>
+    </div>
+    
+    <button id="payButton" disabled>Pay with Paystack</button>
+  </div>
+  
+  <script>
+    // The key to use
+    const paystackKey = 'pk_test_77336172671b6e12b2b92f59a0a2035f7f20c54c';
+    let selectedAmount = 1000;
+    
+    // Check if Paystack is loaded
+    function checkPaystack() {
+      const statusElement = document.getElementById('status');
+      const payButton = document.getElementById('payButton');
+      
+      if (typeof PaystackPop !== 'undefined') {
+        statusElement.textContent = 'Paystack is loaded and ready';
+        statusElement.className = 'success';
+        payButton.disabled = false;
+      } else {
+        statusElement.textContent = 'Paystack is not loaded';
+        statusElement.className = 'error';
+        setTimeout(checkPaystack, 500);
+      }
+    }
+    
+    // Start checking when the page loads
+    window.addEventListener('DOMContentLoaded', function() {
+      checkPaystack();
+      
+      // Add click handlers for amount buttons
+      document.querySelectorAll('.amount-button').forEach(button => {
+        button.addEventListener('click', function() {
+          selectedAmount = parseInt(this.dataset.amount);
+          document.getElementById('payButton').textContent = `Pay ₦${selectedAmount.toLocaleString()}`;
+        });
+      });
+      
+      // Set initial button text
+      document.getElementById('payButton').textContent = `Pay ₦${selectedAmount.toLocaleString()}`;
+    });
+    
+    // Add click handler for the pay button
+    document.getElementById('payButton').addEventListener('click', function() {
+      try {
+        const handler = PaystackPop.setup({
+          key: paystackKey,
+          email: 'customer@example.com',
+          amount: selectedAmount * 100, // Convert to kobo
+          currency: 'NGN',
+          ref: 'TEST_' + Date.now(),
+          callback: function(response) {
+            alert('Payment successful! Reference: ' + response.reference);
+          },
+          onClose: function() {
+            alert('Payment window closed');
+          }
+        });
+        handler.openIframe();
+      } catch (error) {
+        alert('Error: ' + error.message);
+        console.error('Paystack error:', error);
+      }
+    });
+  </script>
+</body>
+</html>

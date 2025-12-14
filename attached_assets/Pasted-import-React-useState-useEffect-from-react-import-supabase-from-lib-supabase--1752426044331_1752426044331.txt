@@ -1,0 +1,163 @@
+import React, { useState, useEffect } from 'react';
+import { supabase } from '../../lib/supabase';
+import LoadingSpinner from '../../components/LoadingSpinner';
+
+interface PayoutDetailsProps {
+  eventId: string;
+}
+
+const EventPayoutDetails: React.FC<PayoutDetailsProps> = ({ eventId }) => {
+  const [loading, setLoading] = useState(true);
+  const [payoutDetails, setPayoutDetails] = useState<any>(null);
+  const [transactions, setTransactions] = useState<any[]>([]);
+  const [participants, setParticipants] = useState<any[]>([]);
+
+  useEffect(() => {
+    const fetchPayoutDetails = async () => {
+      setLoading(true);
+      try {
+        // Get event pool details
+        const { data: poolData, error: poolError } = await supabase
+          .from('event_pools')
+          .select('*')
+          .eq('event_id', eventId)
+          .single();
+
+        if (poolError) throw poolError;
+
+        // Get admin action details
+        const { data: adminActionData, error: adminActionError } = await supabase
+          .from('admin_actions')
+          .select('*')
+          .eq('target_id', eventId)
+          .eq('action_type', 'process_payouts')
+          .order('created_at', { ascending: false })
+          .limit(1);
+
+        if (adminActionError) throw adminActionError;
+
+        // Get transactions related to this event
+        const { data: transactionData, error: transactionError } = await supabase
+          .from('transactions')
+          .select('*, wallets(user_id)')
+          .contains('metadata', { event_id: eventId })
+          .order('created_at', { ascending: false });
+
+        if (transactionError) throw transactionError;
+
+        // Get participants
+        const { data: participantData, error: participantError } = await supabase
+          .from('event_participants')
+          .select('*, profiles(username, avatar_url)')
+          .eq('event_id', eventId);
+
+        if (participantError) throw participantError;
+
+        setPayoutDetails({
+          pool: poolData,
+          adminAction: adminActionData?.[0]?.details || null
+        });
+        setTransactions(transactionData || []);
+        setParticipants(participantData || []);
+      } catch (error) {
+        console.error('Error fetching payout details:', error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    if (eventId) {
+      fetchPayoutDetails();
+    }
+  }, [eventId]);
+
+  if (loading) {
+    return <LoadingSpinner size="lg" />;
+  }
+
+  if (!payoutDetails) {
+    return <div className="text-sm text-gray-500">No payout details available</div>;
+  }
+
+  const { pool, adminAction } = payoutDetails;
+
+  // Calculate statistics
+  const totalParticipants = participants.length;
+  const winnerCount = adminAction?.winner_count || 0;
+  const totalPool = pool?.total_amount || 0;
+  const platformFee = pool?.platform_fee || 0;
+  const creatorFee = pool?.creator_fee || 0;
+  const payoutPerWinner = adminAction?.payout_per_winner || 0;
+
+  return (
+    <div className="bg-gray-800 rounded-lg p-4 mt-4">
+      <h3 className="text-lg font-semibold mb-3">Payout Details</h3>
+
+      <div className="grid grid-cols-2 gap-3 mb-4">
+        <div className="bg-gray-700 p-3 rounded">
+          <div className="text-sm text-gray-400">Total Pool</div>
+          <div className="text-lg font-semibold">{totalPool.toFixed(2)} coins</div>
+        </div>
+        <div className="bg-gray-700 p-3 rounded">
+          <div className="text-sm text-gray-400">Platform Fee</div>
+          <div className="text-lg font-semibold">{platformFee.toFixed(2)} coins</div>
+          <div className="text-xs text-gray-500">({((platformFee / totalPool) * 100).toFixed(1)}%)</div>
+        </div>
+        <div className="bg-gray-700 p-3 rounded">
+          <div className="text-sm text-gray-400">Creator Fee</div>
+          <div className="text-lg font-semibold">{creatorFee.toFixed(2)} coins</div>
+          <div className="text-xs text-gray-500">({((creatorFee / totalPool) * 100).toFixed(1)}%)</div>
+        </div>
+        <div className="bg-gray-700 p-3 rounded">
+          <div className="text-sm text-gray-400">Payout Per Winner</div>
+          <div className="text-lg font-semibold">{payoutPerWinner.toFixed(2)} coins</div>
+        </div>
+      </div>
+
+      <div className="mb-4">
+        <h4 className="text-md font-semibold mb-2">Participation</h4>
+        <div className="grid grid-cols-2 gap-3">
+          <div className="bg-gray-700 p-3 rounded">
+            <div className="text-sm text-gray-400">Total Participants</div>
+            <div className="text-lg font-semibold">{totalParticipants}</div>
+          </div>
+          <div className="bg-gray-700 p-3 rounded">
+            <div className="text-sm text-gray-400">Winners</div>
+            <div className="text-lg font-semibold">{winnerCount}</div>
+            <div className="text-xs text-gray-500">({((winnerCount / totalParticipants) * 100).toFixed(1)}% win rate)</div>
+          </div>
+        </div>
+      </div>
+
+      {transactions.length > 0 && (
+        <div>
+          <h4 className="text-md font-semibold mb-2">Recent Transactions</h4>
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm">
+              <thead className="text-xs text-gray-400">
+                <tr>
+                  <th className="text-left p-2">Type</th>
+                  <th className="text-left p-2">Amount</th>
+                  <th className="text-left p-2">Status</th>
+                  <th className="text-left p-2">Date</th>
+                </tr>
+              </thead>
+              <tbody>
+                {transactions.slice(0, 5).map((tx) => (
+                  <tr key={tx.id} className="border-t border-gray-700">
+                    <td className="p-2 capitalize">{tx.type.replace('_', ' ')}</td>
+                    <td className="p-2">{tx.amount.toFixed(2)} coins</td>
+                    <td className="p-2 capitalize">{tx.status}</td>
+                    <td className="p-2">{new Date(tx.created_at).toLocaleDateString()}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+};
+
+export default EventPayoutDetails;

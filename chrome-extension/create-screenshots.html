@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BetChat Extension Screenshots</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        
+        .screenshot-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        
+        .screenshot-item {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 400px;
+        }
+        
+        .screenshot-item h3 {
+            margin: 0 0 15px 0;
+            color: #333;
+        }
+        
+        .popup-demo {
+            width: 380px;
+            height: 600px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+            position: relative;
+            margin: 0 auto;
+        }
+        
+        .popup-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px 8px 0 0;
+        }
+        
+        .popup-header img {
+            width: 32px;
+            height: 32px;
+            margin-bottom: 8px;
+        }
+        
+        .popup-header h1 {
+            font-size: 18px;
+            margin: 0;
+        }
+        
+        .popup-content {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .balance-section {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .balance-card {
+            flex: 1;
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            padding: 12px;
+            text-align: center;
+        }
+        
+        .balance-label {
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 4px;
+        }
+        
+        .balance-amount {
+            font-size: 16px;
+            font-weight: 600;
+            color: #333;
+        }
+        
+        .quick-actions {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        
+        .btn {
+            padding: 12px 16px;
+            border: none;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+        
+        .btn-primary {
+            background: #48bb78;
+            color: white;
+        }
+        
+        .btn-outline {
+            background: white;
+            color: #667eea;
+            border: 1px solid #667eea;
+        }
+        
+        .notifications-section {
+            flex: 1;
+        }
+        
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+        
+        .section-header h3 {
+            font-size: 14px;
+            margin: 0;
+        }
+        
+        .notifications-list {
+            border: 1px solid #e9ecef;
+            border-radius: 6px;
+            background: #f8f9fa;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+        
+        .notification-item {
+            padding: 12px;
+            border-bottom: 1px solid #e9ecef;
+        }
+        
+        .notification-item:last-child {
+            border-bottom: none;
+        }
+        
+        .notification-title {
+            font-weight: 500;
+            font-size: 13px;
+            color: #333;
+            margin-bottom: 4px;
+        }
+        
+        .notification-message {
+            font-size: 12px;
+            color: #666;
+            line-height: 1.4;
+        }
+        
+        .notification-time {
+            font-size: 11px;
+            color: #999;
+            margin-top: 4px;
+        }
+        
+        .content-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .overlay-content {
+            background: white;
+            border-radius: 12px;
+            width: 90%;
+            max-width: 500px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        }
+        
+        .overlay-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 12px 12px 0 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .overlay-body {
+            padding: 20px;
+        }
+        
+        .page-info {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        
+        .page-info h4 {
+            margin: 0 0 10px 0;
+            font-size: 14px;
+            color: #333;
+        }
+        
+        .page-title {
+            font-size: 13px;
+            font-weight: 500;
+            color: #333;
+            margin-bottom: 5px;
+        }
+        
+        .page-url {
+            font-size: 12px;
+            color: #666;
+            word-break: break-all;
+        }
+        
+        .event-form input {
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 14px;
+            margin-bottom: 12px;
+        }
+        
+        .event-options {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .event-options label {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 13px;
+        }
+        
+        .event-actions {
+            display: flex;
+            gap: 10px;
+            justify-content: flex-end;
+        }
+        
+        .floating-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 16px;
+            border-radius: 25px;
+            box-shadow: 0 4px 20px rgba(102, 126, 234, 0.3);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+        }
+        
+        .website-demo {
+            width: 100%;
+            height: 400px;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .website-header {
+            background: #f8f9fa;
+            padding: 10px 20px;
+            border-bottom: 1px solid #ddd;
+            font-size: 14px;
+            color: #666;
+        }
+        
+        .website-content {
+            padding: 20px;
+        }
+        
+        .website-content h1 {
+            font-size: 24px;
+            margin: 0 0 10px 0;
+            color: #333;
+        }
+        
+        .website-content p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        
+        .chrome-extension-ui {
+            background: #f0f0f0;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+            font-size: 12px;
+            color: #666;
+        }
+        
+        .chrome-toolbar {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .chrome-icon {
+            width: 24px;
+            height: 24px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; margin-bottom: 30px; color: #333;">BetChat Chrome Extension Screenshots</h1>
+    
+    <div class="screenshot-container">
+        <!-- Screenshot 1: Extension Popup -->
+        <div class="screenshot-item">
+            <h3>Extension Popup Interface</h3>
+            <div class="popup-demo">
+                <div class="popup-header">
+                    <div style="width: 32px; height: 32px; background: white; border-radius: 6px; margin: 0 auto 8px; display: flex; align-items: center; justify-content: center; color: #667eea; font-size: 16px;">🎯</div>
+                    <h1>BetChat</h1>
+                </div>
+                <div class="popup-content">
+                    <div class="balance-section">
+                        <div class="balance-card">
+                            <div class="balance-label">Balance</div>
+                            <div class="balance-amount">₦2,450</div>
+                        </div>
+                        <div class="balance-card">
+                            <div class="balance-label">Coins</div>
+                            <div class="balance-amount">125</div>
+                        </div>
+                    </div>
+                    
+                    <div class="quick-actions">
+                        <button class="btn btn-primary">🎯 Create Event</button>
+                        <button class="btn btn-outline">📋 Active Events</button>
+                        <button class="btn btn-outline">⚔️ Challenges</button>
+                    </div>
+                    
+                    <div class="notifications-section">
+                        <div class="section-header">
+                            <h3>Recent Activity</h3>
+                            <button style="background: none; border: none; font-size: 16px; cursor: pointer;">🔄</button>
+                        </div>
+                        <div class="notifications-list">
+                            <div class="notification-item">
+                                <div class="notification-title">New Challenge Created</div>
+                                <div class="notification-message">@john_doe challenged you to predict Bitcoin price</div>
+                                <div class="notification-time">2m ago</div>
+                            </div>
+                            <div class="notification-item">
+                                <div class="notification-title">Event Resolved</div>
+                                <div class="notification-message">You won ₦500 in "Election Prediction"</div>
+                                <div class="notification-time">1h ago</div>
+                            </div>
+                            <div class="notification-item">
+                                <div class="notification-title">Friend Request</div>
+                                <div class="notification-message">@sarah_k wants to be your friend</div>
+                                <div class="notification-time">3h ago</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Screenshot 2: Website Integration -->
+        <div class="screenshot-item">
+            <h3>Website Integration</h3>
+            <div class="website-demo">
+                <div class="chrome-extension-ui">
+                    <div class="chrome-toolbar">
+                        <div class="chrome-icon">🎯</div>
+                        <span>BetChat Extension Active</span>
+                    </div>
+                </div>
+                <div class="website-header">
+                    📰 TechCrunch.com - Breaking Technology News
+                </div>
+                <div class="website-content">
+                    <h1>OpenAI Announces Major AI Breakthrough</h1>
+                    <p>San Francisco - OpenAI has announced a significant advancement in artificial intelligence technology that could revolutionize how we interact with AI systems...</p>
+                    <p>The new system, which has been in development for over two years, promises to deliver more accurate and contextually aware responses...</p>
+                </div>
+                <div class="floating-button">
+                    <span>🎯</span>
+                    <span>BetChat</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Screenshot 3: Event Creation Overlay -->
+        <div class="screenshot-item">
+            <h3>Event Creation from Webpage</h3>
+            <div style="position: relative; width: 100%; height: 500px; background: #f5f5f5; border-radius: 8px; overflow: hidden;">
+                <div class="content-overlay" style="position: absolute;">
+                    <div class="overlay-content">
+                        <div class="overlay-header">
+                            <h3>🎯 BetChat - Create Event</h3>
+                            <button style="background: none; border: none; color: white; font-size: 24px; cursor: pointer;">×</button>
+                        </div>
+                        <div class="overlay-body">
+                            <div class="page-info">
+                                <h4>Current Page:</h4>
+                                <div class="page-title">OpenAI Announces Major AI Breakthrough</div>
+                                <div class="page-url">https://techcrunch.com/2025/01/17/openai-breakthrough</div>
+                            </div>
+                            <div class="event-form">
+                                <h4>Create Prediction Event:</h4>
+                                <input type="text" placeholder="Event title..." value="Will OpenAI's new AI system be released in 2025?">
+                                <div class="event-options">
+                                    <label><input type="radio" name="category" checked> Tech</label>
+                                    <label><input type="radio" name="category"> News</label>
+                                    <label><input type="radio" name="category"> Crypto</label>
+                                </div>
+                                <div class="event-actions">
+                                    <button class="btn btn-primary">Create Event</button>
+                                    <button class="btn" style="background: #0088cc; color: white;">Share to Telegram</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Screenshot 4: Chrome Extension in Browser -->
+        <div class="screenshot-item">
+            <h3>Extension in Chrome Browser</h3>
+            <div style="width: 100%; height: 300px; background: #f0f0f0; border-radius: 8px; padding: 20px;">
+                <div style="background: white; border-radius: 8px; padding: 10px; margin-bottom: 15px; display: flex; align-items: center; gap: 10px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                    <div style="width: 16px; height: 16px; background: #4CAF50; border-radius: 50%;"></div>
+                    <div style="width: 16px; height: 16px; background: #FFC107; border-radius: 50%;"></div>
+                    <div style="width: 16px; height: 16px; background: #F44336; border-radius: 50%;"></div>
+                    <div style="flex: 1; background: #f5f5f5; padding: 5px 10px; border-radius: 4px; font-size: 12px; color: #666;">
+                        🔒 https://news.ycombinator.com/
+                    </div>
+                    <div class="chrome-icon" style="margin-left: 10px;">🎯</div>
+                </div>
+                <div style="background: white; border-radius: 8px; padding: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                    <h4 style="margin: 0 0 10px 0;">Hacker News</h4>
+                    <div style="font-size: 14px; color: #666; line-height: 1.5;">
+                        <div style="margin-bottom: 8px;">• New AI startup raises $50M Series A</div>
+                        <div style="margin-bottom: 8px;">• Apple announces new MacBook Pro</div>
+                        <div style="margin-bottom: 8px;">• Cryptocurrency markets surge</div>
+                    </div>
+                </div>
+                <div style="position: absolute; bottom: 40px; right: 40px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 8px 12px; border-radius: 20px; font-size: 12px; box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);">
+                    BetChat available
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div style="text-align: center; margin-top: 40px; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+        <h3 style="margin: 0 0 10px 0; color: #333;">Screenshot Instructions</h3>
+        <p style="color: #666; font-size: 14px; margin: 0; line-height: 1.5;">
+            Use browser developer tools to capture these mockups at 1280x800 resolution for Chrome Web Store submission.
+            Each screenshot demonstrates key extension features: popup interface, website integration, event creation, and browser integration.
+        </p>
+    </div>
+</body>
+</html>

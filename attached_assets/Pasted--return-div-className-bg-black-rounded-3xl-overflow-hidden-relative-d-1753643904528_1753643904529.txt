@@ -1,0 +1,111 @@
+ return (
+    <>
+      <div className="bg-black rounded-3xl overflow-hidden relative">
+        <div className="relative w-full aspect-video">
+          <img
+            src={event.banner_url || DEFAULT_BANNER}
+            alt={event.title}
+            className="w-full h-full object-cover"
+            onError={(e) => {
+              e.currentTarget.src = DEFAULT_BANNER;
+            }}
+          />
+
+          {/* Single header row with creator info, title, and status */}
+          <div className="absolute top-0 left-0 right-0 bg-gradient-to-b from-black/80 to-transparent pt-2 pb-1.5">
+            <div className="px-3 grid grid-cols-[auto_1fr_auto] items-center w-full gap-2">
+              {/* Creator info - Left side */}
+              <div className="flex items-center flex-shrink-0">
+                <div className="overflow-hidden rounded-full h-5 w-5 border border-white/50 flex-shrink-0">
+                  <img
+                    src={
+                      event.creator.avatar_url
+                      || event.creator.avatar
+                      || `https://api.dicebear.com/7.x/avataaars/svg?seed=${event.creator.username || event.creator.id || 'user'}`
+                    }
+                    alt={event.creator.username}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <span className="text-white/90 text-xs ml-1.5">
+                  {event.creator.username || "mikki24"}
+                </span>
+              </div>
+
+              {/* Centered title */}
+              <h2 className="text-white text-lg font-bold leading-tight text-center mx-auto truncate px-2">
+                {event.title}
+              </h2>
+
+              {/* Status icon - Right side */}
+              <div className="flex-shrink-0">
+                {event.status !== 'HIDDEN' && (
+                  <div className={`${getEventStatus().bg} w-2.5 h-2.5 rounded-full shadow-sm relative`}>
+                    {getEventStatus().animate && (
+                      <div className={`absolute inset-0 ${getEventStatus().dot} rounded-full animate-ping opacity-75`} />
+                    )}
+                    <div className={`absolute inset-0 ${getEventStatus().dot} rounded-full`} />
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Bottom section with adjusted padding and alignment */}
+        <div className="absolute bottom-0 left-0 right-0 p-4 flex items-end justify-between">
+          {/* Event Pool section */}
+          <div className="flex flex-col justify-end">
+            <span className="text-white text-sm font-bold">Event Pool</span>
+            <div className="flex items-center gap-2 mt-1">
+              <div className="bg-white rounded-lg px-2 py-1">
+                <span className="text-black font-bold text-sm">
+                  {formatCurrency(updatedEvent.pool?.total_amount || 0, '₦', true)}
+                </span>
+              </div>
+              {/* Participation Avatar + Count */}
+              <div className="flex items-center ml-[1rem]">
+                <div className="relative">
+                  <div className="overflow-hidden rounded-full h-5 w-5 border-2 border-white-200 flex items-center justify-center">
+                  <img
+  src={`https://api.dicebear.com/7.x/avataaars/svg?seed=${event.id}`}
+  alt="Participant"
+  className="w-full h-full object-cover"
+/>
+                  </div>
+                </div>
+                <div className="bg-white rounded-full min-w-[1.5rem] h-5 flex items-center justify-center text-black font-bold text-xs ml-[-0.2rem] pl-1 pr-1">
+                  {(event.participants?.length || event.current_participants || 0) + (event.display_participant_boost || 0)}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Join Button */}
+          <button
+            type="button"
+            onClick={handleJoinClick}
+            disabled={['CANCELLED', 'ENDED'].includes(updatedEvent.status || getEventStatus().label) || isProcessing || requestSent}
+            className={`${
+              ['CANCELLED', 'ENDED'].includes(updatedEvent.status || getEventStatus().label)
+                ? 'bg-gray-500 cursor-not-allowed text-white'
+                : requestSent
+                  ? 'bg-[#CCFF00] text-black hover:bg-[#CCFF00]'
+                  : isProcessing
+                    ? 'bg-gray-400 text-white hover:bg-gray-400'
+                    : 'btn-primary bg-[#ccff00] text-black hover:bg-[#ccff00]'
+            } h-10 flex items-center justify-center gap-1 px-4 rounded-3x1'`}
+          >
+            {updatedEvent.is_private && !requestSent && <Lock className="h-4 w-4" />}
+            {['CANCELLED', 'ENDED'].includes(updatedEvent.status || getEventStatus().label)
+              ? 'Closed'
+              : isProcessing
+                ? 'Processing...'
+                : requestSent
+                  ? 'Request Sent'
+                  : updatedEvent.is_private
+                    ? 'Request'
+                    : 'Join'}
+          </button>
+        </div>
+      </div>

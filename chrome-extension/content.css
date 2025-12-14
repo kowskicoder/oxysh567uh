@@ -1,0 +1,313 @@
+/* BetChat Chrome Extension - Content Script Styles */
+
+/* Floating Action Button */
+#betchat-floating-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10000;
+    cursor: pointer;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.betchat-fab {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 12px 16px;
+    border-radius: 25px;
+    box-shadow: 0 4px 20px rgba(102, 126, 234, 0.3);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+}
+
+.betchat-fab:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(102, 126, 234, 0.4);
+}
+
+.betchat-fab-icon {
+    font-size: 16px;
+}
+
+.betchat-fab-text {
+    font-size: 13px;
+}
+
+/* Page Indicator */
+#betchat-page-indicator {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 10000;
+    animation: slideIn 0.3s ease-in-out;
+    transition: opacity 0.5s ease;
+}
+
+.betchat-indicator {
+    background: #48bb78;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    box-shadow: 0 2px 10px rgba(72, 187, 120, 0.3);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+}
+
+/* Overlay */
+#betchat-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 20000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.betchat-overlay-content {
+    background: white;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 500px;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    animation: slideUp 0.3s ease-in-out;
+}
+
+.betchat-overlay-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #e9ecef;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 12px 12px 0 0;
+}
+
+.betchat-overlay-header h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#betchat-close-overlay {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background 0.2s ease;
+}
+
+#betchat-close-overlay:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.betchat-overlay-body {
+    padding: 20px;
+}
+
+.betchat-page-info {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
+}
+
+.betchat-page-info h4 {
+    margin: 0 0 10px 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+
+.betchat-page-title {
+    font-size: 13px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 5px;
+    line-height: 1.4;
+}
+
+.betchat-page-url {
+    font-size: 12px;
+    color: #666;
+    word-break: break-all;
+    line-height: 1.3;
+}
+
+.betchat-event-form h4 {
+    margin: 0 0 15px 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+
+.betchat-event-form input,
+.betchat-event-form textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    margin-bottom: 12px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+    transition: border-color 0.2s ease;
+}
+
+.betchat-event-form input:focus,
+.betchat-event-form textarea:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.betchat-event-form textarea {
+    height: 80px;
+    resize: vertical;
+}
+
+.betchat-event-options {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.betchat-event-options label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.betchat-event-options label:hover {
+    color: #667eea;
+}
+
+.betchat-event-options input[type="radio"] {
+    width: auto;
+    margin: 0;
+}
+
+.betchat-event-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.betchat-event-actions button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+}
+
+#betchat-create-event {
+    background: #667eea;
+    color: white;
+}
+
+#betchat-create-event:hover {
+    background: #5a67d8;
+    transform: translateY(-1px);
+}
+
+#betchat-share-telegram {
+    background: #0088cc;
+    color: white;
+}
+
+#betchat-share-telegram:hover {
+    background: #006fa6;
+    transform: translateY(-1px);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .betchat-overlay-content {
+        width: 95%;
+        margin: 20px;
+    }
+    
+    .betchat-fab-text {
+        display: none;
+    }
+    
+    .betchat-fab {
+        padding: 12px;
+        border-radius: 50%;
+    }
+    
+    .betchat-event-options {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .betchat-event-actions {
+        flex-direction: column;
+    }
+}

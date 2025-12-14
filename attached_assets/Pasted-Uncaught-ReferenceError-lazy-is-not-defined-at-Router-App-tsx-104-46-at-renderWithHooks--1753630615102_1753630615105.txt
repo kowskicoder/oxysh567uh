@@ -1,0 +1,37 @@
+Uncaught ReferenceError: lazy is not defined
+    at Router (App.tsx:104:46)
+    at renderWithHooks (chunk-RPCDYKBN.js?v=1ed448c9:11548:26)
+    at mountIndeterminateComponent (chunk-RPCDYKBN.js?v=1ed448c9:14926:21)
+    at beginWork (chunk-RPCDYKBN.js?v=1ed448c9:15914:22)
+    at HTMLUnknownElement.callCallback2 (chunk-RPCDYKBN.js?v=1ed448c9:3674:22)
+    at Object.invokeGuardedCallbackDev (chunk-RPCDYKBN.js?v=1ed448c9:3699:24)
+    at invokeGuardedCallback (chunk-RPCDYKBN.js?v=1ed448c9:3733:39)
+    at beginWork$1 (chunk-RPCDYKBN.js?v=1ed448c9:19765:15)
+    at performUnitOfWork (chunk-RPCDYKBN.js?v=1ed448c9:19198:20)
+    at workLoopSync (chunk-RPCDYKBN.js?v=1ed448c9:19137:13)Understand this error
+chunk-RPCDYKBN.js?v=1ed448c9:14032 The above error occurred in the <Router> component:
+
+    at Router (https://193b8c01-4466-4ed8-b921-aada5a4474bc-00-16r65vfchlboc.janeway.replit.dev:3000/src/App.tsx?v=IgMlpyl4w8bcbaM8aceuJ:77:48)
+    at ErrorBoundary (https://193b8c01-4466-4ed8-b921-aada5a4474bc-00-16r65vfchlboc.janeway.replit.dev:3000/@fs/home/runner/workspace/node_modules/.vite/deps/react-error-boundary.js?v=1ed448c9:18:5)
+    at Provider (https://193b8c01-4466-4ed8-b921-aada5a4474bc-00-16r65vfchlboc.janeway.replit.dev:3000/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-OXZDJRWN.js?v=1ed448c9:38:15)
+    at TooltipProvider (https://193b8c01-4466-4ed8-b921-aada5a4474bc-00-16r65vfchlboc.janeway.replit.dev:3000/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-tooltip.js?v=1ed448c9:64:5)
+    at div
+    at EventsSearchProvider (https://193b8c01-4466-4ed8-b921-aada5a4474bc-00-16r65vfchlboc.janeway.replit.dev:3000/src/context/EventsSearchContext.tsx:20:40)
+    at ThemeProvider (https://193b8c01-4466-4ed8-b921-aada5a4474bc-00-16r65vfchlboc.janeway.replit.dev:3000/src/contexts/ThemeProvider.tsx:20:33)
+    at QueryClientProvider (https://193b8c01-4466-4ed8-b921-aada5a4474bc-00-16r65vfchlboc.janeway.replit.dev:3000/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=1ed448c9:2805:3)
+    at App (https://193b8c01-4466-4ed8-b921-aada5a4474bc-00-16r65vfchlboc.janeway.replit.dev:3000/src/App.tsx?v=IgMlpyl4w8bcbaM8aceuJ:412:39)
+
+React will try to recreate this component tree from scratch using the error boundary you provided, ErrorBoundary.
+logCapturedError @ chunk-RPCDYKBN.js?v=1ed448c9:14032Understand this error
+App.tsx:220 App Error: ReferenceError: lazy is not defined
+    at Router (App.tsx:104:46)
+    at renderWithHooks (chunk-RPCDYKBN.js?v=1ed448c9:11548:26)
+    at mountIndeterminateComponent (chunk-RPCDYKBN.js?v=1ed448c9:14926:21)
+    at beginWork (chunk-RPCDYKBN.js?v=1ed448c9:15914:22)
+    at beginWork$1 (chunk-RPCDYKBN.js?v=1ed448c9:19753:22)
+    at performUnitOfWork (chunk-RPCDYKBN.js?v=1ed448c9:19198:20)
+    at workLoopSync (chunk-RPCDYKBN.js?v=1ed448c9:19137:13)
+    at renderRootSync (chunk-RPCDYKBN.js?v=1ed448c9:19116:15)
+    at recoverFromConcurrentError (chunk-RPCDYKBN.js?v=1ed448c9:18736:28)
+    at performConcurrentWorkOnRoot (chunk-RPCDYKBN.js?v=1ed448c9:18684:30)
+onError @ App.tsx:220Understand this error

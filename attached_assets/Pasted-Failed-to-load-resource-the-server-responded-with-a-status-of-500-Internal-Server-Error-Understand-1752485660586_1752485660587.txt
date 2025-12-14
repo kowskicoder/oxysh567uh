@@ -1,0 +1,38 @@
+Failed to load resource: the server responded with a status of 500 (Internal Server Error)Understand this error
+Console.js:61 API Request Error: Error: 500: {"message":"Failed to create challenge"}
+    at throwIfResNotOk (queryClient.ts:6:11)
+    at async apiRequest (queryClient.ts:23:5)
+    at async Object.mutationFn (Challenges.tsx:110:7)
+Mt.forEach.n.<computed> @ Console.js:61
+await in Mt.forEach.n.<computed>
+mutationFn @ Challenges.tsx:110
+fn @ @tanstack_react-query.js?v=7c1b6b77:1189
+run @ @tanstack_react-query.js?v=7c1b6b77:494
+start @ @tanstack_react-query.js?v=7c1b6b77:536
+execute @ @tanstack_react-query.js?v=7c1b6b77:1225
+await in execute
+mutate @ @tanstack_react-query.js?v=7c1b6b77:2630
+(anonymous) @ @tanstack_react-query.js?v=7c1b6b77:3295
+onSubmit @ Challenges.tsx:180
+(anonymous) @ chunk-4BFJKWC4.js?v=7c1b6b77:1465
+await in (anonymous)
+callCallback2 @ chunk-RPCDYKBN.js?v=7c1b6b77:3674
+invokeGuardedCallbackDev @ chunk-RPCDYKBN.js?v=7c1b6b77:3699
+invokeGuardedCallback @ chunk-RPCDYKBN.js?v=7c1b6b77:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-RPCDYKBN.js?v=7c1b6b77:3736
+executeDispatch @ chunk-RPCDYKBN.js?v=7c1b6b77:7014
+processDispatchQueueItemsInOrder @ chunk-RPCDYKBN.js?v=7c1b6b77:7034
+processDispatchQueue @ chunk-RPCDYKBN.js?v=7c1b6b77:7043
+dispatchEventsForPlugins @ chunk-RPCDYKBN.js?v=7c1b6b77:7051
+(anonymous) @ chunk-RPCDYKBN.js?v=7c1b6b77:7174
+batchedUpdates$1 @ chunk-RPCDYKBN.js?v=7c1b6b77:18913
+batchedUpdates @ chunk-RPCDYKBN.js?v=7c1b6b77:3579
+dispatchEventForPluginEventSystem @ chunk-RPCDYKBN.js?v=7c1b6b77:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-RPCDYKBN.js?v=7c1b6b77:5478
+dispatchEvent @ chunk-RPCDYKBN.js?v=7c1b6b77:5472
+dispatchDiscreteEvent @ chunk-RPCDYKBN.js?v=7c1b6b77:5449Understand this error
+efd076e9-b9ad-4653-aa41-717cd33904ef-00-3ajz21tl6i768.worf.replit.dev/api/challenges:1  Failed to load resource: the server responded with a status of 500 (Internal Server Error)Understand this error
+Console.js:61 API Request Error: Error: 500: {"message":"Failed to create challenge"}
+    at throwIfResNotOk (queryClient.ts:6:11)
+    at async apiRequest (queryClient.ts:23:5)
+    at async Object.mutationFn (Challenges.tsx:110:7)

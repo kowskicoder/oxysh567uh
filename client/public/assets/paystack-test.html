@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paystack Test</title>
+  <script src="https://js.paystack.co/v1/inline.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    button {
+      background-color: #0a721b;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .container {
+      border: 1px solid #ddd;
+      padding: 20px;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+    h1 {
+      font-size: 24px;
+    }
+    #status {
+      margin-top: 20px;
+      padding: 10px;
+      border-radius: 4px;
+    }
+    .success {
+      background-color: #d4edda;
+      color: #155724;
+    }
+    .error {
+      background-color: #f8d7da;
+      color: #721c24;
+    }
+  </style>
+</head>
+<body>
+  <h1>Paystack Test</h1>
+  <div class="container">
+    <p>This is a simple test to verify that Paystack is working correctly.</p>
+    <p>Click the button below to open the Paystack payment form:</p>
+    <button id="payButton">Pay ₦100</button>
+    <div id="status"></div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Check if Paystack is loaded
+      if (typeof PaystackPop === 'undefined') {
+        document.getElementById('status').textContent = 'Error: Paystack not loaded';
+        document.getElementById('status').className = 'error';
+      } else {
+        document.getElementById('status').textContent = 'Paystack loaded successfully';
+        document.getElementById('status').className = 'success';
+      }
+
+      // Add click event to button
+      document.getElementById('payButton').addEventListener('click', function() {
+        try {
+          const handler = PaystackPop.setup({
+            key: 'pk_test_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx', // Replace with your public key
+            email: 'customer@example.com',
+            amount: 10000, // 100 Naira in kobo
+            currency: 'NGN',
+            ref: 'TEST_' + Math.floor(Math.random() * 1000000000),
+            callback: function(response) {
+              document.getElementById('status').textContent = 'Payment successful! Reference: ' + response.reference;
+              document.getElementById('status').className = 'success';
+            },
+            onClose: function() {
+              document.getElementById('status').textContent = 'Payment window closed';
+              document.getElementById('status').className = '';
+            }
+          });
+          handler.openIframe();
+        } catch (error) {
+          document.getElementById('status').textContent = 'Error: ' + error.message;
+          document.getElementById('status').className = 'error';
+        }
+      });
+    });
+  </script>
+</body>
+</html>

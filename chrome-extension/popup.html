@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bantah Extension</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="icons/icon48.png" alt="BetChat" class="logo">
+            <h1>BetChat</h1>
+            <div class="badge" id="notificationBadge"></div>
+        </div>
+        
+        <div class="auth-section" id="authSection">
+            <div class="login-prompt">
+                <p>Connect to your BetChat account</p>
+                <button id="loginBtn" class="btn btn-primary">Login to BetChat</button>
+            </div>
+        </div>
+        
+        <div class="main-content" id="mainContent" style="display: none;">
+            <div class="balance-section">
+                <div class="balance-card">
+                    <span class="balance-label">Balance</span>
+                    <span class="balance-amount" id="balanceAmount">₦0</span>
+                </div>
+                <div class="coins-card">
+                    <span class="coins-label">Coins</span>
+                    <span class="coins-amount" id="coinsAmount">0</span>
+                </div>
+            </div>
+            
+            <div class="quick-actions">
+                <button id="createEventBtn" class="btn btn-accent">
+                    🎯 Create Event
+                </button>
+                <button id="viewEventsBtn" class="btn btn-outline">
+                    📋 Active Events
+                </button>
+                <button id="challengeBtn" class="btn btn-outline">
+                    ⚔️ Challenges
+                </button>
+            </div>
+            
+            <div class="notifications-section">
+                <div class="section-header">
+                    <h3>Recent Activity</h3>
+                    <button id="refreshBtn" class="btn-icon">🔄</button>
+                </div>
+                <div class="notifications-list" id="notificationsList">
+                    <div class="no-notifications">
+                        <p>No new notifications</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="page-actions" id="pageActions" style="display: none;">
+                <div class="section-header">
+                    <h3>Page Actions</h3>
+                </div>
+                <button id="createEventFromPageBtn" class="btn btn-secondary">
+                    📄 Create Event from Page
+                </button>
+                <button id="sharePageBtn" class="btn btn-secondary">
+                    📤 Share to Telegram
+                </button>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <button id="settingsBtn" class="btn-icon">⚙️</button>
+            <button id="helpBtn" class="btn-icon">❓</button>
+            <button id="openWebBtn" class="btn-icon">🌐</button>
+        </div>
+    </div>
+    
+    <script src="popup.js"></script>
+</body>
+</html>

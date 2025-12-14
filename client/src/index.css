@@ -1,0 +1,356 @@
+/* Mobile Compact Design Styles */
+@import './styles/mobile-compact.css';
+
+/* Poppins Rounded Font Configuration */
+@font-face {
+  font-family: 'Poppins Rounded';
+  src: url('/fonts/PoppinsRounded-Rounded.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Mobile App-like styles */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Poppins Rounded', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    font-feature-settings: 'kern' 1;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overscroll-behavior: none;
+    -webkit-overflow-scrolling: touch;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* Remove any existing font references and use SF Pro Rounded */
+  * {
+    font-family: inherit;
+  }
+
+  /* Mobile-specific scrollbar hiding */
+  @media (max-width: 768px) {
+    * {
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+
+    *::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
+
+/* Mobile App Components */
+@layer components {
+  /* Compact mobile cards */
+  .mobile-card {
+    @apply bg-white dark:bg-slate-800 rounded-3xl shadow-sm border border-slate-200 dark:border-slate-700 p-3;
+  }
+
+  .mobile-card-compact {
+    @apply bg-white dark:bg-slate-800 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700 p-2;
+  }
+
+  /* App-like sections */
+  .app-section {
+    @apply bg-white dark:bg-slate-800 rounded-3xl shadow-sm border border-slate-200 dark:border-slate-700 p-4 mb-3;
+  }
+
+  /* Global rounded corners for all UI elements */
+  .rounded-lg {
+    border-radius: 1rem !important;
+  }
+
+  .rounded-md {
+    border-radius: 0.75rem !important;
+  }
+
+  .rounded-sm {
+    border-radius: 0.5rem !important;
+  }
+
+  /* Tab styling with increased radius and no black borders */
+  [role="tablist"] {
+    @apply rounded-2xl border-slate-200 dark:border-slate-700;
+  }
+
+  [role="tab"] {
+    @apply rounded-xl border-slate-200 dark:border-slate-700;
+  }
+
+  /* Remove black borders from all UI elements - light mode */
+  [role="dialog"],
+  [role="alertdialog"],
+  .toast,
+  [role="listbox"],
+  [role="tooltip"],
+  [data-radix-popper-content-wrapper] {
+    border-color: hsl(var(--border)) !important;
+  }
+
+  /* Form elements styling for light mode - matching search bar design */
+  input,
+  textarea,
+  select,
+  .form-control,
+  .form-input {
+    border-color: hsl(220, 9%, 88%) !important;
+    background-color: hsl(220, 14%, 96%) !important;
+  }
+
+  input:focus,
+  textarea:focus,
+  select:focus,
+  .form-control:focus,
+  .form-input:focus,
+  input:focus-visible,
+  textarea:focus-visible,
+  select:focus-visible {
+    border-color: hsl(220, 9%, 82%) !important;
+    box-shadow: 0 0 0 2px hsl(220, 14%, 90%) !important;
+    outline: none !important;
+  }
+
+  /* Specific targeting for shadcn components */
+  [data-radix-combobox-trigger]:focus-visible,
+  [data-radix-select-trigger]:focus-visible,
+  .ui-input:focus-visible,
+  .ui-textarea:focus-visible {
+    --tw-ring-color: hsl(220, 14%, 90%) !important;
+    box-shadow: 0 0 0 2px hsl(220, 14%, 90%) !important;
+  }
+
+  /* Dark mode overrides */
+  .dark input,
+  .dark textarea,
+  .dark select,
+  .dark .form-control,
+  .dark .form-input {
+    border-color: hsl(var(--border)) !important;
+    background-color: hsl(var(--input)) !important;
+  }
+
+  .dark input:focus,
+  .dark textarea:focus,
+  .dark select:focus,
+  .dark .form-control:focus,
+  .dark .form-input:focus {
+    border-color: hsl(var(--primary)) !important;
+    box-shadow: 0 0 0 2px hsl(var(--primary) / 0.2) !important;
+  }
+
+  /* Remove black borders from modals, dialogs, toasts */
+  [role="dialog"] {
+    @apply border-slate-200 dark:border-slate-700 shadow-lg;
+    border-color: hsl(var(--border)) !important;
+  }
+
+  [role="alertdialog"] {
+    @apply border-slate-200 dark:border-slate-700 shadow-lg;
+    border-color: hsl(var(--border)) !important;
+  }
+
+  /* Toast styling */
+  .toast {
+    @apply border-slate-200 dark:border-slate-700 shadow-lg;
+    border-color: hsl(var(--border)) !important;
+  }
+
+  /* Select dropdown styling */
+  [role="listbox"] {
+    @apply border-slate-200 dark:border-slate-700 shadow-lg;
+    border-color: hsl(var(--border)) !important;
+  }
+
+  /* Popover styling */
+  [role="tooltip"],
+  [data-radix-popper-content-wrapper] {
+    @apply border-slate-200 dark:border-slate-700 shadow-lg;
+    border-color: hsl(var(--border)) !important;
+  }
+
+  /* Removed duplicate form styling - using the specific light mode styles above instead */
+
+  /* Mobile button styles */
+  .mobile-btn {
+    @apply rounded-full px-4 py-2 font-medium text-sm transition-all duration-200 active:scale-95;
+  }
+
+  .mobile-btn-primary {
+    @apply mobile-btn bg-primary text-white hover:bg-primary/90 shadow-md;
+  }
+
+  .mobile-btn-secondary {
+    @apply mobile-btn bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-600;
+  }
+
+  /* Splash screen animation */
+  .animate-fade-out {
+    animation: fadeOut 0.3s ease-out 1.7s forwards;
+  }
+
+  @keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+  }
+}
+
+@layer components {
+  /* Page transition animations */
+  .page-enter {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  .page-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+  }
+
+  .page-exit {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .page-exit-active {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 200ms ease-in-out, transform 200ms ease-in-out;
+  }
+
+  /* Mobile-first navigation */
+  .mobile-nav-safe-area {
+    padding-bottom: env(safe-area-inset-bottom, 0);
+  }
+}
+
+::root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(20, 14.3%, 4.1%);
+  --muted: hsl(60, 4.8%, 95.9%);
+  --muted-foreground: hsl(25, 5.3%, 44.7%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(20, 14.3%, 4.1%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(20, 14.3%, 4.1%);
+  --border: hsl(220, 9%, 88%);
+  --input: hsl(220, 14%, 96%);
+  --primary: 260 100% 64%;
+  --primary-foreground: hsl(211, 100%, 99%);
+  --secondary: hsl(60, 4.8%, 95.9%);
+  --secondary-foreground: hsl(24, 9.8%, 10%);
+  --accent: hsl(60, 4.8%, 95.9%);
+  --accent-foreground: hsl(24, 9.8%, 10%);
+  --destructive: hsl(0, 84.2%, 60.2%);
+  --destructive-foreground: hsl(60, 9.1%, 97.8%);
+  --ring: hsl(220, 14%, 90%);
+  --radius: 0.5rem;
+}
+
+.dark {
+  --background: hsl(240, 10%, 3.9%);
+  --foreground: hsl(0, 0%, 98%);
+  --muted: hsl(240, 3.7%, 15.9%);
+  --muted-foreground: hsl(240, 5%, 64.9%);
+  --popover: hsl(240, 10%, 3.9%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --card: hsl(240, 10%, 3.9%);
+  --card-foreground: hsl(0, 0%, 98%);
+  --border: hsl(240, 3.7%, 15.9%);
+  --input: hsl(240, 3.7%, 15.9%);
+  --primary: 260 100% 64%;
+  --primary-foreground: hsl(211, 100%, 99%);
+  --secondary: hsl(240, 3.7%, 15.9%);
+  --secondary-foreground: hsl(0, 0%, 98%);
+  --accent: hsl(240, 3.7%, 15.9%);
+  --accent-foreground: hsl(0, 0%, 98%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(240, 3.7%, 15.9%);
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply antialiased bg-background text-foreground;
+    font-family: 'Poppins Rounded', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 400;
+  }
+
+  /* Global form input styling for light mode - matching search bar design */
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="number"],
+  input[type="tel"],
+  input[type="url"],
+  input[type="search"],
+  textarea,
+  select {
+    border-color: hsl(220, 9%, 88%) !important;
+    background-color: hsl(220, 14%, 96%) !important;
+  }
+
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="password"]:focus,
+  input[type="number"]:focus,
+  input[type="tel"]:focus,
+  input[type="url"]:focus,
+  input[type="search"]:focus,
+  textarea:focus,
+  select:focus {
+    border-color: hsl(220, 9%, 82%) !important;
+    box-shadow: 0 0 0 2px hsl(220, 14%, 90%) !important;
+    outline: none !important;
+  }
+
+  /* Dark mode specific styling */
+  .dark input[type="text"],
+  .dark input[type="email"],
+  .dark input[type="password"],
+  .dark input[type="number"],
+  .dark input[type="tel"],
+  .dark input[type="url"],
+  .dark input[type="search"],
+  .dark textarea,
+  .dark select {
+    border-color: hsl(var(--border)) !important;
+    background-color: hsl(var(--background)) !important;
+  }
+
+  .dark input[type="text"]:focus,
+  .dark input[type="email"]:focus,
+  .dark input[type="password"]:focus,
+  .dark input[type="number"]:focus,
+  .dark input[type="tel"]:focus,
+  .dark input[type="url"]:focus,
+  .dark input[type="search"]:focus,
+  .dark textarea:focus,
+  .dark select:focus {
+    border-color: hsl(var(--primary)) !important;
+    box-shadow: 0 0 0 2px hsl(var(--primary) / 0.2) !important;
+  }
+}
+
+/* Mobile Compact Design Styles */
+@layer components {
+  /* Mobile-optimized buttons */
+  .mobile-compact-button {
+    @apply h-8 px-3 text-xs font-bold;
+  }
+}

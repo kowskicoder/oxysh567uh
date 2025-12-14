@@ -1,0 +1,129 @@
+aegonthe49, [29/06/2025 6:39 pm]
+Here’s how Events and Challenges interact with the wallet system, and how both users and the admin make money:
+
+---
+
+## 1. How Users Make Money (Events & Challenges + Wallet)
+
+### A. Challenge Flow
+1. Challenge Creation:  
+   - User A (challenger) creates a challenge, specifying a stake/entry amount.
+   - This amount is deducted from User A’s wallet and held in escrow.
+
+2. Challenge Acceptance:  
+   - User B (challenged) accepts the challenge.
+   - The same amount is deducted from User B’s wallet and also held in escrow.
+
+3. Event/Contest Participation:  
+   - Both users participate in the event or contest (e.g., a game, prediction, or bet).
+
+4. Result Determination:  
+   - The winner is determined (automatically or manually).
+
+5. Payout:  
+   - The total pot (User A’s stake + User B’s stake) is calculated.
+   - The platform fee (admin’s cut) is subtracted.
+   - The winner receives the remaining amount, which is credited to their wallet.
+
+---
+
+### B. Event Flow
+- Events may have entry fees or pools.
+- Users pay to join; the entry fee is deducted from their wallet.
+- At the end of the event, the prize pool (minus platform fees) is distributed to the winner(s).
+
+---
+
+## 2. How the Admin Makes Money
+
+- Platform Fee:  
+  - For every challenge or event, the admin/platform takes a percentage (e.g., 5%) of the total pot or entry fees as a fee.
+  - This fee is deducted before winnings are paid out to users.
+  - The admin’s earnings accumulate in a designated wallet or account.
+
+---
+
+## 3. Wallet System Integration
+
+- All transactions (stakes, entry fees, winnings, refunds, and platform fees) are processed through the wallet system.
+- Users can see their wallet balance update in real time after each transaction.
+- The wallet ensures transparency and security for all financial operations.
+
+---
+
+## Summary Table
+
+| Action                | User Wallet Effect         | Admin Wallet Effect      |
+|-----------------------|---------------------------|-------------------------|
+| Create/Accept Challenge | Stake deducted (escrow)   | —                       |
+| Win Challenge/Event   | Winnings credited         | —                       |
+| Lose Challenge/Event  | Stake lost                | —                       |
+| Platform Fee          | —                         | Fee credited            |
+
+---
+
+In short:  
+- Users make money by winning challenges/events (winnings go to their wallet).
+- The admin makes money by taking a fee from each challenge/event (fee goes to admin wallet).
+- The wallet system tracks and processes all these transactions automatically.
+
+aegonthe49, [29/06/2025 6:39 pm]
+Here’s a clear explanation of the Challenge system in your app:
+
+---
+
+### 1. What is a Challenge?
+A Challenge is a direct request from one user to another, inviting them to compete, bet, or participate in a specific event or contest. It’s a core social and competitive feature of your platform.
+
+---
+
+### 2. How Challenges Work
+- Initiation:  
+  - A user (the challenger) sends a challenge to another user (the challenged).
+  - This is typically done by selecting an event or bet and choosing a user to challenge.
+
+- Database Structure:  
+  - Challenges are stored in a challenges table.
+  - Key fields include:
+    - id: Unique identifier for the challenge.
+    - challenger_id: The user who sends the challenge.
+    - challenged_id: The user who receives the challenge.
+    - status: The state of the challenge (pending, accepted, rejected, etc.).
+    - Other fields may include event details, timestamps, and wagered amounts.
+
+- Status Flow:  
+  - When a challenge is sent, its status is set to pending.
+  - The challenged user can then accept or reject the challenge.
+  - Accepting may create or join an event, while rejecting ends the process.
+
+---
+
+### 3. Notifications
+- Pending Challenges:  
+  - Users are notified when they receive a new challenge (i.e., when a row is added to the challenges table with their user ID as challenged_id and status pending).
+  - The notification badge in the header shows the count of such pending challenges.
+
+- Real-Time Updates:  
+  - The app may use Supabase real-time subscriptions to update the notification count instantly when new challenges are received or responded to.
+
+---
+
+### 4. User Actions
+- Send Challenge:  
+  - Initiated by the challenger, creates a new row in the challenges table.
+- Respond to Challenge:  
+  - The challenged user can accept (status becomes accepted) or reject (status becomes rejected).
+- View Challenge:  
+  - Users can view incoming and outgoing challenges, their statuses, and take action accordingly.
+
+---
+
+### 5. Integration with Events
+- Accepting a challenge may automatically enroll both users in a specific event or bet, linking the challenge system with the broader event system of your app.
+
+---
+
+Summary:  
+The Challenge system enables users to directly invite others to compete or participate in events, tracks the status of these invitations, and provides real-time notifications for pending requests. It’s a key driver of engagement and competition on your platform.
+
+If you want details on the exact schema, API, or UI flows, let me know!

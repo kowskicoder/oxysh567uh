@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Login</title>
+</head>
+<body>
+    <h1>Test Authentication</h1>
+    <p>Click the button below to test login:</p>
+    <button onclick="testLogin()">Test Login</button>
+    <button onclick="checkAuth()">Check Auth Status</button>
+    <div id="result"></div>
+
+    <script>
+        async function testLogin() {
+            const result = document.getElementById('result');
+            result.innerHTML = 'Attempting login...';
+            
+            try {
+                window.location.href = '/api/login';
+            } catch (error) {
+                result.innerHTML = `Login error: ${error.message}`;
+            }
+        }
+
+        async function checkAuth() {
+            const result = document.getElementById('result');
+            result.innerHTML = 'Checking authentication...';
+            
+            try {
+                const response = await fetch('/api/auth/user');
+                const data = await response.json();
+                
+                if (response.ok) {
+                    result.innerHTML = `✅ Authenticated: ${JSON.stringify(data, null, 2)}`;
+                } else {
+                    result.innerHTML = `❌ Not authenticated: ${data.message}`;
+                }
+            } catch (error) {
+                result.innerHTML = `Error: ${error.message}`;
+            }
+        }
+    </script>
+</body>
+</html>
